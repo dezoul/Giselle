@@ -9,3 +9,50 @@
 @tailwind utilities;
 
 /* Custom CSS */
+
+@font-face {
+    font-family: 'futura book';
+    src: url(/assets/Fonts/Futura-Book-font.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'futura book italic';
+    src: url(/assets/Fonts/Futura-Book-Italic-font.ttf) format('truetype');
+}
+
+* {
+    font-family: 'futura book', sans-serif;
+}
+
+
+header,footer,section,article,aside,nav,main {
+    display: block;
+    padding: 5%;
+    position: relative;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    padding: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    padding-bottom: 1em;
+}
+
+h1,.h1 {
+    font-family: 'futura book italic', sans-serif;
+    font-size: 2.5rem;
+}
+h2,.h2 {
+    font-family: 'futura book', sans-serif;
+    font-size: 2rem;
+}  
+h3,.h3 {
+    font-family: 'futura book', sans-serif;
+    font-size: 1.5rem;
+}
+
+p{
+    min-height: 1px;
+}
