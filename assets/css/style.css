@@ -110,7 +110,7 @@
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-/* ! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -467,6 +467,12 @@ video {
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
 .col-span-6 {
   grid-column: span 6 / span 6;
 }
@@ -482,6 +488,10 @@ video {
 .m-auto {
   margin: auto;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .block {
   display: block;
 }
@@ -491,14 +501,14 @@ video {
 .flex {
   display: flex;
 }
-.grid {
-  display: grid;
-}
 .h-full {
   height: 100%;
 }
 .min-h-screen {
   min-height: 100vh;
+}
+.w-\[50\%\] {
+  width: 50%;
 }
 .w-full {
   width: 100%;
@@ -513,14 +523,14 @@ video {
   --tw-rotate: -90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
 .grid-cols-8 {
   grid-template-columns: repeat(8, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
+}
+.items-start {
+  align-items: flex-start;
 }
 .items-center {
   align-items: center;
@@ -534,17 +544,15 @@ video {
 .gap-16 {
   gap: 4rem;
 }
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
 .bg-gray-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 .bg-cover {
   background-size: cover;
@@ -558,6 +566,9 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.p-2 {
+  padding: 0.5rem;
 }
 .p-4 {
   padding: 1rem;
@@ -573,14 +584,6 @@ video {
 .text-center {
   text-align: center;
 }
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
 .font-bold {
   font-weight: 700;
 }
@@ -589,6 +592,11 @@ video {
 }
 
 /* Custom CSS */
+
+:root{
+    --dark-color: #9f4837;
+    --featured-color: #e8d8b1;
+}
 
 @font-face {
     font-family: 'futura book';
@@ -603,6 +611,26 @@ video {
     font-family: 'futura book', sans-serif;
 }
 
+* img {
+    max-width: 100%;
+ display: inline-block;
+}
+
+.base-section{
+    background-color: #fff;
+    color: var(--dark-color);
+}
+
+.dark-section {
+    background-color: var(--dark-color);
+    color: var(--featured-color);
+}
+
+.featured-section {
+    background-color: var(--featured-color);
+    color: var(--dark-color);
+}
+
 
 header,footer,section,article,aside,nav,main {
     display: block;
@@ -613,8 +641,12 @@ header,footer,section,article,aside,nav,main {
 header a {
     text-decoration: none;
     color: inherit;
+    font-size: 2rem;
+    font-family: futura book italic;
     padding: 1rem;
 }
+
+
 
 h1,h2,h3,h4,h5,h6,p{
     padding-bottom: 1em;
@@ -635,9 +667,67 @@ h3,.h3 {
 
 p{
     min-height: 1px;
+    font-size: 1.25rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+
+.has-arrow {
+    position: relative;
+
+}
+
+.has-arrow:has(input:not(:-moz-placeholder))::after {
+    content: url(/assets/images/svg-arrow.svg);
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-top: 0.5rem solid var(--dark-color);
+}
+
+.has-arrow:has(input:not(:placeholder-shown))::after {
+    content: url(/assets/images/svg-arrow.svg);
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-top: 0.5rem solid var(--dark-color);
 }
 
 .spacer{
-    border: 1px solid;
+display: none;
+}
+
+@media (min-width: 768px) {
+
+.spacer{
+    /* border: 1px solid; */
+    display: block;
     min-height: 10vh;
+}
+
+.md\:grid {
+    display: grid;
+  }
+
+.md\:w-full {
+    width: 100%;
+  }
+
 }

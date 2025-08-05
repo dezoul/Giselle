@@ -9,12 +9,12 @@
     <title>{{page.title}}</title>
 </head>
 
-<body class="height-screen relative">
+<body class="height-screen relative base-section">
     <div class="sticky right-0 top-[50%] z-10">
-    <a href="/assets/images/map.png" class="bg-red-600 uppercase p-4 text-center absolute block -rotate-90 h3" style="width: 12rem;
-right: -4rem;"><span>view menu</span></a>
+    <a href="/assets/images/map.png" class=" dark-section uppercase p-4 text-center absolute block -rotate-90 h3" style="width: 12rem;
+right: -4rem;" target="_blank"><span>view menu</span></a>
 </div>
-    <header class="min-h-screen flex flex-col bg-cover bg-center text-center relative z-20" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
+    <header class="dark-section min-h-screen flex flex-col bg-cover bg-center text-center relative z-20" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
         <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
         {% if page.banner.video.file %}
         <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
@@ -23,7 +23,7 @@ right: -4rem;"><span>view menu</span></a>
         </video>
         {% endif %}
         <nav class="flex relative">
-            <a href="/">home</a>
+            <a href="/">Menu</a>
             <a href="/about">about</a>
             <h2 class="m-auto">
                 Gisille
@@ -31,15 +31,15 @@ right: -4rem;"><span>view menu</span></a>
             <a href="/booking">booking</a>
             <a href="/info">info</a>
         </nav>
-        <h1 class="text-8xl font-bold m-auto relative">{{page.title}}</h1>
-        <p class="text-2xl m-auto max-w-2xl relative">
+        <h1 class="font-bold m-auto relative">{{page.title}}</h1>
+        <p class="m-auto max-w-2xl relative">
             {{page.banner.description}}
         </p>
     </header>
     {{content}}
 
-    <footer class="grid grid-cols-3 bg-red-600">
-        <div>
+    <footer class="flex flex-col md:grid grid-cols-8 dark-section gap-2">
+        <div class="col-span-3">
             <img src="/assets/images/footer-logo.png" alt="Giselle logo">
             <div class="editable">
                 <h3 class="editable">NEWSLETTER SIGN UP</h3>
@@ -47,6 +47,28 @@ right: -4rem;"><span>view menu</span></a>
                     Exclusive updates, sneak preiews, VIP opportunities
                 </p>
             </div>
+        </div>
+        <div class="row-span-2">
+
+        </div>
+        <div class="flex flex-col items-start justify-center col-span-2">
+            <a href="/">RESERVATIONS</a>
+            <a href="/">MENU</a>
+            <a href="/">ABOUT US</a>
+            <a href="/">CONTACT</a>
+        </div>
+        <div class="flex flex-col items-start justify-center col-span-2">
+            <a href="/">RESERVATIONS</a>
+            <a href="/">MENU</a>
+            <a href="/">ABOUT US</a>
+            <a href="/">CONTACT</a>
+        </div>
+        
+        <form action="" class="col-span-3">
+            <input type="text" placeholder="Email" class="featured-section p-2 w-[50%] md:w-full block">
+        </form>
+        <div class="col-span-4">
+            <p>© Copyright Giselle Bali 2025. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
