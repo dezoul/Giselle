@@ -56,3 +56,8 @@ h3,.h3 {
 p{
     min-height: 1px;
 }
+
+.spacer{
+    border: 1px solid;
+    min-height: 10vh;
+}
