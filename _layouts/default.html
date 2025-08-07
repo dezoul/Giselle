@@ -22,53 +22,57 @@ right: -4rem;" target="_blank"><span>view menu</span></a>
             Your browser does not support the video tag.    
         </video>
         {% endif %}
-        <nav class="flex relative">
-            <a href="/">Menu</a>
-            <a href="/about">about</a>
-            <h2 class="m-auto">
-                Gisille
-            </h2>
-            <a href="/booking">booking</a>
-            <a href="/info">info</a>
-        </nav>
-        <h1 class="font-bold m-auto relative">{{page.title}}</h1>
-        <p class="m-auto max-w-2xl relative">
-            {{page.banner.description}}
-        </p>
+        <div class="max-w-screen-lg mx-auto">
+            <nav class="flex relative">
+                <a href="/">Menu</a>
+                <a href="/about">about</a>
+                <h2 class="m-auto">
+                    Gisille
+                </h2>
+                <a href="/booking">booking</a>
+                <a href="/info">info</a>
+            </nav>
+            <h1 class="font-bold m-auto relative">{{page.title}}</h1>
+            <p class="m-auto max-w-2xl relative">
+                {{page.banner.description}}
+            </p>
+        </div>
     </header>
     {{content}}
 
-    <footer class="flex flex-col md:grid grid-cols-8 dark-section gap-2">
-        <div class="col-span-3">
-            <img src="/assets/images/footer-logo.png" alt="Giselle logo">
-            <div class="editable">
-                <h3 class="editable">NEWSLETTER SIGN UP</h3>
-                <p class="editable">
-                    Exclusive updates, sneak preiews, VIP opportunities
-                </p>
+    <footer class="dark-section ">
+        <div class="max-w-screen-lg mx-auto flex flex-col md:grid grid-cols-8 dark-section gap-2">
+            <div class="col-span-3">
+                <img src="/assets/images/footer-logo.png" alt="Giselle logo">
+                <div class="editable">
+                    <h3 class="editable">NEWSLETTER SIGN UP</h3>
+                    <p class="editable">
+                        Exclusive updates, sneak preiews, VIP opportunities
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="row-span-2">
+            <div class="row-span-2">
 
-        </div>
-        <div class="flex flex-col items-start justify-center col-span-2">
-            <a href="/">RESERVATIONS</a>
-            <a href="/">MENU</a>
-            <a href="/">ABOUT US</a>
-            <a href="/">CONTACT</a>
-        </div>
-        <div class="flex flex-col items-start justify-center col-span-2">
-            <a href="/">RESERVATIONS</a>
-            <a href="/">MENU</a>
-            <a href="/">ABOUT US</a>
-            <a href="/">CONTACT</a>
-        </div>
-        
-        <form action="" class="col-span-3">
-            <input type="text" placeholder="Email" class="featured-section p-2 w-[50%] md:w-full block">
-        </form>
-        <div class="col-span-4">
-            <p>© Copyright Giselle Bali 2025. All Rights Reserved.</p>
+            </div>
+            <div class="flex flex-col items-start justify-center col-span-2">
+                <a href="/">RESERVATIONS</a>
+                <a href="/">MENU</a>
+                <a href="/">ABOUT US</a>
+                <a href="/">CONTACT</a>
+            </div>
+            <div class="flex flex-col items-start justify-center col-span-2">
+                <a href="/">RESERVATIONS</a>
+                <a href="/">MENU</a>
+                <a href="/">ABOUT US</a>
+                <a href="/">CONTACT</a>
+            </div>
+            
+            <form action="" class="col-span-3">
+                <input type="text" placeholder="Email" class="featured-section p-2 w-[50%] md:w-full block">
+            </form>
+            <div class="col-span-4">
+                <p>© Copyright Giselle Bali 2025. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
