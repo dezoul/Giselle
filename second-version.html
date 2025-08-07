@@ -2,7 +2,10 @@
 layout: default
 title: L'amour a la page
 banner:
-    banner-heading: L'amour a la page
+    banner_message: 
+        - text: Here we can introduce the restaurant,
+        - text: give a quick overview of the concept and highlight
+        - text: the core ideas and beliefs that make it unique and inviting. We keep things short and sweet, using spacious layouts, clean design and minimal illustrations to give an essence of the French Riviera.
     description: This is the homepage of your site.
     text-color: '#ffffff'
     overlay-color:
@@ -12,7 +15,20 @@ banner:
     video:
         file: /assets/videos/intro.mp4
         file_type: video/mp4
-slideshow:
+slideshow-with-text:
+    images:
+        - image_path: /assets/images/Screenshot-1.png
+          text: "La vie est belle"
+        - image_path: /assets/images/Screenshot-2.png
+          text: "something else La vie est belle"
+        - image_path: /assets/images/Screenshot-3.png
+          text: "La vie est belle"
+        - image_path: /assets/images/Screenshot-4.png
+          text: 'third bit of text' 
+        - image_path: /assets/images/Screenshot-5.png
+          text: "La vie est belle"
+    speed_in_seconds: 3
+slideshow-2:
     images:
         - /assets/images/Screenshot-1.png
         - /assets/images/Screenshot-2.png
@@ -30,9 +46,40 @@ slideshow:
 </section>
 
 
-<section class="bright-section bg-center bg-no-repeat min-h-screen flex flex-col justify-center items-center" style="background-image: url(/assets/images/Screenshot-3.png); background-size: min( max(17rem,36%), 100%)" >
+<section class=" slideshow bright-section bg-center bg-no-repeat min-h-screen flex flex-col justify-center items-center" style="background-image: url(/assets/images/Screenshot-3.png); background-size: min( max(17rem,36%), 100%)" >
     <h2 class="h1 text-center editable max-w-screen-lg mx-auto" style="font-size: max(3.5rem, 10vw);">La vie est belle</h2>
+
+    <div class="data-divs">
+    {% for image in page.slideshow-with-text.images %}
+        <div class="data-div-1" data-url="{{image.image_path}}" data-text="{{image.text}}">
+            <img src="{{image.image_path}}" alt="">
+        </div>
+    {% endfor %}
+
+</div>
+
 </section>
+
+<script>
+    const slideshow = document.querySelector('.slideshow');
+
+
+    const dataDivs = document.querySelectorAll('.data-div-1');
+
+
+
+    let currentIndex = 0;
+
+    function showNextImage() {
+        dataDivs[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % dataDivs.length;
+        dataDivs[currentIndex].classList.add('active');
+        slideshow.style.backgroundImage = `url(${dataDivs[currentIndex].dataset.url})`;
+        slideshow.querySelector('h2').innerText = dataDivs[currentIndex].dataset.text;
+    }
+
+    setInterval(showNextImage, {{page.slideshow-with-text.speed_in_seconds}} * 1000);
+</script>
 
 
 <section class="dark-section">
@@ -66,22 +113,24 @@ slideshow:
         
 </section>
 
-<section class="slideshow flex justify-center items-start p-36 bg-center bg-cover" style="background-image: url(/assets/images/map.png); min-height: 90vh; ">
+<section class="slideshow-2 flex justify-center items-start p-36 bg-center bg-cover" style="background-image: url(/assets/images/map.png); min-height: 90vh; ">
     <div class="text-center max-w-screen-lg mx-auto">
         <P>
             <a class="px-8 py-4 base-section" href="/maplink">BOOK A TABLE</a>
         </P>
     </div>
 <div class="data-divs">
-    {% for image in page.slideshow.images %}
-    <div class="data-div" data-url="{{image}}"><img src="{{image}}" alt=""></div>
+    {% for image in page.slideshow-2.images %}
+    <div class="data-div-2" data-url="{{image}}"><img src="{{image}}" alt=""></div>
     {% endfor %}
 </div>
 </section>
 
 <script>
-    const slideshow = document.querySelector('.slideshow');
-    const dataDivs = document.querySelectorAll('.data-div');
+    const slideshow = document.querySelector('.slideshow-2');
+
+
+    const dataDivs = document.querySelectorAll('.data-div-2');
 
 
 
@@ -94,5 +143,5 @@ slideshow:
         slideshow.style.backgroundImage = `url(${dataDivs[currentIndex].dataset.url})`;
     }
 
-    setInterval(showNextImage, {{page.slideshow.speed_in_seconds}} * 1000);
+    setInterval(showNextImage, {{page.slideshow-2.speed_in_seconds}} * 1000);
 </script>

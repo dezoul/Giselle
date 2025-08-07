@@ -52,7 +52,7 @@
 }
 
 
-header,footer,section,article,aside,nav,main {
+footer,section,article,aside,nav,main {
     display: block;
     padding: 5%;
     position: relative;
