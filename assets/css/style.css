@@ -550,9 +550,6 @@ video {
 .items-center {
   align-items: center;
 }
-.items-stretch {
-  align-items: stretch;
-}
 .justify-end {
   justify-content: flex-end;
 }
@@ -672,10 +669,13 @@ footer,section,article,aside,nav,main {
     position: relative;
 }
 
+header {
+    color: var(--featured-color);
+}
+
 header a {
     text-decoration: none;
-    color: inherit;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: 'futura book italic';
     padding: 1rem;
 }
