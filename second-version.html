@@ -1,0 +1,90 @@
+---
+layout: default
+title: L'amour a la page
+banner:
+    description: This is the homepage of your site.
+    text-color: '#ffffff'
+    overlay-color:
+        color: '#722'
+        opacity: 0.0
+    image: /assets/images/cafe-spread.png
+    video:
+        file: /assets/videos/intro.mp4
+        file_type: video/mp4
+slideshow:
+    images:
+        - /assets/images/Screenshot-1.png
+        - /assets/images/Screenshot-2.png
+        - /assets/images/Screenshot-3.png
+        - /assets/images/Screenshot-4.png
+        - /assets/images/Screenshot-5.png
+    speed_in_seconds: 3
+---
+<section class="flex items-center justify-center bg-gray-100">
+    <div class="editable text-center">
+        <h3>Friends, fun, and a love of the Riviera.</h3>
+        <h3>Welcome to Giselle</h3>
+        <p></p>
+        <p></p><img alt="line drawing of a woman with a drink" src="/assets/images/line-drawing.png" />
+    </div>
+
+</section>
+
+
+<section class="bright-section bg-center bg-no-repeat min-h-screen flex flex-col justify-center items-center" style="background-image: url(/assets/images/Screenshot-3.png); background-size: min( max(17rem,36%), 100%)" >
+    <h2 class="h1 text-center editable">La vie set belle</h2>
+</section>
+
+
+<section class="dark-section">
+
+    <div class="editable flex flex-col">
+        <a  href="/food-menu">
+            See Food Menu ›
+        </a>
+        <a href="/drink-menu">
+            See Drink Menu ›
+        </a>
+        <a href="/about">
+            About our concept ›
+        </a>
+    </div>
+    <div class="text-right">
+        <img class="editable inline-block max-w-[50%]" src="/assets/images/line-drawin-2.png" alt="" />
+
+    </div>
+    
+
+
+    </div>
+
+</section>
+
+<section class="slideshow flex justify-center items-start p-36 bg-center bg-cover" style="background-image: url(/assets/images/map.png); min-height: 90vh; ">
+    <div class="text-center">
+        <a class="px-8 py-4 base-section" href="/maplink">book a table</a>
+    </div>
+<div class="data-divs" >
+    {% for image in page.slideshow.images %}
+    <div class="data-div" data-url="{{image}}"><img src="{{image}}" alt=""></div>
+    {% endfor %}
+</div>
+</section>
+
+<script>
+    const slideshow = document.querySelector('.slideshow');
+    const dataDivs = document.querySelectorAll('.data-div');
+
+
+
+    let currentIndex = 0;
+
+    function showNextImage() {
+        dataDivs[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % dataDivs.length;
+        dataDivs[currentIndex].classList.add('active');
+        slideshow.style.backgroundImage = `url(${dataDivs[currentIndex].dataset.url})`;
+    }
+
+    setInterval(showNextImage, {{page.slideshow.speed_in_seconds}} * 1000);
+</script>
