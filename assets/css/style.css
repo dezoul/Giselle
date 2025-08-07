@@ -501,6 +501,9 @@ video {
 .flex {
   display: flex;
 }
+.table {
+  display: table;
+}
 .h-full {
   height: 100%;
 }
@@ -541,14 +544,14 @@ video {
 .justify-center {
   justify-content: center;
 }
-.gap-16 {
-  gap: 4rem;
-}
 .gap-2 {
   gap: 0.5rem;
 }
 .gap-8 {
   gap: 2rem;
+}
+.gap-\[3vw\] {
+  gap: 3vw;
 }
 .bg-gray-100 {
   --tw-bg-opacity: 1;
@@ -573,6 +576,9 @@ video {
 .p-4 {
   padding: 1rem;
 }
+.p-36 {
+  padding: 9rem;
+}
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -583,6 +589,9 @@ video {
 }
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 .font-bold {
   font-weight: 700;
@@ -596,6 +605,7 @@ video {
 :root{
     --dark-color: #9f4837;
     --featured-color: #e8d8b1;
+    --bright-color: #e6b446;
 }
 
 @font-face {
@@ -631,6 +641,11 @@ video {
     color: var(--dark-color);
 }
 
+.bright-section {
+    background-color: var(--bright-color);
+    color: #fff;
+}
+
 
 header,footer,section,article,aside,nav,main {
     display: block;
@@ -654,7 +669,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 h1,.h1 {
     font-family: 'futura book italic', sans-serif;
-    font-size: 2.5rem;
+    font-size: max(3.5rem, 9vw);
 }
 h2,.h2 {
     font-family: 'futura book', sans-serif;
@@ -722,12 +737,22 @@ display: none;
     min-height: 10vh;
 }
 
-.md\:grid {
+}
+
+/* slideshow lazyloading images */
+.data-divs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 1px;
+    height: 1px;
+    left:100vw
+}
+@media (min-width: 768px) {
+  .md\:grid {
     display: grid;
   }
-
-.md\:w-full {
+  .md\:w-full {
     width: 100%;
   }
-
 }
