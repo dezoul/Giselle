@@ -628,6 +628,9 @@ video {
 .uppercase {
   text-transform: uppercase;
 }
+.italic {
+  font-style: italic;
+}
 
 /* Custom CSS */
 
@@ -731,7 +734,10 @@ footer a {
 }
 
 .letter-spacing {
-    letter-spacing: 2px;
+    letter-spacing: 0.1rem;
+}
+.italic {
+    font-family: 'futura book italic', sans-serif;
 }
 
 .copyright {
