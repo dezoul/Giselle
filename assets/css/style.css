@@ -492,11 +492,11 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
-.mt-16 {
-  margin-top: 4rem;
-}
 .mb-16 {
   margin-bottom: 4rem;
+}
+.mt-16 {
+  margin-top: 4rem;
 }
 .block {
   display: block;
@@ -723,6 +723,10 @@ a {
 footer a {
     font-size: 1rem;
     padding: 0.5rem;
+    letter-spacing: 2px;
+}
+
+.letter-spacing {
     letter-spacing: 2px;
 }
 

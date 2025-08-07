@@ -109,6 +109,10 @@ footer a {
     letter-spacing: 2px;
 }
 
+.letter-spacing {
+    letter-spacing: 2px;
+}
+
 .copyright {
     font-size: 0.75rem;
     padding: 0.5rem;
