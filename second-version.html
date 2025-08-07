@@ -10,23 +10,19 @@ banner:
     text-color: '#ffffff'
     overlay-color:
         color: '#722'
-        opacity: 0.0
+        opacity: 0.2
     image: /assets/images/cafe-spread.png
     video:
         file: /assets/videos/intro.mp4
         file_type: video/mp4
 slideshow-with-text:
     images:
-        - image_path: /assets/images/Screenshot-1.png
-          text: "La vie est belle"
         - image_path: /assets/images/Screenshot-2.png
-          text: "something else La vie est belle"
+          text: "La vie est belle"
         - image_path: /assets/images/Screenshot-3.png
-          text: "La vie est belle"
-        - image_path: /assets/images/Screenshot-4.png
-          text: 'third bit of text' 
+          text: "something else La vie est belle"
         - image_path: /assets/images/Screenshot-5.png
-          text: "La vie est belle"
+          text: "La vie third est belle"
     speed_in_seconds: 3
 slideshow-2:
     images:
@@ -70,7 +66,7 @@ slideshow-2:
 
     let currentIndex = 0;
 
-    function showNextImage() {
+    function showNextImageOne() {
         dataDivs[currentIndex].classList.remove('active');
         currentIndex = (currentIndex + 1) % dataDivs.length;
         dataDivs[currentIndex].classList.add('active');
@@ -78,7 +74,7 @@ slideshow-2:
         slideshow.querySelector('h2').innerText = dataDivs[currentIndex].dataset.text;
     }
 
-    setInterval(showNextImage, {{page.slideshow-with-text.speed_in_seconds}} * 1000);
+    setInterval(showNextImageOne, {{page.slideshow-with-text.speed_in_seconds}} * 1000);
 </script>
 
 
@@ -136,12 +132,12 @@ slideshow-2:
 
     let currentIndex = 0;
 
-    function showNextImage() {
+    function showNextImageTwo() {
         dataDivs[currentIndex].classList.remove('active');
         currentIndex = (currentIndex + 1) % dataDivs.length;
         dataDivs[currentIndex].classList.add('active');
         slideshow.style.backgroundImage = `url(${dataDivs[currentIndex].dataset.url})`;
     }
 
-    setInterval(showNextImage, {{page.slideshow-2.speed_in_seconds}} * 1000);
+    setInterval(showNextImageTwo, {{page.slideshow-2.speed_in_seconds}} * 1000);
 </script>
