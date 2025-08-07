@@ -2,6 +2,7 @@
 layout: default
 title: L'amour a la page
 banner:
+    banner-heading: L'amour a la page
     description: This is the homepage of your site.
     text-color: '#ffffff'
     overlay-color:
@@ -21,10 +22,8 @@ slideshow:
     speed_in_seconds: 3
 ---
 <section class="flex items-center justify-center bg-gray-100">
-    <div class="editable text-center max-w-screen-lg mx-auto">
-        <h3>Friends, fun, and a love of the Riviera.</h3>
-        <h3>Welcome to Giselle</h3>
-        <p></p>
+    <div class="editable text-center max-w-screen-lg mx-auto" style="max-width: 33rem;">
+        <p>Here we can introduce the restaurant, give a quick overview of the concept and highlight the core ideas and beliefs that make it unique and inviting. We keep things short and sweet, using spacious layouts, clean design and minimal illustrations to give an essence of the French Riviera.</p>
         <p></p><img alt="line drawing of a woman with a drink" src="/assets/images/line-drawing.png" />
     </div>
 
@@ -32,7 +31,7 @@ slideshow:
 
 
 <section class="bright-section bg-center bg-no-repeat min-h-screen flex flex-col justify-center items-center" style="background-image: url(/assets/images/Screenshot-3.png); background-size: min( max(17rem,36%), 100%)" >
-    <h2 class="h1 text-center editable max-w-screen-lg mx-auto">La vie set belle</h2>
+    <h2 class="h1 text-center editable max-w-screen-lg mx-auto" style="font-size: max(3.5rem, 10vw);">La vie est belle</h2>
 </section>
 
 
@@ -40,15 +39,22 @@ slideshow:
     
     <div class="max-w-screen-lg mx-auto">
         <div class="editable flex flex-col">
-            <a  href="/food-menu">
+            <p><a  href="/food-menu" download="">
                 See Food Menu ›
             </a>
-            <a href="/drink-menu">
+        </p>
+        
+        <p>
+            <a href="/drink-menu" download="">
                 See Drink Menu ›
             </a>
-            <a href="/about">
+        </p>
+        
+        <p>
+            <a href="/about" download="">
                 About our concept ›
             </a>
+        </p>
         </div>
         <div class="text-right">
             <img class="editable inline-block max-w-[50%]" src="/assets/images/line-drawin-2.png" alt="" />
@@ -62,7 +68,9 @@ slideshow:
 
 <section class="slideshow flex justify-center items-start p-36 bg-center bg-cover" style="background-image: url(/assets/images/map.png); min-height: 90vh; ">
     <div class="text-center max-w-screen-lg mx-auto">
-        <a class="px-8 py-4 base-section" href="/maplink">book a table</a>
+        <P>
+            <a class="px-8 py-4 base-section" href="/maplink">BOOK A TABLE</a>
+        </P>
     </div>
 <div class="data-divs">
     {% for image in page.slideshow.images %}
