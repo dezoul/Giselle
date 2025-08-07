@@ -31,7 +31,7 @@ slideshow-2:
         - /assets/images/Screenshot-3.png
         - /assets/images/Screenshot-4.png
         - /assets/images/Screenshot-5.png
-    speed_in_seconds: 3
+    speed_in_seconds: 1
 ---
 <section class="flex items-center justify-center bg-gray-100">
     <div class="editable text-center max-w-screen-lg mx-auto" style="max-width: 33rem;">
@@ -123,20 +123,21 @@ slideshow-2:
 </section>
 
 <script>
-    const slideshow = document.querySelector('.slideshow-2');
+    const slideshow2 = document.querySelector('.slideshow-2');
 
 
-    const dataDivs = document.querySelectorAll('.data-div-2');
+    const dataDivs2 = document.querySelectorAll('.data-div-2');
 
 
 
-    let currentIndex = 0;
+    let currentIndexSecond = 0;
 
     function showNextImageTwo() {
-        dataDivs[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + 1) % dataDivs.length;
-        dataDivs[currentIndex].classList.add('active');
-        slideshow.style.backgroundImage = `url(${dataDivs[currentIndex].dataset.url})`;
+        console.log(currentIndexSecond);
+        dataDivs2[currentIndexSecond].classList.remove('active');
+        currentIndexSecond = (currentIndexSecond + 1) % dataDivs2.length;
+        dataDivs2[currentIndexSecond].classList.add('active');
+        slideshow2.style.backgroundImage = `url(${dataDivs2[currentIndexSecond].dataset.url})`;
     }
 
     setInterval(showNextImageTwo, {{page.slideshow-2.speed_in_seconds}} * 1000);
