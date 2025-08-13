@@ -31,7 +31,7 @@
  display: inline-block;
 }
 
-.base-section{
+.base-section {
     background-color: #fff;
     color: var(--dark-color);
 }
@@ -39,6 +39,24 @@
 .dark-section {
     background-color: var(--dark-color);
     color: var(--featured-color);
+}
+
+.featured-section {
+    background-color: var(--featured-color);
+    color: var(--dark-color);
+}
+
+.bright-section {
+    background-color: var(--bright-color);
+    color: #fff;
+}
+
+.base-section path{
+    fill: var(--dark-color);
+}
+
+.dark-section path{
+    fill:  var(--featured-color);
 }
 
 .featured-section {

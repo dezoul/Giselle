@@ -21,6 +21,7 @@ slideshow:
         - /assets/images/Screenshot-3.png
         - /assets/images/Screenshot-4.png
         - /assets/images/Screenshot-5.png
+
     speed_in_seconds: 1
 ---
 <section class="flex items-center justify-center base-section">
@@ -33,7 +34,7 @@ slideshow:
 
 </section>
 
-<section style="background-image: linear-gradient(to bottom, #fff, #fff 20%,#e8d8b1 20%, #e8d8b1);">
+<section style="background-image: linear-gradient(to bottom, #fff, #fff  20%,#e8d8b1 20%, #e8d8b1);">
     <div class="text-center flex flex-col items-center gap-8 max-w-screen-lg mx-auto relative">
         <img class="inline-block max-w-[50%] slideshow object-cover object-center" src="/assets/images/car-pic.png" alt="" />
         <div class="max-w-[45%] top-8 absolute svg-parent p-4">
@@ -50,7 +51,7 @@ slideshow:
                 <div class="data-divs">
     {% for image in page.slideshow.images %}
         <div class="data-div-1" data-url="{{image}}">
-            <img src="{{image}}" alt="" />
+            <img src="{{image}}" alt="">
         </div>
     {% endfor %}
 
@@ -103,8 +104,12 @@ window.addEventListener('load', () => {
 <section>
     <div class="flex flex-col md:grid grid-cols-8 gap-[3vw] max-w-screen-lg mx-auto">
         <div class="col-span-full editable">
-            <p> Join us on instagram </p>
-            <p> @giselle.bali </p>
+            <p>
+                Join us on instagram
+            </p>
+            <p>
+                @giselle.bali
+            </p>
         </div>
         <div class="spacer col-span-6"></div>
         <!-- 1 -->
