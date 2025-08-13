@@ -20,7 +20,6 @@ slideshow:
         - /assets/images/Screenshot-3.png
         - /assets/images/Screenshot-4.png
         - /assets/images/Screenshot-5.png
-
     speed_in_seconds: 1
 ---
 <section class="flex items-center justify-center bg-gray-100">
@@ -45,7 +44,7 @@ slideshow:
                 <div class="data-divs">
     {% for image in page.slideshow.images %}
         <div class="data-div-1" data-url="{{image}}">
-            <img src="{{image}}" alt="">
+            <img src="{{image}}" alt="" />
         </div>
     {% endfor %}
 
@@ -97,12 +96,8 @@ window.addEventListener('load', () => {
 <section>
     <div class="flex flex-col md:grid grid-cols-8 gap-[3vw] max-w-screen-lg mx-auto">
         <div class="col-span-full editable">
-            <p>
-                Join us on instagram
-            </p>
-            <p>
-                @giselle.bali
-            </p>
+            <p> Join us on instagram </p>
+            <p> @giselle.bali </p>
         </div>
         <div class="spacer col-span-6"></div>
         <!-- 1 -->

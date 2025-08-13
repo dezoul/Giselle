@@ -2,10 +2,17 @@
 layout: default
 title: L'amour a la page
 banner:
-    banner_message: 
-        - text: Here we can introduce the restaurant,
-        - text: give a quick overview of the concept and highlight
-        - text: the core ideas and beliefs that make it unique and inviting. We keep things short and sweet, using spacious layouts, clean design and minimal illustrations to give an essence of the French Riviera.
+    banner_message:
+        -
+            text: Here we can introduce the restaurant,
+        -
+            text: give a quick overview of the concept and highlight
+        -
+            text: >-
+                the core ideas and beliefs that make it unique and inviting. We
+                keep things short and sweet, using spacious layouts, clean
+                design and minimal illustrations to give an essence of the
+                French Riviera.
     description: This is the homepage of your site.
     text-color: '#ffffff'
     overlay-color:
@@ -17,12 +24,15 @@ banner:
         file_type: video/mp4
 slideshow-with-text:
     images:
-        - image_path: /assets/images/Screenshot-2.png
-          text: "La vie est belle"
-        - image_path: /assets/images/Screenshot-3.png
-          text: "something else La vie est belle"
-        - image_path: /assets/images/Screenshot-5.png
-          text: "La vie third est belle"
+        -
+            image_path: /assets/images/Screenshot-2.png
+            text: La vie est belle
+        -
+            image_path: /assets/images/Screenshot-3.png
+            text: something else La vie est belle
+        -
+            image_path: /assets/images/Screenshot-5.png
+            text: La vie third est belle
     speed_in_seconds: 3
 slideshow-2:
     images:
@@ -42,13 +52,15 @@ slideshow-2:
 </section>
 
 
-<section class=" slideshow bright-section bg-center bg-no-repeat min-h-screen flex flex-col justify-center items-center" style="background-image: url(/assets/images/Screenshot-3.png); background-size: min( max(17rem,36%), 100%)" >
-    <h2 class="h1 text-center editable max-w-screen-lg mx-auto" style="font-size: max(3.5rem, 10vw);">La vie est belle</h2>
+<section class=" slideshow bright-section bg-center bg-no-repeat min-h-screen flex flex-col justify-center items-center" style="background-image: url(/assets/images/Screenshot-3.png); background-size: min( max(17rem,36%), 100%)">
+    <h2 class="h1 text-center editable max-w-screen-lg mx-auto" style="font-size: max(3.5rem, 10vw);">
+        something else La vie est belle
+    </h2>
 
     <div class="data-divs">
     {% for image in page.slideshow-with-text.images %}
         <div class="data-div-1" data-url="{{image.image_path}}" data-text="{{image.text}}">
-            <img src="{{image.image_path}}" alt="">
+            <img src="{{image.image_path}}" alt="" />
         </div>
     {% endfor %}
 
@@ -111,13 +123,13 @@ slideshow-2:
 
 <section class="slideshow-2 flex justify-center items-start p-36 bg-center bg-cover" style="background-image: url(/assets/images/map.png); min-height: 90vh; ">
     <div class="text-center max-w-screen-lg mx-auto">
-        <P>
+        <p>
             <a class="px-8 py-4 base-section letter-spacing" href="/maplink">BOOK A TABLE</a>
-        </P>
+        </p>
     </div>
 <div class="data-divs">
     {% for image in page.slideshow-2.images %}
-    <div class="data-div-2" data-url="{{image}}"><img src="{{image}}" alt=""></div>
+    <div class="data-div-2" data-url="{{image}}"><img src="{{image}}" alt="" /></div>
     {% endfor %}
 </div>
 </section>
