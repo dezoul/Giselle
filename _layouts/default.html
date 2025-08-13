@@ -14,7 +14,8 @@
     <a href="/assets/images/map.png" class="italic dark-section uppercase p-4 text-center absolute block -rotate-90 letter-spacing" style="width: 18.2rem; right: -7rem; letter-spacing: 5px; font-size: 1.4rem;" target="_blank"><span>view menu</span></a>
 </div>
 {% if page.url == '/' %}
-    <header class="dark-section min-h-screen bg-cover bg-center text-center relative z-20" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
+  
+    <header class="dark-section min-h-screen bg-cover bg-center text-center relative z-20 pt-1" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
         <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
         {% if page.banner.video.file %}
         <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
@@ -22,7 +23,7 @@
             Your browser does not support the video tag.    
         </video>
         {% endif %}
-        <div class="max-w-screen-lg mx-auto flex flex-col content-between min-h-[90vh]">
+        <div class="max-w-screen-xl mx-auto flex flex-col content-between min-h-[90vh]">
             <nav class="flex justify-center items-center relative">
                 <a href="/">Menu</a>
                 <a href="/about">About</a>
