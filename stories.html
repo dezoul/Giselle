@@ -1,0 +1,49 @@
+---
+layout: default
+title: L'amour a la plage
+banner:
+    banner-svg: /assets/images/stories.svg
+    description: This is the homepage of your site.
+    text-color: '#e8d8b1'
+    overlay-color:
+        color: '#722'
+        opacity: 0
+    image: /assets/images/beach.png
+    video:
+        file: /assets/videos/intro.mp4
+        file_type: video/mp4
+
+---
+
+    <header class="dark-section min-h-screen bg-cover bg-center text-center relative z-20" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
+        <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
+        {% if page.banner.video.file %}
+        <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
+            <source src="{{page.banner.video.file}}" type="{{page.banner.video.file_type}}">
+        </video>
+        {% endif %}
+        <div class="max-w-screen-lg mx-auto flex flex-col content-between min-h-[90vh]">
+            {% include nav.html %}
+            <img src="{{page.banner.banner-svg}}" alt="">
+            <p class="m-auto max-w-2xl relative">
+                {{page.banner.description}}
+            </p>
+        </div>
+    </header>
+<section class="base-section">
+    {% for post in site.posts %}
+
+    <a href="{{ post.url }}" class="mb-[10%] block">
+        <div class="flex items-end gap-4">
+            <div class="{% cycle '', 'order-3' %} p-4" style="width: 12rem; ">
+                <h3>{{ post.blog-info.title }}</h3>
+                <p>{{ post.blog-info.excerpt }}</p>
+            </div>
+            <div class="min-h-[60vh] grow relative">
+                <img class="absolute inset-0 w-full h-full" src="{{post.blog-info.image}}" alt="{{ post.blog-info.excerpt }}">
+            </div>
+        </div>
+    </a>    
+        
+    {% endfor %}
+</section>
