@@ -110,9 +110,10 @@ deserts:
     <section class="dark-section menu-section z-10 flex width-screen overflow-x-scroll p-0 h-initial" style="scroll-snap-type: x mandatory;">
         <!-- starters -->
         <div class="slider-menu-item z-10">
-            <div class="max-w-screen-md mx-auto content-between relative z-10 pb-32">
-                <div class="mb-8 text-center">
-                    <img class="inline w-[50%]" src="/assets/images/starters.svg" alt="" />
+            <div class="max-w-screen-md mx-auto content-between relative z-10 pb-8 ">
+                <div class="pb-32 flex justify-center">
+                    {% include /menu-svg/starters.html width = "384px" %}
+                    <!-- <img class="inline w-[50%]" src="/assets/images/starters.svg" alt="" /> -->
                 </div>
                 {% for food in page.starters %}
                 <div class="flex justify-between">
@@ -121,17 +122,20 @@ deserts:
                 </div>
                 
                 {% endfor %}
-                <img src="/assets/images/starter-pic.svg" style="position: absolute;
+                <div style="position: absolute;
                 bottom: -9rem;
                 left: -8rem;
                 width: 27rem;
-                rotate: -1deg;" />
+                rotate: -1deg;">
+                  {% include /menu-svg/woman-lying-down.html width = "100%" color = "#E6B446" %}
+                </div>
             </div>
             <div class="max-w-screen-lg mx-auto">
                 <div class=" flex justify-end relative z-10">
                     <span class="menu-slider-button" onclick="slide(1)">
-                        <img src="/assets/images/mains.svg" class="menu-slider-button-text w-32" alt="mains button" />
-                        <img src="/assets/images/Arrow-1.svg" class="arrow-right" alt="Arrow to the left" />
+                        
+                        {% include /menu-svg/mains.html width = "200px" %} 
+                        {% include /menu-svg/Arrow-1.html direction = 'right' %}
                     </span>
                 </div>
             </div>
@@ -139,7 +143,7 @@ deserts:
         <!-- mains -->
         <div class="slider-menu-item z-10">
             <div class="max-w-screen-md mx-auto content-between relative z-10   pb-32">
-                <div class="mb-8 text-center">
+                <div class="mb-32 text-center">
                     <img class="inline w-[50%]" src="/assets/images/starters.svg" alt="" />
                 </div>
                 {% for food in page.mains %}
@@ -159,20 +163,20 @@ deserts:
                 <div class=" flex justify-between relative z-10">
                     <span class="menu-slider-button" onclick="slide(0)">
                         <img src="/assets/images/starters.svg" class="menu-slider-button-text w-32" alt="mains button" />
-                        <img src="/assets/images/Arrow-1.svg" class="arrow-left" alt="Arrow to the left" />
+                         {% include /menu-svg/Arrow-1.html direction = 'left' %}
                     </span>
                     <span class="menu-slider-button" onclick="slide(2)">
                         <img src="/assets/images/deserts.svg" class="menu-slider-button-text w-32" alt="mains button" />
-                        <img src="/assets/images/Arrow-1.svg" class="arrow-right" alt="Arrow to the left" />
+                         {% include /menu-svg/Arrow-1.html direction = 'right' %}
                     </span>
             </div>
             </div>
         </div>
         <!-- deserts -->
-        <div class="slider-menu-item z-10">
+        <div class="slider-menu-item z-10 featured-section">
             <div class="max-w-screen-md mx-auto content-between relative z-10   pb-32">
-                <div class="mb-8 text-center">
-                    <img class="inline w-[50%]" src="/assets/images/deserts.svg" alt="" />
+                <div class="flex justify-center mb-32">
+                    {% include /menu-svg/desert.html width = "244px" %}
                 </div>
                 {% for food in page.deserts %}
                 <div class="flex justify-between">
@@ -181,16 +185,24 @@ deserts:
                 </div>
                 
                 {% endfor %}
+                <div style="position: absolute;
+                  bottom: 4rem;
+                  right: 7rem;
+                  width: 19rem;">
+                {% include /menu-svg/pear.html width = "100%" color = "#E6B446" %}  
+              </div>
             </div>
             <div class="max-w-screen-lg mx-auto">
                 <div class=" flex justify-between relative z-10">
                     <span class="menu-slider-button" onclick="slide(1)">
-                        <img src="/assets/images/mains.svg" class="menu-slider-button-text w-32" alt="mains button" />
-                        <img src="/assets/images/Arrow-1.svg" class="arrow-left" alt="Arrow to the left" />
+                      {% include /menu-svg/mains.html width = "200px" %} 
+                      {% include /menu-svg/Arrow-1.html direction = 'left' %}
                     </span>
                     <span class="menu-slider-button">
-                        <img src="/assets/images/Make-a-reservation.svg" class="menu-slider-button-text " style="width: 26rem;" alt="mains button" />
-                        <img src="/assets/images/Arrow-1.svg" class="arrow-right" alt="Arrow to the left" />
+
+                      {% include /menu-svg/Make-a-reservation.html width = "500px" %} 
+                        {% include /menu-svg/Arrow-1.html direction = 'right' %}
+                        <!-- <img src="/assets/images/Arrow-1.svg" class="arrow-right" alt="Arrow to the left" /> -->
                     </span>
                 </div>
                 <!-- todo add reservation link -->
@@ -215,7 +227,7 @@ console.log(menu,menu.offsetHeight,largestMenu);
     }
 })
 
-menuSection.style.height = `${largestMenu * 1.25}px`;
+menuSection.style.height = `${largestMenu * 1.1}px`;
 
 
         function slide(x) {

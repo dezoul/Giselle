@@ -31,7 +31,7 @@
  display: inline-block;
 }
 
-.base-section {
+.base-section,body {
     background-color: #fff;
     color: var(--dark-color);
 }
@@ -51,7 +51,7 @@
     color: #fff;
 }
 
-.base-section path{
+.base-section path, body{
     fill: var(--dark-color);
 }
 
@@ -80,7 +80,7 @@ header {
 
 header a {
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-family: 'futura book italic';
     padding: 1rem;
 }

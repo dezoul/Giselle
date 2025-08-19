@@ -3,7 +3,7 @@ layout: default
 title: L'amour a la plage
 banner:
     banner-svg: /uploads/lamour.svg
-    description: This is the homepage of your site.
+    description: Short description of the restaurant and food concept
     text-color: '#e8d8b1'
     overlay-color:
         color: '#722'
@@ -12,6 +12,15 @@ banner:
     video:
         file: /assets/videos/intro.mp4
         file_type: video/mp4
+slideshow:
+    images:
+        - /assets/images/car-pic.png
+        - /assets/images/Screenshot-1.png
+        - /assets/images/Screenshot-2.png
+        - /assets/images/Screenshot-3.png
+        - /assets/images/Screenshot-4.png
+        - /assets/images/Screenshot-5.png
+    speed_in_seconds: 1
 ---
 <header class="dark-section min-h-screen bg-cover bg-center text-center relative z-20" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
         <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
@@ -20,21 +29,25 @@ banner:
             <source src="{{page.banner.video.file}}" type="{{page.banner.video.file_type}}" />
         </video>
         {% endif %}
-        <div class="max-w-screen-lg mx-auto flex flex-col content-between min-h-[90vh]">
+        <div class="max-w-screen-2xl mx-auto flex flex-col content-between min-h-[90vh] relative z-20">
             {% include nav.html %}
-            <img src="{{page.banner.banner-svg}}" alt="" />
-            <p class="m-auto max-w-2xl relative">
+            <div class="p-[5%] text-center">
+            {% include banner-svg/index.html %}
+            </div>
+            <h3 class="m-auto relative" style="max-width: 23rem;">
                 {{page.banner.description}}
-            </p>
+            </h3>
         </div>
     </header>
 
 <section class="flex items-center justify-center base-section">
     <div class="editable text-center max-w-screen-lg mx-auto">
-        <p>Friends, fun, and a love of the Riviera.</p>
-        <p>Welcome to Giselle</p>
-        <p></p>
-        <p></p><img alt="line drawing of a woman with a drink" src="/assets/images/line-drawing.png" />
+        <h3 class="subheading-no-linebreak-under">Friends, fun, and a love of the Riviera.</h3>
+        <h3>Welcome to Giselle</h3>
+        <h3></h3>
+        <p>
+            <img alt="line drawing of a woman with a drink" src="/assets/images/line-drawing.png" />
+        </p>
     </div>
 
 </section>
@@ -110,7 +123,7 @@ window.addEventListener('load', () => {
     <div class="flex flex-col md:grid grid-cols-8 gap-[3vw] max-w-screen-lg mx-auto">
         <div class="col-span-full editable">
             <p> Join us on instagram </p>
-            <p><a class="p" href="instagram.com/giselle.bali">@giselle.bali</a> </p>
+            <p><a class="p" href="https://instagram.com/giselle.bali">@giselle.bali</a> </p>
         </div>
         <div class="spacer col-span-6"></div>
         <!-- 1 -->
@@ -126,7 +139,7 @@ window.addEventListener('load', () => {
             <img src="/assets/images/Screenshot-4.png" class="editable" />
         </div>
         <!-- 3 -->
-        <div class="col-span-2 row-span-2 flex items-center justify-center">
+        <div class="col-span-2 row-span-2 flex items-center justify-center p-6">
             <p><img src="/uploads/screenshot-2025-08-06-113425.png" class="editable" /></p>
         </div>
         <div class="spacer col-span-2"></div>
