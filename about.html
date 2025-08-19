@@ -53,16 +53,8 @@ slideshow-2:
             Your browser does not support the video tag.    
         </video>
         {% endif %}
-        <div class="max-w-screen-lg w-full">
-            <nav class="flex relative">
-                <a href="/">Menu</a>
-                <a href="/about">About</a>
-                <h2 class="m-auto">
-                    Gisille
-                </h2>
-                <a href="/booking">Booking</a>
-                <a href="/info">Info</a>
-            </nav>
+        <div class="max-w-screen-2xl w-full">
+{% include nav.html %}
         </div>
         <div class="tickerBanner">
             {% for message in page.banner.banner_message %}

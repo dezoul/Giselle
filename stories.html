@@ -3,8 +3,8 @@ layout: default
 title: L'amour a la plage
 banner:
     banner-svg: /assets/images/stories.svg
-    description: This is the homepage of your site.
-    text-color: '#e8d8b1'
+    description:
+    text-color: '#fff'
     overlay-color:
         color: '#722'
         opacity: 0
@@ -22,9 +22,9 @@ banner:
             <source src="{{page.banner.video.file}}" type="{{page.banner.video.file_type}}">
         </video>
         {% endif %}
-        <div class="max-w-screen-lg mx-auto flex flex-col content-between min-h-[90vh]">
-            {% include nav.html %}
-            <img src="{{page.banner.banner-svg}}" alt="">
+        <div class="max-w-screen-2xl mx-auto flex flex-col content-between min-h-[90vh]">
+            {% include nav.html  %}
+            <img src="{{page.banner.banner-svg}}" alt="" class="mx-auto" style="width: 540px;">
             <p class="m-auto max-w-2xl relative">
                 {{page.banner.description}}
             </p>
@@ -35,8 +35,9 @@ banner:
 
     <a href="{{ post.url }}" class="mb-[10%] block">
         <div class="flex items-end gap-4">
-            <div class="{% cycle '', 'order-3' %} p-4" style="width: 12rem; ">
-                <h3>{{ post.blog-info.title }}</h3>
+            <div class="{% cycle '', 'order-3' %} p-4" style="width: 17rem; ">
+                <h3 class="uppercase" style="font-size: 2rem;
+  font-weight: 600;">{{ post.blog-info.title }}</h3>
                 <p>{{ post.blog-info.excerpt }}</p>
             </div>
             <div class="min-h-[80vh] grow relative">

@@ -449,9 +449,6 @@ video {
 .inset-0 {
   inset: 0px;
 }
-.bottom-0 {
-  bottom: 0px;
-}
 .left-0 {
   left: 0px;
 }
@@ -555,6 +552,9 @@ video {
 .min-h-\[90vh\] {
   min-height: 90vh;
 }
+.min-h-\[95vh\] {
+  min-height: 95vh;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -564,14 +564,8 @@ video {
 .w-\[33\%\] {
   width: 33%;
 }
-.w-\[34\%\] {
-  width: 34%;
-}
 .w-\[50\%\] {
   width: 50%;
-}
-.w-\[70\%\] {
-  width: 70%;
 }
 .w-full {
   width: 100%;
@@ -643,6 +637,9 @@ video {
 .gap-2 {
   gap: 0.5rem;
 }
+.gap-32 {
+  gap: 8rem;
+}
 .gap-4 {
   gap: 1rem;
 }
@@ -693,6 +690,10 @@ video {
 .p-\[5\%\] {
   padding: 5%;
 }
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -723,6 +724,15 @@ video {
 }
 .text-right {
   text-align: right;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
 }
 .uppercase {
   text-transform: uppercase;
@@ -823,7 +833,7 @@ h2,.h2 {
     font-size: 2rem;
 }  
 h3,.h3 {
-    font-family: 'futura book', sans-serif;
+    font-family: 'futura book italic', sans-serif;
     font-size: 1.5rem;
 }
 

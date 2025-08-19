@@ -30,7 +30,7 @@ slideshow:
         </video>
         {% endif %}
         <div class="max-w-screen-2xl mx-auto flex flex-col content-between min-h-[90vh] relative z-20">
-            {% include nav.html %}
+            {% include nav.html color = page.banner.text-color  %}
             <div class="p-[5%] text-center">
             {% include banner-svg/index.html %}
             </div>
@@ -64,17 +64,16 @@ slideshow:
             <a class="editable mx-auto inline-block p-4 uppercase letter-spacing" href="/assets/images/map.png" download>
                 View food menu
             </a>
-
-
-                <div class="data-divs">
-    {% for image in page.slideshow.images %}
-        <div class="data-div-1" data-url="{{image}}">
-            <img src="{{image}}" alt="" />
-        </div>
-    {% endfor %}
-
-</div>
         </p>
+
+
+        <div class="data-divs absolute">
+        {% for image in page.slideshow.images %}
+            <div class="data-div-1" data-url="{{image}}">
+                <img src="{{image}}" alt="" />
+            </div>
+        {% endfor %}
+        </div>
     </div>
 </section>
 

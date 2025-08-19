@@ -6,3 +6,11 @@ a.p{
 h3.subheading-no-linebreak-under{
     padding-bottom:0;
 }
+
+h3.non-italic{
+    font-family: 'futura book', sans-serif;
+}
+
+p.non-italic{
+    font-family: 'futura book', sans-serif;
+}

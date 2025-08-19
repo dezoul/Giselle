@@ -12,17 +12,19 @@ banner:
 ---
 
 
-    <header class="bright-section text-center relative z-20" style=" color: {{page.banner.text-color}}; background-image: linear-gradient(to bottom, var(--bright-color) 0,var(--bright-color) 70%, white 70%, white 100%);">
+    <header class="bright-section text-center relative z-20" style=" color: {{page.banner.text-color}}; background-image: linear-gradient(to bottom, var(--bright-color) 0,var(--bright-color) 60%, white 60%, white 100%);">
 
-        <div class="max-w-screen-lg mx-auto flex flex-col content-between min-h-[70vh] relative z-10">
+        <div class="max-w-screen-2x mx-auto flex flex-col content-between min-h-[70vh] relative z-10">
             {% include nav.html %}
             <div class="relative">
-              <img src="/assets/images/Screenshot-5.png" class="w-[70%]" alt="beach-fun">
-              <img class="absolute left-0 top-8 w-full" src="{{page.banner.banner-svg}}" alt="starters">
+              <img src="/assets/images/Screenshot-5.png" class="w-[50%]" alt="beach-fun">
+              <img class="absolute left-0 top-8 w-full" src="{{page.banner.banner-svg}}" alt="starters" style="width: 74%;
+                        margin: auto;
+                        left: 13%;"   >
             </div>
             <div class="grid grid-cols-2 p-8">
                 <div></div>
-                <div class="editable text-left justify-center p-8">
+                <div class="text-left justify-center p-8">
                     <p class="">
                         {{page.banner.description}}
                     </p>
@@ -33,14 +35,14 @@ banner:
         </div>
     </header>
     <section>
-      <div class="max-w-screen-lg mx-auto flex content-between relative z-10">
+      <div class="max-w-screen-lg mx-auto flex content-between justify-center items-center gap-32 relative z-10">
         <div class="contact-details">
-          <h3>FIND US<a class="p" href="todo"> 10 Batu Balong, Canggu</a></h3> 
-          <h3>WHATSAPP<a class="p" href="tel:625555555"> +62 555 5555</a></h3>
-          <h3>EMAIL<a class="p" href="mailto:hello@gisellebali.com"> hello@gisellebali.com</a></h3>
-          <h3>INSTA <a class="p" href="instagram.com/giselle.bali"> @gisellebali </a></h3>
-          <img src="/assets/images/get-in-touch-line-drawing.svg" class="absolute bottom-0 right-0 w-[34%]" alt="">
+          <h3 class="font-bold">FIND US<a class="p" href="todo"> 10 Batu Balong, Canggu</a></h3> 
+          <h3 class="font-bold">WHATSAPP<a class="p" href="tel:625555555"> +62 555 5555</a></h3>
+          <h3 class="font-bold">EMAIL<a class="p" href="mailto:hello@gisellebali.com"> hello@gisellebali.com</a></h3>
+          <h3 class="font-bold">INSTA <a class="p" href="instagram.com/giselle.bali"> @gisellebali </a></h3>
         </div>
+        <img src="/assets/images/get-in-touch-line-drawing.svg" class="grow" alt="">
 
       </div>
     </section>

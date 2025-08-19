@@ -4,9 +4,7 @@ title: L'amour a la plage
 banner:
   banner-svg: /assets/images/dine-with-us.svg
   description: >-
-    This is a short blurb about the restaurant introducing the concept of the
-    venue & it’s menu. You can write as much or as little as you like here as an
-    intro to the full menu below.
+    This is a short blurb about the restaurant introducing the concept of the venue & it’s menu. You can write as much or as little as you like here as an intro to the full menu below. 
   overlay-color:
     color: '#722'
     opacity: 0
@@ -90,12 +88,12 @@ deserts:
             </div>
         </div>
 
-        <div class="max-w-screen-lg mx-auto flex flex-col content-between min-h-[70vh] relative z-10">
+        <div class="max-w-screen-2xl mx-auto flex flex-col content-between min-h-[95vh] relative z-10">
             {% include nav.html %}
-            <img src="{{page.banner.banner-svg}}" alt="starters" />
+            <img src="{{page.banner.banner-svg}}" alt="starters" class="mx-auto" style="width: 80%"/>
             <div class="grid grid-cols-2 p-8">
                 <div></div>
-                <div class="editable text-left justify-center p-8">
+                <div class="editable text-left justify-center px-24">
                     <p> {{page.banner.description}} </p>
                 </div>
 
@@ -134,7 +132,7 @@ deserts:
                 <div class=" flex justify-end relative z-10">
                     <span class="menu-slider-button" onclick="slide(1)">
                         
-                        {% include /menu-svg/mains.html width = "200px" %} 
+                        {% include /menu-svg/mains.html width = "140px" %} 
                         {% include /menu-svg/Arrow-1.html direction = 'right' %}
                     </span>
                 </div>
