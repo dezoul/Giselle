@@ -1,0 +1,7 @@
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+  events:
+    output: true
+    permalink: /events/:title/

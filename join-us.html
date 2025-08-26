@@ -1,0 +1,67 @@
+---
+layout: default
+title: join us
+banner:
+    description: Short description of the restaurant and food concept
+    text-color: '#fff'
+    overlay-color:
+        color: '#fff'
+        opacity: 0
+    image: /assets/images/Screenshot-5.png
+---
+<header class="bright-section bg-cover bg-center text-center relative z-20  min-h-[90vh] " style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
+    <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
+
+    <div class="max-w-screen-2xl mx-auto flex flex-col content-between relative z-20">
+        {% include nav.html color = page.banner.text-color  %}
+    </div>
+    <div class="relative flex justify-center">
+        {% include banner-svg/join-us.html %}
+    </div>
+
+</header>
+
+<section class="p-0">
+    <div class="max-w-screen-2xl mx-auto relative z-20 grid grid-cols-2">
+        <div class="bright-section p-[10%] relative -top-[10%] left-[10%]">
+            <div class="editable">
+
+                <h2 class="font-bold text-2xl mb-4">OPEN JOBS </h2>
+                <p>
+                    Head Chef - This is a short blurb about this role.
+                </p>
+                <p>
+                    Su Chef - This is a short blurb about this role.
+                </p>
+                <p>
+                    Front of house - This is a short blurb about this role.
+                </p>
+                <p>
+                    Bartender - This is a short blurb about this role.
+                </p>
+                <p>
+                    Barista - This is a short blurb about this role.
+                </p>
+            </div>
+            <div class="flex justify-end mt-12">
+                {% include svg-images/girl-with-sun.html width = "30%" %}
+            </div>
+                
+        </div>
+        <div class="flex justify-center items-center text-center">
+            <div class="editable">
+                <h2>
+                    APPLY NOW
+                </h2>
+                <p>
+                    Share your resume with 
+                </p>
+                <p>
+                    <a href="mailto:hello@gisellebali.com">hello@gisellebali.com</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>

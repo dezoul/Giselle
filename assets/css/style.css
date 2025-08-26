@@ -467,6 +467,18 @@ video {
 .top-\[50\%\] {
   top: 50%;
 }
+.-top-\[5\%\] {
+  top: -5%;
+}
+.left-\[5\%\] {
+  left: 5%;
+}
+.-top-\[10\%\] {
+  top: -10%;
+}
+.left-\[10\%\] {
+  left: 10%;
+}
 .z-10 {
   z-index: 10;
 }
@@ -522,6 +534,12 @@ video {
 .mt-16 {
   margin-top: 4rem;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mt-12 {
+  margin-top: 3rem;
+}
 .block {
   display: block;
 }
@@ -540,8 +558,14 @@ video {
 .hidden {
   display: none;
 }
+.aspect-\[0\.663212435\] {
+  aspect-ratio: 0.663212435;
+}
 .h-full {
   height: 100%;
+}
+.min-h-\[50vh\] {
+  min-height: 50vh;
 }
 .min-h-\[70vh\] {
   min-height: 70vh;
@@ -563,6 +587,9 @@ video {
 }
 .w-\[33\%\] {
   width: 33%;
+}
+.w-\[35vw\] {
+  width: 35vw;
 }
 .w-\[50\%\] {
   width: 50%;
@@ -597,11 +624,20 @@ video {
 .flex-shrink {
   flex-shrink: 1;
 }
+.shrink-0 {
+  flex-shrink: 0;
+}
 .grow {
   flex-grow: 1;
 }
+.basis-\[35vw\] {
+  flex-basis: 35vw;
+}
 .-rotate-90 {
   --tw-rotate: -90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .grid-cols-2 {
@@ -690,6 +726,13 @@ video {
 .p-\[5\%\] {
   padding: 5%;
 }
+.p-\[10\%\] {
+  padding: 10%;
+}
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .px-24 {
   padding-left: 6rem;
   padding-right: 6rem;
@@ -697,6 +740,10 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .py-4 {
   padding-top: 1rem;
@@ -709,6 +756,9 @@ video {
 .py-\[5vh\] {
   padding-top: 5vh;
   padding-bottom: 5vh;
+}
+.pb-0 {
+  padding-bottom: 0px;
 }
 .pb-32 {
   padding-bottom: 8rem;
@@ -725,11 +775,9 @@ video {
 .text-right {
   text-align: right;
 }
-.font-medium {
-  font-weight: 500;
-}
-.font-semibold {
-  font-weight: 600;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .font-bold {
   font-weight: 700;
@@ -816,6 +864,12 @@ header a {
     font-size: 2rem;
     font-family: 'futura book italic';
     padding: 1rem;
+}
+
+
+.alt-max-width {
+    padding-left: max(5%, calc((100vw - 1536px)/2) );
+    padding-right: max(5%, calc((100vw - 1536px)/2) );
 }
 
 

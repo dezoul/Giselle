@@ -1,0 +1,84 @@
+---
+layout: default
+title: Events
+banner:
+    description: Short description of the restaurant and food concept
+    text-color: '#fff'
+    overlay-color:
+        color: '#fff'
+        opacity: 0
+    image: /assets/images/events-banner.png
+---
+
+<header class="bright-section bg-cover bg-center text-center relative z-20  min-h-[90vh] " style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
+    <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
+
+    <div class="max-w-screen-2xl mx-auto flex flex-col content-between relative z-20">
+        {% include nav.html color = page.banner.text-color  %}
+    </div>
+    <div class="grid relative z-20 upcoming-scg-parent">
+        {% include banner-svg/upcoming.html %}
+        {% include banner-svg/events.html %}
+    </div>
+
+</header>
+
+<style>
+    header svg path{
+        fill: {{page.banner.text-color}};
+    }
+
+    .upcoming-scg-parent{
+        grid-template-columns: 1.5fr 1fr;
+    }
+    .upcoming-scg-parent svg{
+        width: 100%;
+        grid-row: span 2;
+    }
+    .upcoming-scg-parent svg:nth-child(2){
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+</style>
+
+<section class="px-0 pb-0">
+    <div class="flex content-between gap-8 overflow-x-scroll alt-max-width">
+        {% assign sorted-events = site.events | sort: 'events_order' %}
+        {% for event in sorted-events %}
+        <a href="{{event.url}}" class="w-[35vw] shrink-0 basis-[35vw] featured-section p-4">
+            <div>
+                <p class="text-right">{{event.event_date}}</p>
+                <div class="relative aspect-[0.663212435]">
+                    <img class="absolute inset-0 h-full w-full" src="{{event.featured_image}}" alt="">
+                </div>
+                <h3>{{event.title}}</h3>
+                <p>
+                    {{event.event_description}}
+                </p>
+            </div>
+        </a>
+        {% endfor %}
+            
+</section>
+
+<section class="py-0">
+    <div class="max-width-screen-xl mx-auto">
+        <div class="flex flex-col justify-center items-center text-center min-h-[50vh]">
+            <div class="editable mb-16" style="max-width: 28rem;">
+                <p>
+                    This is a short blurb about the restaurant introducing the concept of the venue & it’s menu.
+                </p>
+                <p>
+                    You can write as much or as little as you like here as an intro to the full menu below. 
+                </p>
+            </div>
+            <a class="px-8 py-4 mb-16 dark-section editable letter-spacing" href="/maplink">BOOK NOW</a>
+<div class="absolute" style="width: 38%;
+  bottom: 0rem;
+  right: 0;
+  transform: rotatey(180deg);">
+  {% include /menu-svg/woman-lying-down.html width = "100000000px" color = "var(--dark-color)" %}
+</div>
+        </div>
+    </div>
+</section>
