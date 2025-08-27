@@ -482,9 +482,6 @@ video {
 .z-20 {
   z-index: 20;
 }
-.order-3 {
-  order: 3;
-}
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -515,9 +512,17 @@ video {
 .m-auto {
   margin: auto;
 }
+.mx-\[5\%\] {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.my-\[9rem\] {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
 }
 .my-auto {
   margin-top: auto;
@@ -541,8 +546,14 @@ video {
 .mt-16 {
   margin-top: 4rem;
 }
+.mt-32 {
+  margin-top: 8rem;
+}
 .mt-4 {
   margin-top: 1rem;
+}
+.mt-\[9rem\] {
+  margin-top: 9rem;
 }
 .block {
   display: block;
@@ -565,6 +576,9 @@ video {
 .aspect-\[0\.663212435\] {
   aspect-ratio: 0.663212435;
 }
+.aspect-\[1\.5\] {
+  aspect-ratio: 1.5;
+}
 .h-full {
   height: 100%;
 }
@@ -573,9 +587,6 @@ video {
 }
 .min-h-\[70vh\] {
   min-height: 70vh;
-}
-.min-h-\[80vh\] {
-  min-height: 80vh;
 }
 .min-h-\[90vh\] {
   min-height: 90vh;
@@ -597,6 +608,9 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-\[80\%\] {
+  width: 80%;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -683,6 +697,12 @@ video {
 .gap-\[3vw\] {
   gap: 3vw;
 }
+.gap-\[5vw\] {
+  gap: 5vw;
+}
+.overflow-scroll {
+  overflow: scroll;
+}
 .overflow-x-scroll {
   overflow-x: scroll;
 }
@@ -728,6 +748,10 @@ video {
   padding-left: 0px;
   padding-right: 0px;
 }
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
 .px-24 {
   padding-left: 6rem;
   padding-right: 6rem;
@@ -739,6 +763,10 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.py-\[21rem\] {
+  padding-top: 21rem;
+  padding-bottom: 21rem;
 }
 .py-\[50vw\] {
   padding-top: 50vw;
@@ -909,7 +937,7 @@ a {
 footer a {
     font-size: 1rem;
     padding: 0.5rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 footer svg {
@@ -917,6 +945,14 @@ footer svg {
     left: 0rem;
     max-height: 40vh;
     width: 54%;
+}
+
+footer input::-moz-placeholder {
+    color: var(--dark-color)
+}
+
+footer input::placeholder {
+    color: var(--dark-color)
 }
 
 @media (min-width: 768px) {
@@ -1035,14 +1071,14 @@ display: none;
 
 .burger-button {
   position:fixed;
-  top: 2vh;
-  right: 2vh;
+  top: 6%;
+  right: 5%;
   z-index: 9;
   padding: 8px;
 }
 /*this is where you can chand the color of the buttons*/
 .burger-button span{
-  width: 40px;
+  width: 60px;
   border: 2px solid var(--text-color);
   background-color: var(--text-color);
   display: block;
@@ -1088,7 +1124,6 @@ display: none;
 }
 
 .burger-menu {
-    display: flex;
     position: fixed;
     top: 0vh;
     left:100vw;
@@ -1111,7 +1146,6 @@ display: none;
   text-decoration: none;
   font-size: 20px;
   font-weight: 300;
-  color: #C3BFBC;
   font-family: 'Alegreya Sans SC', sans-serif;
   display:block;
   padding:5px 15px;
@@ -1125,18 +1159,44 @@ display: none;
   .md\:-right-\[5\%\] {
     right: -5%;
   }
+  .md\:order-3 {
+    order: 3;
+  }
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
   }
+  .md\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
   .md\:block {
     display: block;
+  }
+  .md\:flex {
+    display: flex;
   }
   .md\:grid {
     display: grid;
   }
   .md\:hidden {
     display: none;
+  }
+  .md\:aspect-auto {
+    aspect-ratio: auto;
+  }
+  .md\:min-h-\[80vh\] {
+    min-height: 80vh;
+  }
+  .md\:min-h-\[90vh\] {
+    min-height: 90vh;
   }
   .md\:min-h-screen {
     min-height: 100vh;
@@ -1147,11 +1207,17 @@ display: none;
   .md\:w-full {
     width: 100%;
   }
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
   .md\:basis-\[35vw\] {
     flex-basis: 35vw;
   }
   .md\:justify-center {
     justify-content: center;
+  }
+  .md\:p-0 {
+    padding: 0px;
   }
   .md\:py-0 {
     padding-top: 0px;

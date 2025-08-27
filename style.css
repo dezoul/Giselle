@@ -128,7 +128,7 @@ a {
 footer a {
     font-size: 1rem;
     padding: 0.5rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 footer svg {
@@ -136,6 +136,10 @@ footer svg {
     left: 0rem;
     max-height: 40vh;
     width: 54%;
+}
+
+footer input::placeholder {
+    color: var(--dark-color)
 }
 
 @media (min-width: 768px) {
@@ -244,14 +248,14 @@ display: none;
 
 .burger-button {
   position:fixed;
-  top: 2vh;
-  right: 2vh;
+  top: 6%;
+  right: 5%;
   z-index: 9;
   padding: 8px;
 }
 /*this is where you can chand the color of the buttons*/
 .burger-button span{
-  width: 40px;
+  width: 60px;
   border: 2px solid var(--text-color);
   background-color: var(--text-color);
   display: block;
@@ -297,7 +301,6 @@ display: none;
 }
 
 .burger-menu {
-    display: flex;
     position: fixed;
     top: 0vh;
     left:100vw;
@@ -320,7 +323,6 @@ display: none;
   text-decoration: none;
   font-size: 20px;
   font-weight: 300;
-  color: #C3BFBC;
   font-family: 'Alegreya Sans SC', sans-serif;
   display:block;
   padding:5px 15px;

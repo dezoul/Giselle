@@ -9,39 +9,53 @@ banner:
         color: '#722'
         opacity: 0
     image: /assets/images/beach.png
-    video:
-        file: /assets/videos/intro.mp4
-        file_type: video/mp4
 
 ---
 
-    <header class="dark-section min-h-screen bg-cover bg-center text-center relative z-20" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
-        <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
-        {% if page.banner.video.file %}
-        <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
-            <source src="{{page.banner.video.file}}" type="{{page.banner.video.file_type}}">
-        </video>
-        {% endif %}
-        <div class="max-w-screen-2xl mx-auto flex flex-col content-between min-h-[90vh]">
-            {% include nav.html  %}
-            <img src="{{page.banner.banner-svg}}" alt="" class="mx-auto" style="width: 540px;">
-            <p class="m-auto max-w-2xl relative">
-                {{page.banner.description}}
-            </p>
+<header class="dark-section md:min-h-screen bg-cover bg-center text-center relative z-20">
+    <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
+    <div class="max-w-screen-2xl mx-auto flex flex-col content-between md:min-h-[90vh]">
+        {% include nav.html  %}
+
+         <div class="mobile-banner bg-cover bg-cneter py-[21rem] md:py-0 my-[9rem] md:my-0 mx-[5%] md:mx-0">
+              <div class="text-center">
+                {% include banner-svg/stories.html width="80%" %}
+              </div>
+
         </div>
-    </header>
-<section class="base-section">
+
+
+    </div>
+</header>
+<style>
+    .mobile-banner{
+        background-image: url('{{page.banner.image}}');
+    }
+
+    @media screen and (min-width: 768px) {
+        .mobile-banner{
+            background-image: none;
+        }
+        header {
+            background-image: url('{{page.banner.image}}');
+            color: {{page.banner.text-color}};
+        }
+    }
+
+</style>
+
+<section class="base-section flex md:block overflow-scroll gap-[5vw]">
     {% for post in site.posts %}
 
-    <a href="{{ post.url }}" class="mb-[10%] block">
-        <div class="flex items-end gap-4">
-            <div class="{% cycle '', 'order-3' %} p-4" style="width: 17rem; ">
+    <a href="{{ post.url }}" class="mb-[10%] block w-[80vw] basis-[80vw] md:w-full shrink-0 {% cycle '', 'mt-32 md:mt-0' %}">
+        <div class="md:flex items-end gap-4 ">
+            <div class="aspect-[1.5] md:aspect-auto md:min-h-[80vh] grow relative {% cycle '', 'md:order-3' %} ">
+                <img class="absolute inset-0 w-full h-full object-cover object-center" src="{{post.blog-info.image}}" alt="{{ post.blog-info.excerpt }}">
+            </div>
+            <div class="p-4" style="width: 17rem; ">
                 <h3 class="uppercase" style="font-size: 2rem;
   font-weight: 600;">{{ post.blog-info.title }}</h3>
                 <p>{{ post.blog-info.excerpt }}</p>
-            </div>
-            <div class="min-h-[80vh] grow relative">
-                <img class="absolute inset-0 w-full h-full object-cover object-center" src="{{post.blog-info.image}}" alt="{{ post.blog-info.excerpt }}">
             </div>
         </div>
     </a>    
