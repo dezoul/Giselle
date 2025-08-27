@@ -15,38 +15,28 @@ burger-menu:
 ---
 
 
-    <header class="bright-section text-center relative z-20" style=" color: {{page.banner.text-color}}; background-image: linear-gradient(to bottom, var(--bright-color) 0,var(--bright-color) 60%, white 60%, white 100%);">
+    <header class="bright-section text-center relative z-20" style=" ">
 
-        <div class="max-w-screen-2x mx-auto flex flex-col content-between min-h-[70vh] relative z-10">
+        <div class="max-w-screen-2x mx-auto flex flex-col content-between md:min-h-[70vh] relative z-10">
             {% include nav.html %}
-            <div class="relative mt-[9rem] md:mt-0">
+            <div class="relative mt-[9rem] mb-16 md:my-0">
               <img src="/assets/images/Screenshot-5.png" class="w-[80%] md:w-[50%]" alt="beach-fun">
               <img class="absolute left-0 top-32 w-full" src="{{page.banner.banner-svg}}" alt="starters" style="width: 74%;
                         margin: auto;
                         left: 13%;"   >
             </div>
-            <div class="grid grid-cols-2 p-8">
-                <div></div>
-                <div class="text-left justify-center p-8">
-                    <p class="">
-                        {{page.banner.description}}
-                    </p>
-
-                </div>
-
-            </div>
         </div>
     </header>
     <style>
-        .mobile-banner{
-            background-image: url('{{page.banner.image}}');
+        header {
+            color: {{page.banner.text-color}}; 
         }
 
-        @media screen and (min-width: 768px) {
-            .mobile-banner{
-                background-image: none;
+        @media (min-width: 768px) {
+            
+            header {
+                background-image: linear-gradient(to bottom, var(--bright-color) 0,var(--bright-color) 80%, white 80%, white 100%);
             }
-          
         }
 
     </style>

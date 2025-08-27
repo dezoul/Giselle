@@ -15,6 +15,9 @@ banner:
     video:
         file: /assets/videos/intro.mp4
         file_type: video/mp4
+burger-menu:
+    background-color: "#e6b446"
+    text-color: "#fff"
 slideshow-with-text:
     images:
         -
@@ -37,7 +40,7 @@ slideshow-2:
     speed_in_seconds: 1
 ---
 
- <header class="bright-section bg-cover bg-center text-center relative z-20 py-[5vh] min-h-[90vh] flex flex-col justify-between items-center" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
+ <header class="bright-section bg-cover bg-center text-center relative z-20 py-[5vh] min-h-[90vh] md:flex flex-col justify-between items-center" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
         <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
         {% if page.banner.video.file %}
         <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
@@ -45,13 +48,13 @@ slideshow-2:
             Your browser does not support the video tag.    
         </video>
         {% endif %}
-        <div class="max-w-screen-2xl mx-auto flex flex-col content-between min-h-[90vh] relative z-20">
+        <div class="max-w-screen-2xl mx-auto pt-[12rem] md:pt-0 flex flex-col content-between min-h-[90vh] relative z-20">
             
             {% include nav.html %}
         
 
                 <!-- placeholder text svg -->
-            {% include banner-svg/index.html  %}
+            {% include banner-svg/index.html width='80vw'  %}
 
             <p class="m-auto max-w-2xl relative">
                 {{page.banner.description}}

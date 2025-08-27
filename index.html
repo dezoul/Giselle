@@ -12,6 +12,9 @@ banner:
     video:
         file: /assets/videos/intro.mp4
         file_type: video/mp4
+burger-menu:
+    background-color: "#e6b446"
+    text-color: "#fff"
 slideshow:
     images:
         - /assets/images/car-pic.png
@@ -29,10 +32,10 @@ slideshow:
             <source src="{{page.banner.video.file}}" type="{{page.banner.video.file_type}}" />
         </video>
         {% endif %}
-        <div class="max-w-screen-2xl mx-auto flex flex-col content-between min-h-[90vh] relative z-20">
+        <div class="max-w-screen-2xl mx-auto pt-[12rem] md:pt-0 flex flex-col content-between min-h-[90vh] relative z-20">
             {% include nav.html color = page.banner.text-color  %}
             <div class="p-4 text-center m-auto">
-            {% include banner-svg/index.html %}
+            {% include banner-svg/index.html width = "70vw" %}
             </div>
             <h3 class="m-auto relative" style="max-width: 23rem;">
                 {{page.banner.description}}

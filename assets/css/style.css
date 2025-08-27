@@ -470,6 +470,9 @@ video {
 .top-0 {
   top: 0px;
 }
+.top-32 {
+  top: 8rem;
+}
 .top-8 {
   top: 2rem;
 }
@@ -603,14 +606,14 @@ video {
 .w-\[50\%\] {
   width: 50%;
 }
+.w-\[80\%\] {
+  width: 80%;
+}
 .w-\[80vw\] {
   width: 80vw;
 }
 .w-full {
   width: 100%;
-}
-.w-\[80\%\] {
-  width: 80%;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -794,6 +797,9 @@ video {
 .pt-0 {
   padding-top: 0px;
 }
+.pt-\[12rem\] {
+  padding-top: 12rem;
+}
 .text-left {
   text-align: left;
 }
@@ -945,6 +951,10 @@ footer svg {
     left: 0rem;
     max-height: 40vh;
     width: 54%;
+}
+
+footer h3,footer p {
+    letter-spacing: 3px;
 }
 
 footer input::-moz-placeholder {
@@ -1201,14 +1211,17 @@ display: none;
   .md\:min-h-screen {
     min-height: 100vh;
   }
+  .md\:min-h-\[70vh\] {
+    min-height: 70vh;
+  }
   .md\:w-\[35vw\] {
     width: 35vw;
   }
-  .md\:w-full {
-    width: 100%;
-  }
   .md\:w-\[50\%\] {
     width: 50%;
+  }
+  .md\:w-full {
+    width: 100%;
   }
   .md\:basis-\[35vw\] {
     flex-basis: 35vw;
@@ -1226,5 +1239,8 @@ display: none;
   .md\:py-64 {
     padding-top: 16rem;
     padding-bottom: 16rem;
+  }
+  .md\:pt-0 {
+    padding-top: 0px;
   }
 }

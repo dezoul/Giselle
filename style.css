@@ -138,6 +138,10 @@ footer svg {
     width: 54%;
 }
 
+footer h3,footer p {
+    letter-spacing: 3px;
+}
+
 footer input::placeholder {
     color: var(--dark-color)
 }
