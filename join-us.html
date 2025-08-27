@@ -9,14 +9,15 @@ banner:
         opacity: 0
     image: /assets/images/Screenshot-5.png
 ---
-<header class="bright-section bg-cover bg-center text-center relative z-20  min-h-[90vh] " style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
+<header class="bright-section bg-cover bg-center text-center relative z-20" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
     <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
 
-    <div class="max-w-screen-2xl mx-auto flex flex-col content-between relative z-20">
+    <div class="max-w-screen-2xl mx-auto flex flex-col content-between relative z-20 pb-[300px] min-h-[90vh] ">
         {% include nav.html color = page.banner.text-color  %}
-    </div>
-    <div class="relative flex justify-center">
-        {% include banner-svg/join-us.html %}
+        <div class="my-auto text-center">
+        
+            {% include banner-svg/join-us.html width="50%" %}
+        </div>
     </div>
 
 </header>
@@ -44,11 +45,11 @@ banner:
                 </p>
             </div>
             <div class="flex justify-end mt-12">
-                {% include svg-images/girl-with-sun.html width = "30%" %}
+                {% include svg-images/girl-with-sun.html width = "40%" %}
             </div>
                 
         </div>
-        <div class="flex justify-center items-center text-center">
+        <div class="flex justify-center items-center text-right">
             <div class="editable">
                 <h2>
                     APPLY NOW

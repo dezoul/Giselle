@@ -3,16 +3,8 @@ layout: default
 title: L'amour a la page
 banner:
     banner_message:
-        -
-            text: Here we can introduce the restaurant,
-        -
-            text: give a quick overview of the concept and highlight
-        -
-            text: >-
-                the core ideas and beliefs that make it unique and inviting. We
-                keep things short and sweet, using spacious layouts, clean
-                design and minimal illustrations to give an essence of the
-                French Riviera.
+        - text: Here we can introduce the restaurant,
+
 
     description: This is the homepage of your site.
     text-color: '#ffffff'
@@ -45,7 +37,7 @@ slideshow-2:
     speed_in_seconds: 1
 ---
 
- <header class="dark-section bg-cover bg-center text-center relative z-20 py-[5vh] min-h-[90vh] flex flex-col justify-between items-center" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
+ <header class="bright-section bg-cover bg-center text-center relative z-20 py-[5vh] min-h-[90vh] flex flex-col justify-between items-center" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
         <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
         {% if page.banner.video.file %}
         <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
@@ -53,121 +45,24 @@ slideshow-2:
             Your browser does not support the video tag.    
         </video>
         {% endif %}
-        <div class="max-w-screen-2xl w-full">
-{% include nav.html %}
-        </div>
-        <div class="tickerBanner">
-            {% for message in page.banner.banner_message %}
-                <h2 class="text-block ticketbanner-text-extra-large">{{message.text}}</h2>
-            {% endfor %}
-        </div>
-        <div class="max-w-screen-lg mx-auto flex flex-col content-between">
+        <div class="max-w-screen-2xl mx-auto flex flex-col content-between min-h-[90vh] relative z-20">
+            
+            {% include nav.html %}
+        
+
+                <!-- placeholder text svg -->
+            {% include banner-svg/index.html  %}
+
             <p class="m-auto max-w-2xl relative">
                 {{page.banner.description}}
             </p>
         
         </div>
+        </div>
     </header>
 
-<style>
 
 
-.tickerBanner{
-  --bannerBlockLength: 280px;
-  --bannerBlockTime: 2s;
-overflow-X: hidden;
-display: flex;
-flex-direction: row-reverse;
-text-align: center;
-}
-
-
-.tickerBanner .img {
-  width: 600px;
-  height: 400px;
-  flex-shrink: 0;
-}
-
-.tickerBanner > * {
-  display: inline-block;
-  padding: 1vw;
-  flex-shrink: 0;
-  position: relative;
-}
-
-.tickerBanner.active > * {
-  animation: ticker 2s infinite linear;
-  animation-duration: var(--bannerBlockTime), 2s;
-} 
-.ticketbanner-text-extra-large{
-    font-size: 15vw;
-}
-
-
-
-@keyframes ticker {
-    from {left:0}
-    to   {left:var(--bannerBlockLength)}
-}
-</style>
-
-
-<script>
-  const tickerBanners = document.querySelectorAll('.tickerBanner');
-
-console.log(tickerBanners)
-
-tickerBanners.forEach(banner => {
-
-
-
-  let textBlock = banner.querySelectorAll('.text-block');
-
-
-
-  let bannerBlock = 0;
-  textBlock.forEach( block => {
-    bannerBlock += block.offsetWidth
-  });
-
-  let bannerLength = bannerBlock
-  console.log(bannerBlock)
-  console.log(bannerLength)
-  
-  
-  banner.style.setProperty('--bannerBlockLength', `${bannerBlock}px`);
-  banner.style.setProperty('--bannerBlockTime', `${(bannerBlock / 50)}s`);
-
-  
-  function extendBanner() {
-    // debugger
-  if (bannerLength < (screen.width + bannerBlock) ) {
-    textBlock.forEach(block => {
-      console.log(block.innerHTML)
-      // add the newly created element and its content into the DOM
-      banner.appendChild(block.cloneNode(true));
-      // banner.querySelector('a:last-child').innerHTML = block.innerHTML
-      // banner.querySelector('a:last-child').href = block.href
-      
-    });
-    bannerLength += bannerBlock;
-    console.log(bannerLength) 
-    extendBanner()
-  } else {
-    banner.classList.add('active')
-  }
-
-  }
-
-
-
-  extendBanner()
-
-  console.log(bannerLength)
-
-})
-
-</script>
 
 <section class="flex items-center justify-center">
     <div class="editable text-center max-w-screen-lg mx-auto" style="max-width: 33rem;">
@@ -178,10 +73,11 @@ tickerBanners.forEach(banner => {
 </section>
 
 
-<section class=" slideshow bright-section bg-center bg-no-repeat min-h-screen flex flex-col justify-center items-center" style="background-image: url(/assets/images/Screenshot-3.png); background-size: min( max(17rem,36%), 100%)">
-    <h2 class="h1 text-center editable max-w-screen-lg mx-auto" style="font-size: max(3.5rem, 10vw);">
-        something else La vie est belle
-    </h2>
+<section class=" slideshow bright-section bg-center bg-no-repeat md:min-h-screen py-[50vw] md:py-0 flex flex-col justify-center items-center" style="background-image: url(/assets/images/Screenshot-3.png); background-size: min( max(17rem,36%), 100%)">
+    <div class="w-[50%]">
+        {% include svg-text/french-words.html %}    
+
+    </div>
 
     <div class="data-divs">
     {% for image in page.slideshow-with-text.images %}
@@ -220,25 +116,25 @@ tickerBanners.forEach(banner => {
     
     <div class="max-w-screen-lg mx-auto">
         <div class="editable flex flex-col">
-            <p class="mb-8"><a class="letter-spacing" href="/food-menu" download="">
+            <p class=""><a class="letter-spacing" href="/food-menu" download="">
                 See Food Menu ›
             </a>
         </p>
         
-        <p class="mb-8">
+        <p class="">
             <a class="letter-spacing" href="/drink-menu" download="">
                 See Drink Menu ›
             </a>
         </p>
         
-        <p class="mb-8">
+        <p class="">
             <a class="letter-spacing" href="/about" download="">
                 About our concept ›
             </a>
         </p>
         </div>
-        <div class="text-right">
-            <img class="editable inline-block max-w-[33%] w-[33%]" src="/assets/images/get-in-touch-line-drawing.svg" alt="" />
+        <div class="text-right relative md:-right-[5%]">
+            <img class="editable inline-block max-w-[40%] w-[40%]" src="/assets/images/get-in-touch-line-drawing.svg" alt="" />
             
         </div>
         

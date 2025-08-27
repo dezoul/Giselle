@@ -88,10 +88,10 @@ deserts:
             </div>
         </div>
 
-        <div class="max-w-screen-2xl mx-auto flex flex-col content-between min-h-[95vh] relative z-10">
+        <div class="max-w-screen-2xl mx-auto flex flex-col content-between min-h-[95vh] mb-16 relative z-10">
             {% include nav.html %}
-            <img src="{{page.banner.banner-svg}}" alt="starters" class="mx-auto" style="width: 80%"/>
-            <div class="grid grid-cols-2 p-8">
+            <img src="{{page.banner.banner-svg}}" alt="starters" class="m-auto" style="width: 80%"/>
+            <div class="grid grid-cols-2 p-8 m-auto">
                 <div></div>
                 <div class="editable text-left justify-center px-24">
                     <p> {{page.banner.description}} </p>
@@ -105,12 +105,12 @@ deserts:
     <!-- menu fun -->
 
 
-    <section class="dark-section menu-section z-10 flex width-screen overflow-x-scroll p-0 h-initial" style="scroll-snap-type: x mandatory;">
+    <section class="menu-section z-10 flex width-screen overflow-x-scroll p-0 h-initial" style="scroll-snap-type: x mandatory;">
         <!-- starters -->
-        <div class="slider-menu-item z-10">
+        <div class="slider-menu-item z-10 featured-section">
             <div class="max-w-screen-md mx-auto content-between relative z-10 pb-8 ">
                 <div class="pb-32 flex justify-center">
-                    {% include /menu-svg/starters.html width = "384px" %}
+                    {% include /menu-svg/starters.html width = "50%" %}
                     <!-- <img class="inline w-[50%]" src="/assets/images/starters.svg" alt="" /> -->
                 </div>
                 {% for food in page.starters %}
@@ -132,17 +132,17 @@ deserts:
                 <div class=" flex justify-end relative z-10">
                     <span class="menu-slider-button" onclick="slide(1)">
                         
-                        {% include /menu-svg/mains.html width = "140px" %} 
+                        {% include /menu-svg/mains.html width = "200px" %} 
                         {% include /menu-svg/Arrow-1.html direction = 'right' %}
                     </span>
                 </div>
             </div>
         </div>
         <!-- mains -->
-        <div class="slider-menu-item z-10">
+        <div class="slider-menu-item z-10 dark-section">
             <div class="max-w-screen-md mx-auto content-between relative z-10   pb-32">
-                <div class="mb-32 text-center">
-                    <img class="inline w-[50%]" src="/assets/images/starters.svg" alt="" />
+                <div class="mb-32 text-center relative z-20">
+                      {% include /menu-svg/mains.html width = "50%" %}
                 </div>
                 {% for food in page.mains %}
                 <div class="flex justify-between relative z-10">
@@ -160,11 +160,11 @@ deserts:
             <div class="max-w-screen-lg mx-auto">
                 <div class=" flex justify-between relative z-10">
                     <span class="menu-slider-button" onclick="slide(0)">
-                        <img src="/assets/images/starters.svg" class="menu-slider-button-text w-32" alt="mains button" />
+                      {% include /menu-svg/starters.html width = "200px" %}
                          {% include /menu-svg/Arrow-1.html direction = 'left' %}
                     </span>
                     <span class="menu-slider-button" onclick="slide(2)">
-                        <img src="/assets/images/deserts.svg" class="menu-slider-button-text w-32" alt="mains button" />
+                      {% include /menu-svg/desert.html width = "200px" %}
                          {% include /menu-svg/Arrow-1.html direction = 'right' %}
                     </span>
             </div>
@@ -174,7 +174,7 @@ deserts:
         <div class="slider-menu-item z-10 featured-section">
             <div class="max-w-screen-md mx-auto content-between relative z-10   pb-32">
                 <div class="flex justify-center mb-32">
-                    {% include /menu-svg/desert.html width = "244px" %}
+                    {% include /menu-svg/desert.html width = "50%" %}
                 </div>
                 {% for food in page.deserts %}
                 <div class="flex justify-between">
@@ -237,7 +237,7 @@ menuSection.style.height = `${largestMenu * 1.1}px`;
         }
     </script>
 
-    <section class="base-section relative z-10 py-64">
+    <section class="base-section relative z-10 md:py-64">
         <div class="max-w-screen-sm mx-auto">
             <div class="text-center">
                 <img src="/assets/images/make-a-reservatrion-large.svg" alt="" class="mx-auto" style="width: 23rem;" />

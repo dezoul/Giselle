@@ -10,13 +10,13 @@ banner:
     image: /assets/images/events-banner.png
 ---
 
-<header class="bright-section bg-cover bg-center text-center relative z-20  min-h-[90vh] " style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
+<header class="bright-section bg-cover bg-center text-center relative z-20  min-h-[90vh] pb-32 flex flex-col content-between " style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
     <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
 
-    <div class="max-w-screen-2xl mx-auto flex flex-col content-between relative z-20">
+    <div class="max-w-screen-2xl w-full mx-auto flex flex-col content-between relative z-20">
         {% include nav.html color = page.banner.text-color  %}
     </div>
-    <div class="grid relative z-20 upcoming-scg-parent">
+    <div class="grid relative z-20 upcoming-scg-parent my-auto">
         {% include banner-svg/upcoming.html %}
         {% include banner-svg/events.html %}
     </div>
@@ -45,13 +45,13 @@ banner:
     <div class="flex content-between gap-8 overflow-x-scroll alt-max-width">
         {% assign sorted-events = site.events | sort: 'events_order' %}
         {% for event in sorted-events %}
-        <a href="{{event.url}}" class="w-[35vw] shrink-0 basis-[35vw] featured-section p-4">
+        <a href="{{event.url}}" class="w-[80vw] md:w-[35vw] basis-[80vw] md:basis-[35vw] shrink-0  featured-section p-4">
             <div>
                 <p class="text-right">{{event.event_date}}</p>
                 <div class="relative aspect-[0.663212435]">
                     <img class="absolute inset-0 h-full w-full" src="{{event.featured_image}}" alt="">
                 </div>
-                <h3>{{event.title}}</h3>
+                <h3 class="mt-4" style="font-size: 1.8rem;">{{event.title}}</h3>
                 <p>
                     {{event.event_description}}
                 </p>
@@ -61,7 +61,7 @@ banner:
             
 </section>
 
-<section class="py-0">
+<section class="">
     <div class="max-width-screen-xl mx-auto">
         <div class="flex flex-col justify-center items-center text-center min-h-[50vh]">
             <div class="editable mb-16" style="max-width: 28rem;">

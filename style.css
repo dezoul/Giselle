@@ -131,6 +131,19 @@ footer a {
     letter-spacing: 2px;
 }
 
+footer svg {
+    position: relative;
+    left: 0rem;
+    max-height: 40vh;
+    width: 54%;
+}
+
+@media (min-width: 768px) {
+    footer svg {
+        left: -5%;
+   }
+}
+
 .letter-spacing {
     letter-spacing: 0.1rem;
 }
@@ -204,13 +217,25 @@ display: none;
 .menu-slider-button .arrow-right {
     width: 5rem;
     position: absolute;
-    right: -2rem;
     bottom: -2rem;
+    right: 0;
 }
 .menu-slider-button .arrow-left {
     width: 5rem;
     position: absolute;
-    left: -2rem;
     bottom: -2rem;
+    left: 0;
     rotate: 180deg;
+}
+
+@media screen and (min-width: 1000px) {
+    .menu-slider-button .arrow-right {
+        width: 7rem;
+        right: -2rem;
+    }
+    .menu-slider-button .arrow-left {
+        width: 7rem;
+        left: -2rem;
+    }
+    
 }

@@ -22,7 +22,7 @@ slideshow:
         - /assets/images/Screenshot-5.png
     speed_in_seconds: 1
 ---
-<header class="dark-section min-h-screen bg-cover bg-center text-center relative z-20" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
+<header class="dark-section bg-cover bg-center text-center relative z-20 pb-16" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
         <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
         {% if page.banner.video.file %}
         <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
@@ -31,7 +31,7 @@ slideshow:
         {% endif %}
         <div class="max-w-screen-2xl mx-auto flex flex-col content-between min-h-[90vh] relative z-20">
             {% include nav.html color = page.banner.text-color  %}
-            <div class="p-[5%] text-center">
+            <div class="p-4 text-center m-auto">
             {% include banner-svg/index.html %}
             </div>
             <h3 class="m-auto relative" style="max-width: 23rem;">
