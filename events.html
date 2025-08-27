@@ -8,13 +8,16 @@ banner:
         color: '#fff'
         opacity: 0
     image: /assets/images/events-banner.png
+burger-menu:
+    background-color: #e6b446
+    text-color: #fff
 ---
 
 <header class="bright-section bg-cover bg-center text-center relative z-20  min-h-[90vh] pb-32 flex flex-col content-between " style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
     <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
 
     <div class="max-w-screen-2xl w-full mx-auto flex flex-col content-between relative z-20">
-        {% include nav.html color = page.banner.text-color  %}
+        {% include nav.html color = page.banner.text-color   %}
     </div>
     <div class="grid relative z-20 upcoming-scg-parent my-auto">
         {% include banner-svg/upcoming.html %}
