@@ -26,7 +26,7 @@ slideshow:
 footer:
     background: dark
 ---
-<header class="dark-section bg-cover bg-center text-center relative z-20 pb-16" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
+<header class="dark-section bg-cover bg-center text-center relative z-20 pb-16 md:py-[5vh]" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
         <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
         {% if page.banner.video.file %}
         <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
