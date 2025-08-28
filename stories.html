@@ -50,15 +50,15 @@ footer:
 <section class="base-section flex md:block overflow-scroll gap-[5vw]">
     {% for post in site.posts %}
 
-    <a href="{{ post.url }}" class="mb-[10%] block w-[80vw] basis-[80vw] md:w-full shrink-0 {% cycle '', 'mt-32 md:mt-0' %}">
+    <a href="{{ post.url }}" class="mb-[10%] block w-[80vw] basis-[80vw] md:w-full shrink-0 {% cycle 'mt-8', 'mt-32 md:mt-0', '' %}">
         <div class="md:flex items-end gap-4 ">
             <div class="aspect-[1.5] md:aspect-auto md:min-h-[80vh] grow relative {% cycle '', 'md:order-3' %} ">
                 <img class="absolute inset-0 w-full h-full object-cover object-center" src="{{post.blog-info.image}}" alt="{{ post.blog-info.excerpt }}">
             </div>
-            <div class="p-4" style="width: 17rem; ">
+            <div class="p-4 pb-0 relative md:top-[7px]" style="width: 17rem; ">
                 <h3 class="uppercase" style="font-size: 2rem;
-  font-weight: 600;">{{ post.blog-info.title }}</h3>
-                <p>{{ post.blog-info.excerpt }}</p>
+  font-weight: 600;">{{ post.title }}</h3>
+                <p class="pb-0">{{ post.blog-info.description }}</p>
             </div>
         </div>
     </a>    

@@ -458,14 +458,8 @@ video {
 .-right-\[5\%\] {
   right: -5%;
 }
-.-top-\[10\%\] {
-  top: -10%;
-}
 .left-0 {
   left: 0px;
-}
-.left-\[10\%\] {
-  left: 10%;
 }
 .right-0 {
   right: 0px;
@@ -484,6 +478,9 @@ video {
 }
 .top-8 {
   top: 2rem;
+}
+.top-\[2vw\] {
+  top: 2vw;
 }
 .top-\[50\%\] {
   top: 50%;
@@ -573,6 +570,9 @@ video {
 }
 .mt-4 {
   margin-top: 1rem;
+}
+.mt-8 {
+  margin-top: 2rem;
 }
 .mt-\[9rem\] {
   margin-top: 9rem;
@@ -804,9 +804,9 @@ video {
   padding-top: 50vw;
   padding-bottom: 50vw;
 }
-.py-\[5vh\] {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+.py-\[5\%\] {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .pb-0 {
   padding-bottom: 0px;
@@ -1084,8 +1084,11 @@ display: none;
     width: 100vw;
     flex: 0 0 100vw;
     padding:10% 5%;
-    cursor: pointer;
     scroll-snap-align: center;
+}
+
+.menu-slider-button  {
+    cursor: pointer;
 }
 
 .menu-slider-button .arrow-right {
@@ -1117,8 +1120,8 @@ display: none;
 /* burger */
 
 .burger-button {
-  position:fixed;
-  top: 6%;
+  position: relative;
+  top: -1rem;
   right: 5%;
   z-index: 9;
   padding: 8px;
@@ -1130,13 +1133,11 @@ display: none;
   background-color: var(--text-color);
   display: block;
   border-radius: 22px;
-  transition: 2s;
+  transition: .5s opacity;
 }
-/* only needed if you want different active and passive colors */
-/* .burger-button.active span{
-  border-color: var(--text-color);
-  background-color: var(--text-color);
-} */
+.burger-x-1, .burger-x-2{
+  opacity: 0;
+}
 
 .burger-top, .burger-bottom{
   position: absolute;
@@ -1149,26 +1150,26 @@ display: none;
 .burger-bottom{
   bottom: -02px;
 }
-/* make sure this has the same top as the burger button has padding*/
-.burger-button.active .burger-top{
+.burger-x-1{
   position: absolute;
   top: 8px;
   transform: rotateZ(45deg);
 }
-
-.burger-button.active .burger-middle{
-/*   transform: rotateZ(270deg); */
-  border-color: rgba(0,0,0,0);
-  background-color:rgba(0,0,0,0);
-}
-
-/* make sure this has the same bottom as the burger button has padding*/
-
-.burger-button.active .burger-bottom{
+.burger-x-2{
   position: absolute;
   bottom: 8px;
   transform: rotateZ(-45deg);
 }
+
+.burger-button.active .burger-middle, .burger-button.active .burger-top, .burger-button.active .burger-bottom{
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+.burger-button.active .burger-x-1, .burger-button.active .burger-x-2{
+  opacity: 1;
+}
+
 
 .burger-menu {
     position: fixed;
@@ -1186,14 +1187,11 @@ display: none;
   flex-direction:column;
 }
 .burger-menu.active{
-  left:50vw;
+  left:00vw;
   right:0;
 }
 .burger-menu a {
   text-decoration: none;
-  font-size: 20px;
-  font-weight: 300;
-  font-family: 'Alegreya Sans SC', sans-serif;
   display:block;
   padding:5px 15px;
   text-align:center;
@@ -1205,6 +1203,18 @@ display: none;
   }
   .md\:-right-\[5\%\] {
     right: -5%;
+  }
+  .md\:-top-\[10\%\] {
+    top: -10%;
+  }
+  .md\:left-\[10\%\] {
+    left: 10%;
+  }
+  .md\:top-0 {
+    top: 0px;
+  }
+  .md\:top-\[7px\] {
+    top: 7px;
   }
   .md\:order-3 {
     order: 3;
@@ -1277,7 +1287,14 @@ display: none;
     padding-top: 16rem;
     padding-bottom: 16rem;
   }
+  .md\:py-\[5vh\] {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
   .md\:pt-0 {
     padding-top: 0px;
+  }
+  .md\:text-right {
+    text-align: right;
   }
 }
