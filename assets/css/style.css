@@ -449,6 +449,12 @@ video {
 .inset-0 {
   inset: 0px;
 }
+.-left-\[22vw\] {
+  left: -22vw;
+}
+.-right-\[17\%\] {
+  right: -17%;
+}
 .-right-\[5\%\] {
   right: -5%;
 }
@@ -463,6 +469,9 @@ video {
 }
 .right-0 {
   right: 0px;
+}
+.right-\[1vw\] {
+  right: 1vw;
 }
 .right-\[50vw\] {
   right: 50vw;
@@ -534,6 +543,9 @@ video {
   margin-top: auto;
   margin-bottom: auto;
 }
+.-mt-\[2\.3rem\] {
+  margin-top: -2.3rem;
+}
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -600,6 +612,9 @@ video {
 .min-h-screen {
   min-height: 100vh;
 }
+.w-\[102vw\] {
+  width: 102vw;
+}
 .w-\[40\%\] {
   width: 40%;
 }
@@ -615,8 +630,11 @@ video {
 .w-full {
   width: 100%;
 }
-.max-w-2xl {
-  max-width: 42rem;
+.w-screen {
+  width: 100vw;
+}
+.max-w-\[19rem\] {
+  max-width: 19rem;
 }
 .max-w-\[40\%\] {
   max-width: 40%;
@@ -706,6 +724,9 @@ video {
 .overflow-scroll {
   overflow: scroll;
 }
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
 .overflow-x-scroll {
   overflow-x: scroll;
 }
@@ -770,6 +791,10 @@ video {
 .py-\[21rem\] {
   padding-top: 21rem;
   padding-bottom: 21rem;
+}
+.py-\[25vh\] {
+  padding-top: 25vh;
+  padding-bottom: 25vh;
 }
 .py-\[50vw\] {
   padding-top: 50vw;
@@ -957,12 +982,20 @@ footer h3,footer p {
     letter-spacing: 3px;
 }
 
+footer .footer-p{
+    font-size: 1rem;
+}
+
 footer input::-moz-placeholder {
-    color: var(--dark-color)
+    color: var(--dark-color);
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 footer input::placeholder {
-    color: var(--dark-color)
+    color: var(--dark-color);
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 @media (min-width: 768px) {

@@ -142,8 +142,14 @@ footer h3,footer p {
     letter-spacing: 3px;
 }
 
+footer .footer-p{
+    font-size: 1rem;
+}
+
 footer input::placeholder {
-    color: var(--dark-color)
+    color: var(--dark-color);
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 @media (min-width: 768px) {

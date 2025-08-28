@@ -84,6 +84,8 @@ deserts:
     price: 1200
   - dish_name: beef wellington w/ foie gras & mushrooms
     price: 1100
+footer:
+    background: dark
 ---
 <header class="bright-section text-center relative z-20" style=" color: {{page.banner.text-color}};">
         <div class="absolute inset-0 hidden md:grid grid-cols-2">
@@ -226,7 +228,7 @@ deserts:
                       {% include /menu-svg/mains.html width = "169px" %} 
                       {% include /menu-svg/Arrow-1.html direction = 'left' %}
                     </span>
-                    <span class="menu-slider-button">
+                    <span class="menu-slider-button hidden md:block">
 
                       {% include /menu-svg/Make-a-reservation.html width = "500px" %} 
                         {% include /menu-svg/Arrow-1.html direction = 'right' %}
@@ -290,6 +292,6 @@ menuSection.style.height = `${largestMenu * 1.1}px`;
 
     </div></section>
 
-    <section class="bg-cover bg-center relative z-10" style="background-image: url('/assets/images/beach.png'); min-height: 60vh;">>
+    <section class="bg-cover bg-center relative z-10" style="background-image: url('/assets/images/beach.png'); min-height: min(44vw,50vh);">>
 
     </section>

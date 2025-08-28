@@ -11,6 +11,8 @@ banner:
 burger-menu:
     background-color: "#e6b446"
     text-color: "#fff"
+footer:
+    background: dark
 ---
 
 <header class="bright-section bg-cover bg-center text-center relative z-20  min-h-[90vh] pb-32 flex flex-col content-between " style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
@@ -19,7 +21,7 @@ burger-menu:
     <div class="max-w-screen-2xl w-full mx-auto flex flex-col content-between relative z-30">
         {% include nav.html color = page.banner.text-color   %}
     </div>
-    <div class="grid relative z-20 upcoming-scg-parent my-auto">
+    <div class="grid relative z-20 upcoming-scg-parent my-auto w-[102vw] right-[1vw]">
         {% include banner-svg/upcoming.html %}
         {% include banner-svg/events.html %}
     </div>
