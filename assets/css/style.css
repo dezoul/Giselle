@@ -535,6 +535,10 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .my-\[9rem\] {
   margin-top: 9rem;
   margin-bottom: 9rem;
@@ -788,13 +792,13 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.py-\[21rem\] {
-  padding-top: 21rem;
-  padding-bottom: 21rem;
-}
 .py-\[25vh\] {
   padding-top: 25vh;
   padding-bottom: 25vh;
+}
+.py-\[30vh\] {
+  padding-top: 30vh;
+  padding-bottom: 30vh;
 }
 .py-\[50vw\] {
   padding-top: 50vw;
@@ -978,7 +982,7 @@ footer svg {
     width: 54%;
 }
 
-footer h3,footer p {
+footer h3 {
     letter-spacing: 3px;
 }
 
