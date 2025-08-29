@@ -3,18 +3,17 @@ layout: default
 title: Events
 banner:
     description: Short description of the restaurant and food concept
-    text-color: '#fff'
+    text-color: '#ffffff'
     overlay-color:
         color: '#fff'
         opacity: 0
-    image: /assets/images/events-banner.png
+    image: /assets/images/giselle-website-5.jpg
 burger-menu:
-    background-color: "#e6b446"
-    text-color: "#fff"
+    background-color: '#e6b446'
+    text-color: '#fff'
 footer:
     background: dark
 ---
-
 <header class="bright-section bg-cover bg-center text-center relative z-20 md:py-[5vh] min-h-[90vh] pb-32 flex flex-col content-between " style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
     <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
 
@@ -54,7 +53,7 @@ footer:
             <div>
                 <p class="text-right">{{event.event_date}}</p>
                 <div class="relative aspect-[.8]">
-                    <img class="absolute inset-0 h-full w-full" src="{{event.featured_image}}" alt="">
+                    <img class="absolute inset-0 h-full w-full" src="{{event.featured_image}}" alt="" />
                 </div>
                 <h3 class="mt-4" style="font-size: 1.8rem;">{{event.title}}</h3>
                 <p>
@@ -64,9 +63,9 @@ footer:
         </a>
         {% endfor %}
             
-</section>
+</div></section>
 
-<section class="">
+<section>
     <div class="max-width-screen-xl mx-auto">
         <div class="flex flex-col justify-center items-center text-center min-h-[50vh]">
             <div class="editable mb-16" style="max-width: 28rem;">
