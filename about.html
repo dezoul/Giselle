@@ -3,21 +3,20 @@ layout: default
 title: L'amour a la page
 banner:
     banner_message:
-        - text: Here we can introduce the restaurant,
-
-
+        -
+            text: Here we can introduce the restaurant,
     description: Short description of the restaurant and food concept
     text-color: '#ffffff'
     overlay-color:
-        color: '#722'
+        color: '#000000'
         opacity: 0.2
-    image: /assets/images/cafe-spread.png
+    image: /assets/images/giselle-website-6.jpg
     video:
         file: /assets/videos/intro.mp4
         file_type: video/mp4
 burger-menu:
-    background-color: "#e6b446"
-    text-color: "#fff"
+    background-color: '#e6b446'
+    text-color: '#fff'
 slideshow-with-text:
     images:
         -
@@ -41,12 +40,11 @@ slideshow-2:
 footer:
     background: dark
 ---
-
- <header class="bright-section bg-cover bg-center text-center relative z-20 md:py-[5vh] min-h-[90vh] md:flex flex-col justify-between items-center overflow-x-hidden" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
+<header class="bright-section bg-cover bg-center text-center relative z-20 md:py-[5vh] min-h-[90vh] md:flex flex-col justify-between items-center overflow-x-hidden" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
         <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
         {% if page.banner.video.file %}
         <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
-            <source src="{{page.banner.video.file}}" type="{{page.banner.video.file_type}}">
+            <source src="{{page.banner.video.file}}" type="{{page.banner.video.file_type}}" />
             Your browser does not support the video tag.    
         </video>
         {% endif %}
@@ -66,7 +64,7 @@ footer:
             </p>
         
         </div>
-        </div>
+        
     </header>
 
 
@@ -75,7 +73,7 @@ footer:
 <section class="flex items-center justify-center">
     <div class="editable text-center max-w-screen-lg mx-auto" style="max-width: 33rem;">
         <p>Here we can introduce the restaurant, give a quick overview of the concept and highlight the core ideas and beliefs that make it unique and inviting. We keep things short and sweet, using spacious layouts, clean design and minimal illustrations to give an essence of the French Riviera.</p>
-        <p></p><img  alt="line drawing of a woman with a drink" src="/assets/images/line-drawing.png" />
+        <p></p><img alt="line drawing of a woman with a drink" src="/assets/images/line-drawing.png" />
     </div>
 
 </section>
@@ -120,22 +118,22 @@ footer:
 </script>
 
 
-<section class="">
+<section>
     
     <div class="max-w-screen-lg mx-auto">
         <div class="editable flex flex-col">
-            <p class=""><a class="letter-spacing" href="/menu">
+            <p><a class="letter-spacing" href="/menu">
                 See Food Menu ›
             </a>
         </p>
         
-        <p class="">
+        <p>
             <a class="letter-spacing" href="/menu">
                 See Drink Menu ›
             </a>
         </p>
         
-        <p class="">
+        <p>
             <a class="letter-spacing" href="/about">
                 About our concept ›
             </a>

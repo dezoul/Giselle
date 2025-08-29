@@ -4,18 +4,17 @@ title: L'amour a la plage
 banner:
     banner-svg: /assets/images/stories.svg
     description:
-    text-color: '#fff'
+    text-color: '#ffffff'
     overlay-color:
         color: '#722'
         opacity: 0
     image: /assets/images/beach.png
 burger-menu:
-    background-color: "#e6b446"
-    text-color: "#fff"
+    background-color: '#e6b446'
+    text-color: '#fff'
 footer:
     background: dark
 ---
-
 <header class="bright-section md:min-h-screen bg-cover bg-center text-center relative z-20 md:py-[5vh]">
     <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
     <div class="max-w-screen-2xl mx-auto flex flex-col content-between md:min-h-[90vh] relative z-30">
@@ -53,7 +52,7 @@ footer:
     <a href="{{ post.url }}" class="mb-[10%] block w-[80vw] basis-[80vw] md:w-full shrink-0 {% cycle 'mt-8', 'mt-32 md:mt-0', '' %}">
         <div class="md:flex items-end gap-4 ">
             <div class="aspect-[1.5] md:aspect-auto md:min-h-[80vh] grow relative {% cycle '', 'md:order-3' %} ">
-                <img class="absolute inset-0 w-full h-full object-cover object-center" src="{{post.blog-info.image}}" alt="{{ post.blog-info.excerpt }}">
+                <img class="absolute inset-0 w-full h-full object-cover object-center" src="{{post.blog-info.image}}" alt="{{ post.blog-info.excerpt }}" />
             </div>
             <div class="p-4 pb-0 relative md:top-[7px]" style="width: 17rem; ">
                 <h3 class="uppercase" style="font-size: 2rem;
