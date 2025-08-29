@@ -17,10 +17,39 @@ blog-info:
 footer:
     background: dark
 ---
-**Meet the chef Antoine Darquin**
+**Meet our head chef, Antoine Darquin**
 
-The thought behind the menu that’s bringing the Riviera to Bali.
+**Tell me about yourself and your background?**
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I’m Antoine Darquin — a French kid who was supposed to become a physical trainer, rebelled, and ended up in kitchen instead. My culinary journey began in Lyon and Paris, where chefs yelled more than they spoke… and somehow, I fell in love with the energy there. I got the opportunity to learn beside incredible Michelin star chef. From there, I travelled kitchens across France and Asia, always chasing flavor over fame. I opened Bisou Bangkok to bring a slice of that soulful, unpretentious, kiss of French indulgence to Bangkok.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+What cuisines or styles have influenced your cooking the most?
+
+French roots first — But over the years, Mediterranean generosity, Japanese precision, and punchiness snuck into my DNA. My style today is what I call “naughty bistro” — technique-driven cooking with a playful spirit and zero snobbism.
+
+Tell me about the exciting new project, Giselle?
+
+Giselle is our new restaurant located in Bali, she’s inspired by the Mediterranean seaside lifestyle — think long lunches, fresh catch, feet in the sand, and dishes that taste like summer flings feel: unforgettable but never too serious.
+
+How would you describe the concept and culinary identity of the restaurant?
+
+Giselle is a Mediterranean seafood playground. Fresh, local fish from Bali’s coast cooked with European creativity and simplicity. It’s not about reinventing the wheel — it’s about reminding people how damn good the wheel tastes when the product is top and the vibe is honest. Casual elegance with a bit of cheek.
+
+What sets this restaurant apart from others in the area?
+
+We don’t do “fusion” to be trendy. We do clarity of flavour, exceptional sourcing, and a warm atmosphere where you’re treated like a regular even on your first visit. It’s a restaurant with a soul (and a little attitude). Our secret sauce? We cook like we’re inviting you to our home — except the wine is colder and the music is better.
+
+Tell us about the menu and how it was created?
+
+The menu was born from the fresh catch and French savoir-faire. The idea: let the product speak — don’t shout over it. Every dish is three things: seasonal, sexy, and shareable. Because food tastes better when you steal it off someone else’s plate.
+
+What excites you the most about Giselle?
+
+Honestly? The energy. It’s a restaurant you feel before you even taste it. And the challenge of bringing Michelin-level mentality into a relaxed vibes — that contrast is thrilling. Plus, watching people fall in love with simple things done right…
+
+Can you share one or two dishes you’re most excited for people to try?
+
+```
+•	The Sea Bream Sashimi, Yuzukosho Vinaigrette, dressed directly on the fish bones with citrus Yuzukoshol
+•	Our whole roasted Pink Snapper in Salt Crust, Beurre Blanc Noily Prat
+```
