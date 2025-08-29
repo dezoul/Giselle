@@ -10,9 +10,9 @@ banner:
     overlay-color:
         color: '#ffffff'
         opacity: 0
-    image: /assets/images/dive.png
+    image: /assets/images/giselle-website-9.jpg
 blog-info:
-    image: /assets/images/dive.png
+    image: /assets/images/giselle-website-9.jpg
     description: How to refresh after a scorching summer’s day in Batu Balong.
 footer:
     background: dark
