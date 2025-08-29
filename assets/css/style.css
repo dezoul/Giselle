@@ -595,11 +595,14 @@ video {
 .hidden {
   display: none;
 }
-.aspect-\[0\.663212435\] {
-  aspect-ratio: 0.663212435;
+.aspect-\[1\.25\] {
+  aspect-ratio: 1.25;
 }
 .aspect-\[1\.5\] {
   aspect-ratio: 1.5;
+}
+.aspect-\[\.8\] {
+  aspect-ratio: .8;
 }
 .h-full {
   height: 100%;
@@ -1236,6 +1239,10 @@ display: none;
     margin-top: 0px;
     margin-bottom: 0px;
   }
+  .md\:my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
   .md\:mt-0 {
     margin-top: 0px;
   }
@@ -1266,14 +1273,20 @@ display: none;
   .md\:min-h-screen {
     min-height: 100vh;
   }
-  .md\:w-\[35vw\] {
-    width: 35vw;
-  }
   .md\:w-\[50\%\] {
     width: 50%;
   }
   .md\:w-full {
     width: 100%;
+  }
+  .md\:w-\[35vw\] {
+    width: 35vw;
+  }
+  .md\:w-\[inital\] {
+    width: inital;
+  }
+  .md\:max-w-full {
+    max-width: 100%;
   }
   .md\:basis-\[35vw\] {
     flex-basis: 35vw;

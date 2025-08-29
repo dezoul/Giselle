@@ -1,18 +1,21 @@
 ---
-layout: default
-title: Love notes from bali
+layout: post
+title: Love notes from Bali
 banner:
-    description: This is a short blurb about the restaurant introducing the concept of the venue & it’s menu. You can write as much or as little as you like here as an intro to the full menu below. 
+    title: Love notes from Bali
+    text-color: '#9f4837'
     overlay-color:
-        color: '#722'
+        color: '#fff'
         opacity: 0.0
     image: /assets/images/oranges.png
 blog-info:
     image: /assets/images/oranges.png
     description: Moments from the islands of the gods that lit up our soul that we want to share
+footer:
+    background: dark
 ---
 
-## Love notes from bali
+## Love notes from Bali
 
 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio itaque laudantium nobis numquam, doloremque inventore et modi recusandae iusto sequi eum consectetur praesentium libero at sint sit, placeat cum hic?
 

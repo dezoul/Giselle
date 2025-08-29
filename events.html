@@ -50,10 +50,10 @@ footer:
     <div class="flex content-between gap-8 overflow-x-scroll alt-max-width">
         {% assign sorted-events = site.events | sort: 'events_order' %}
         {% for event in sorted-events %}
-        <a href="{{event.url}}" class="w-[80vw] md:w-[35vw] basis-[80vw] md:basis-[35vw] shrink-0  featured-section p-4">
+        <a href="{{event.url}}" class="shrink-0 featured-section p-4 w-[80vw] md:w-[35vw] basis-[80vw] md:basis-[35vw]">
             <div>
                 <p class="text-right">{{event.event_date}}</p>
-                <div class="relative aspect-[0.663212435]">
+                <div class="relative aspect-[.8]">
                     <img class="absolute inset-0 h-full w-full" src="{{event.featured_image}}" alt="">
                 </div>
                 <h3 class="mt-4" style="font-size: 1.8rem;">{{event.title}}</h3>

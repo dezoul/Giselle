@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/editor.css">
     <title>{{page.title}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
 </head>
 
 <body class="height-screen relative">
@@ -17,10 +20,10 @@
     </div>
     {% endif %}
     
-    {{content}}
+    {{ content }}
 
     <footer class="{{page.footer.background}}-section ">
-        <div class="max-w-screen-lg mx-auto flex flex-col md:grid grid-cols-8 dark-section gap-2">
+        <div class="max-w-screen-lg mx-auto flex flex-col md:grid grid-cols-8 gap-2">
             <div class="col-span-3 ">
                 <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="590 350 800 896.97">
                     <path d="M951.55,621.83c-1.17,1.12-2.43,2.22-4.08,2.91s-3.76.95-5.77.35c-.31-.09-.64-.22-.8-.45-.13-.19-.11-.4-.07-.59,1.28-8.04,5.58-15.36,12.28-20.89,1.78-1.47,4.51-2.86,7.17-1.67,7.74,3.47-6.21,17.91-8.74,20.35Z"/>

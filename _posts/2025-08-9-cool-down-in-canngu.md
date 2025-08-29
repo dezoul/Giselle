@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: cool down in canngu
 banner:
     banner-svg: /assets/images/dine-with-us.svg
@@ -11,5 +11,7 @@ banner:
 blog-info:
     image: /assets/images/dive.png
     description: How to refresh after a scorching summer’s day in Batu Balong. 
+footer:
+    background: dark
 ---
 

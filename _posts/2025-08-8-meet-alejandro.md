@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: MEET THE CHEF - ALEJANDRO
 banner:
     banner-svg: /assets/images/dine-with-us.svg
@@ -10,7 +10,9 @@ banner:
     image: /assets/images/dish-1.png
 blog-info:
     image: /assets/images/dish-1.png
-    description: The thought behind the menu that’s bringing the Riviera to Bali. 
+    description: The thought behind the menu that’s bringing the Riviera to Bali.
+footer:
+    background: dark
 ---
 
 MEET THE CHEF - ALEJANDRO
