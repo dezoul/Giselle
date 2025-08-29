@@ -800,13 +800,13 @@ video {
   padding-top: 30vh;
   padding-bottom: 30vh;
 }
-.py-\[50vw\] {
-  padding-top: 50vw;
-  padding-bottom: 50vw;
-}
 .py-\[5\%\] {
   padding-top: 5%;
   padding-bottom: 5%;
+}
+.py-\[50vw\] {
+  padding-top: 50vw;
+  padding-bottom: 50vw;
 }
 .pb-0 {
   padding-bottom: 0px;
@@ -1293,6 +1293,9 @@ display: none;
   }
   .md\:pt-0 {
     padding-top: 0px;
+  }
+  .md\:pt-\[5vh\] {
+    padding-top: 5vh;
   }
   .md\:text-right {
     text-align: right;
