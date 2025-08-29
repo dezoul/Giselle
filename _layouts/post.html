@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<header class="bright-section md:min-h-screen bg-cover bg-center text-center relative z-20 md:py-[5vh]">
+    <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
+    <div class="max-w-screen-2xl mx-auto flex flex-col content-between md:min-h-[90vh] relative z-30">
+        {% include nav.html  %}
+
+         <div class="mobile-banner bg-cover bg-cneter py-[25vh] md:py-0 my-[9rem] md:my-0 mx-[5%] md:mx-0">
+              <div class="text-center">
+                {% include banner-svg/stories.html width="40%" %}
+              </div>
+        </div>
+
+
+    </div>
+</header>
+<style>
+    .mobile-banner{
+        background-image: url('{{page.banner.image}}');
+    }
+
+    @media screen and (min-width: 768px) {
+        .mobile-banner{
+            background-image: none;
+        }
+        header {
+            background-image: url('{{page.banner.image}}');
+            color: {{page.banner.text-color}};
+        }
+    }
+</style>
+{{content}}
