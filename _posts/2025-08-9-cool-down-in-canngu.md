@@ -17,6 +17,20 @@ blog-info:
 footer:
     background: dark
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+# Cool Down in Canggu
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+We flock to Bali for its endless summer — the kind that wraps you in sunshine from breakfast till late. But after a few hours in 32 degrees and 90% humidity, even the most devoted sun-chaser will be looking for ways to cool off. Luckily, Canggu knows how to deliver.
+
+Start with the obvious: the ocean itself. Batu Bolong’s waves are forgiving enough for a cooling dip, yet lively with the rhythm of surfers gliding along the break. Nothing cuts through the heat quite like ducking beneath the swells and letting the sea rinse away the afternoon.
+
+&nbsp;![](/uploads/ocean-surf.jpg)
+
+From there, head inland a few steps and grab something cold. A cracked-open coconut from a roadside stand does the trick, or try a café juice—watermelon mint is a local favorite, balancing sweetness and refreshment in one frosted glass. It’s the kind of simple pleasure that Canggu does best: unpretentious, sun-kissed, and exactly what you needed.
+
+When the afternoon edges into its hottest stretch, retreat into shade. Pop into one of the countless spa’s for a traditional balinese massage or wander through air-conditioned boutiques to shop for locally made designs. The key is not to fight the heat, but to lean into the slower rhythm it demands.
+
+And then comes the best part: sunset. This is when Canggu comes alive with open-air restaurants and cocktail bars that feel purpose-built for aperitivo hour. We designed Giselle’s courtyard to be exactly that — a space to transition from day to night, cool off with a handcrafted cocktail, and catch the breeze drifting through the upstairs terrace. Order a spritz, sink into your chair, and watch the sky burn coral before it fades to indigo.
+
+&lt;add image of Giselle courtyard&gt;
+
+By nightfall, the day’s intensity has melted away. Maybe you’ll slip into one of Canggu’s late-night cocktail bars, maybe back to the sand for a moonlit stroll. Either way, the day has cooled, the energy has shifted, and you’re reminded why Canggu’s blend of heat and ease keeps people coming back.
