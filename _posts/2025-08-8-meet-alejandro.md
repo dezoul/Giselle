@@ -47,9 +47,6 @@ The menu was born from the fresh catch and French savoir-faire. The idea: let th
 
 Honestly? The energy. It’s a restaurant you feel before you even taste it. And the challenge of bringing Michelin-level mentality into a relaxed vibes — that contrast is thrilling. Plus, watching people fall in love with simple things done right…
 
-Can you share one or two dishes you’re most excited for people to try?
+**Can you share one or two dishes you’re most excited for people to try?**
 
-```
-•	The Sea Bream Sashimi, Yuzukosho Vinaigrette, dressed directly on the fish bones with citrus Yuzukoshol
-•	Our whole roasted Pink Snapper in Salt Crust, Beurre Blanc Noily Prat
-```
+The Sea Bream Sashimi, Yuzukosho Vinaigrette, dressed directly on the fish bones with citrus Yuzukoshol and our whole roasted Pink Snapper in Salt Crust, Beurre Blanc Noily Prat.
