@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Love notes from Bali
+title: A foodies guide to 24 hours in Canggu
 banner:
-    title: Love notes from Bali
+    title: A foodies guide to 24 hours in Canggu
     text-color: '#9f4837'
     overlay-color:
         color: '#fff'
