@@ -2,14 +2,6 @@
 layout: post
 title: Cool down in canggu
 banner:
-    banner-svg: /assets/images/dine-with-us.svg
-    description: >-
-        This is a short blurb about the restaurant introducing the concept of
-        the venue & it’s menu. You can write as much or as little as you like
-        here as an intro to the full menu below.
-    overlay-color:
-        color: '#ffffff'
-        opacity: 0
     image: /assets/images/giselle-website-9.jpg
 blog-info:
     image: /assets/images/giselle-website-9.jpg
