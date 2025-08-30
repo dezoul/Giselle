@@ -24,6 +24,8 @@ French roots first — But over the years, Mediterranean generosity, Japanese pr
 
 Giselle is our new restaurant located in Bali, she’s inspired by the Mediterranean seaside lifestyle — think long lunches, fresh catch, feet in the sand, and dishes that taste like summer flings feel: unforgettable but never too serious.
 
+![](/assets/images/giselle-website-4.jpg)
+
 **How would you describe the concept and culinary identity of the restaurant?**
 
 Giselle is a Mediterranean seafood playground. Fresh, local fish from Bali’s coast cooked with European creativity and simplicity. It’s not about reinventing the wheel — it’s about reminding people how damn good the wheel tastes when the product is top and the vibe is honest. Casual elegance with a bit of cheek.
@@ -36,13 +38,12 @@ We don’t do “fusion” to be trendy. We do clarity of flavour, exceptional s
 
 The menu was born from the fresh catch and French savoir-faire. The idea: let the product speak — don’t shout over it. Every dish is three things: seasonal, sexy, and shareable. Because food tastes better when you steal it off someone else’s plate.
 
+![](/assets/images/giselle-website-7.jpg)
+
 **What excites you the most about Giselle?**
 
 Honestly? The energy. It’s a restaurant you feel before you even taste it. And the challenge of bringing Michelin-level mentality into a relaxed vibes — that contrast is thrilling. Plus, watching people fall in love with simple things done right…
 
-Can you share one or two dishes you’re most excited for people to try?
+**Can you share one or two dishes you’re most excited for people to try?**
 
-```
-•	The Sea Bream Sashimi, Yuzukosho Vinaigrette, dressed directly on the fish bones with citrus Yuzukoshol
-•	Our whole roasted Pink Snapper in Salt Crust, Beurre Blanc Noily Prat
-```
+The Sea Bream Sashimi, Yuzukosho Vinaigrette, dressed directly on the fish bones with citrus Yuzukoshol and our whole roasted Pink Snapper in Salt Crust, Beurre Blanc Noily Prat.
