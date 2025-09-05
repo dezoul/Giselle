@@ -847,6 +847,10 @@ video {
   padding-top: 50vw;
   padding-bottom: 50vw;
 }
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -1173,7 +1177,7 @@ footer input::placeholder {
 }
 /*this is where you can chand the color of the buttons*/
 .burger-button span{
-  width: 55px;
+  width: 40px;
   border: 1px solid var(--text-color);
   background-color: var(--text-color);
   display: block;
@@ -1356,14 +1360,14 @@ footer input::placeholder {
     padding-top: 5vh;
     padding-bottom: 5vh;
   }
+  .md\:pb-\[300px\] {
+    padding-bottom: 300px;
+  }
   .md\:pt-0 {
     padding-top: 0px;
   }
   .md\:pt-\[5vh\] {
     padding-top: 5vh;
-  }
-  .md\:pb-\[300px\] {
-    padding-bottom: 300px;
   }
   .md\:text-right {
     text-align: right;
