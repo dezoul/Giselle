@@ -267,7 +267,7 @@ footer input::placeholder {
 }
 /*this is where you can chand the color of the buttons*/
 .burger-button span{
-  width: 60px;
+  width: 55px;
   border: 1px solid var(--text-color);
   background-color: var(--text-color);
   display: block;

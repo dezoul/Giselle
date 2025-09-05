@@ -586,6 +586,9 @@ video {
 .mt-\[9rem\] {
   margin-top: 9rem;
 }
+.-mb-2 {
+  margin-bottom: -0.5rem;
+}
 .block {
   display: block;
 }
@@ -831,6 +834,10 @@ video {
 .py-\[50vw\] {
   padding-top: 50vw;
   padding-bottom: 50vw;
+}
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 .pb-0 {
   padding-bottom: 0px;
@@ -1161,7 +1168,7 @@ footer input::placeholder {
 }
 /*this is where you can chand the color of the buttons*/
 .burger-button span{
-  width: 60px;
+  width: 55px;
   border: 1px solid var(--text-color);
   background-color: var(--text-color);
   display: block;
@@ -1309,6 +1316,9 @@ footer input::placeholder {
   }
   .md\:basis-\[35vw\] {
     flex-basis: 35vw;
+  }
+  .md\:items-start {
+    align-items: flex-start;
   }
   .md\:justify-center {
     justify-content: center;
