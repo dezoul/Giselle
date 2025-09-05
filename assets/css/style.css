@@ -819,9 +819,9 @@ video {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.py-36 {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 .py-4 {
   padding-top: 1rem;
@@ -846,10 +846,6 @@ video {
 .py-\[50vw\] {
   padding-top: 50vw;
   padding-bottom: 50vw;
-}
-.py-28 {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
 }
 .pb-0 {
   padding-bottom: 0px;
@@ -1181,7 +1177,7 @@ footer input::placeholder {
   border: 1px solid var(--text-color);
   background-color: var(--text-color);
   display: block;
-  /* border-radius: 22px; */
+  border-radius: 22px;
   transition: .5s opacity;
 }
 .burger-x-1, .burger-x-2{
@@ -1331,9 +1327,6 @@ footer input::placeholder {
   }
   .md\:flex-row {
     flex-direction: row;
-  }
-  .md\:items-start {
-    align-items: flex-start;
   }
   .md\:items-center {
     align-items: center;

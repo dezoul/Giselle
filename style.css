@@ -271,7 +271,7 @@ footer input::placeholder {
   border: 1px solid var(--text-color);
   background-color: var(--text-color);
   display: block;
-  /* border-radius: 22px; */
+  border-radius: 22px;
   transition: .5s opacity;
 }
 .burger-x-1, .burger-x-2{
