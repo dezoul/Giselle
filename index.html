@@ -2,7 +2,7 @@
 layout: default
 title: L'amour a la plage
 banner:
-    description: Short description of the restaurant and food concept
+    description: Freinds, fun amd a love of the Riviera. Welcome to Giselle
     text-color: '#e8d8b1'
     overlay-color:
         color: '#000000'
@@ -37,16 +37,19 @@ footer:
             <div class="p-4 text-center m-auto">
             {% include banner-svg/index.html width = "70vw" %}
             </div>
-            <h3 class="m-auto relative" style="max-width: 23rem;">
-                {{page.banner.description}}
+            <div class="m-auto relative" style="max-width: 30rem;">
+                <h3>
+                    {{page.banner.description}}
+                </h3>
+    
+                    <div class="md:hidden text-center mt-8">
+                        <a class="dark-section editable mx-auto inline-block p-4 uppercase letter-spacing" href="/book now">
+                    book now
+                    </a>
+                    </div>
 
-                <div class="md:hidden text-center mt-8">
-                    <a class="dark-section editable mx-auto inline-block p-4 uppercase letter-spacing" href="/book now">
-                book now
-                </a>
-                </div>
+            </div>
 
-            </h3>
         </div>
     </header>
 
@@ -70,7 +73,7 @@ footer:
         </div>
         <p class="mt-16">
             <a class="editable mx-auto inline-block p-4 uppercase letter-spacing" href="/menu">
-                View food menu
+                discover our menu
             </a>
         </p>
 
