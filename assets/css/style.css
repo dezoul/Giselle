@@ -437,6 +437,9 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
@@ -455,11 +458,17 @@ video {
 .-right-\[17\%\] {
   right: -17%;
 }
+.bottom-8 {
+  bottom: 2rem;
+}
 .left-0 {
   left: 0px;
 }
 .right-0 {
   right: 0px;
+}
+.right-8 {
+  right: 2rem;
 }
 .right-\[1vw\] {
   right: 1vw;
@@ -490,6 +499,9 @@ video {
 }
 .z-30 {
   z-index: 30;
+}
+.z-50 {
+  z-index: 50;
 }
 .col-span-1 {
   grid-column: span 1 / span 1;
@@ -601,6 +613,9 @@ video {
 .aspect-\[1\.5\] {
   aspect-ratio: 1.5;
 }
+.h-16 {
+  height: 4rem;
+}
 .h-full {
   height: 100%;
 }
@@ -615,6 +630,9 @@ video {
 }
 .min-h-screen {
   min-height: 100vh;
+}
+.w-16 {
+  width: 4rem;
 }
 .w-\[102vw\] {
   width: 102vw;
@@ -725,6 +743,9 @@ video {
 .gap-\[5vw\] {
   gap: 5vw;
 }
+.overflow-hidden {
+  overflow: hidden;
+}
 .overflow-scroll {
   overflow: scroll;
 }
@@ -733,6 +754,9 @@ video {
 }
 .overflow-x-scroll {
   overflow-x: scroll;
+}
+.border {
+  border-width: 1px;
 }
 .bg-cover {
   background-size: cover;
@@ -1066,19 +1090,10 @@ footer input::placeholder {
     border-top: 0.5rem solid var(--dark-color);
 }
 
-.spacer{
-display: none;
-}
 
-@media (min-width: 768px) {
 
-.spacer{
-    /* border: 1px solid; */
-    display: block;
-    min-height: 10vh;
-}
 
-}
+
 
 /* slideshow lazyloading images */
 .data-divs {

@@ -14,11 +14,13 @@
 </head>
 
 <body class="height-screen relative">
+    {% comment %}
     {% if page.url == "/" %}
     <div class="sticky right-0 top-[50%] z-10">
         <a href="/menu" class="italic dark-section uppercase p-4 text-center absolute block -rotate-90 letter-spacing" style="width: 18.2rem; right: -7rem; letter-spacing: 5px; font-size: 1.4rem;" target="_blank"><span>view menu</span></a>
     </div>
     {% endif %}
+    {% endcomment %}
     
     {{ content }}
 
@@ -70,6 +72,12 @@
     hr { border-color: var(--featured-color); border-width: 1px;}
   </style>
   
+    <div class="whatsapp-button fixed bottom-8 right-8 z-50">
+      <a href="https://api.whatsapp.com/send/?phone={{site.data.navigation.whatsApp_number | replace: ' ', ''}}&text={{site.data.navigation.whatsApp_initial_message | replace: ' ', '+'}}&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+        <img src="/uploads/whatsapp-icon.ico" alt="whatsapp icon" class="w-16 h-16">
+      </a>
+    </div>
+
 </body>
 
 </html>
