@@ -827,6 +827,10 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.py-\[10\%\] {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
 .py-\[25vh\] {
   padding-top: 25vh;
   padding-bottom: 25vh;
@@ -843,10 +847,6 @@ video {
   padding-top: 50vw;
   padding-bottom: 50vw;
 }
-.py-\[10\%\] {
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -858,9 +858,6 @@ video {
 }
 .pb-8 {
   padding-bottom: 2rem;
-}
-.pb-\[300px\] {
-  padding-bottom: 300px;
 }
 .pt-0 {
   padding-top: 0px;
@@ -1351,19 +1348,22 @@ footer input::placeholder {
     padding-top: 16rem;
     padding-bottom: 16rem;
   }
-  .md\:py-\[5vh\] {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-  }
   .md\:py-\[5\%\] {
     padding-top: 5%;
     padding-bottom: 5%;
+  }
+  .md\:py-\[5vh\] {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
   }
   .md\:pt-0 {
     padding-top: 0px;
   }
   .md\:pt-\[5vh\] {
     padding-top: 5vh;
+  }
+  .md\:pb-\[300px\] {
+    padding-bottom: 300px;
   }
   .md\:text-right {
     text-align: right;
