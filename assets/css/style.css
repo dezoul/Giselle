@@ -452,9 +452,6 @@ video {
 .inset-0 {
   inset: 0px;
 }
-.-left-\[22vw\] {
-  left: -22vw;
-}
 .-right-\[17\%\] {
   right: -17%;
 }
@@ -655,12 +652,6 @@ video {
 .w-full {
   width: 100%;
 }
-.w-screen {
-  width: 100vw;
-}
-.max-w-\[19rem\] {
-  max-width: 19rem;
-}
 .max-w-\[40\%\] {
   max-width: 40%;
 }
@@ -758,9 +749,6 @@ video {
 }
 .overflow-scroll {
   overflow: scroll;
-}
-.overflow-x-hidden {
-  overflow-x: hidden;
 }
 .overflow-x-scroll {
   overflow-x: scroll;
