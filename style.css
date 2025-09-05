@@ -196,19 +196,10 @@ footer input::placeholder {
     border-top: 0.5rem solid var(--dark-color);
 }
 
-.spacer{
-display: none;
-}
 
-@media (min-width: 768px) {
 
-.spacer{
-    /* border: 1px solid; */
-    display: block;
-    min-height: 10vh;
-}
 
-}
+
 
 /* slideshow lazyloading images */
 .data-divs {

@@ -2,8 +2,7 @@
 layout: default
 title: L'amour a la plage
 banner:
-    banner-svg: /uploads/lamour.svg
-    description: Short description of the restaurant and food concept
+    description: Freinds, fun amd a love of the Riviera. Welcome to Giselle
     text-color: '#e8d8b1'
     overlay-color:
         color: '#000000'
@@ -38,9 +37,19 @@ footer:
             <div class="p-4 text-center m-auto">
             {% include banner-svg/index.html width = "70vw" %}
             </div>
-            <h3 class="m-auto relative" style="max-width: 23rem;">
-                {{page.banner.description}}
-            </h3>
+            <div class="m-auto relative" style="max-width: 30rem;">
+                <h3>
+                    {{page.banner.description}}
+                </h3>
+    
+                    <div class="md:hidden text-center mt-8">
+                        <a class="dark-section editable mx-auto inline-block p-4 uppercase letter-spacing" href="/book now">
+                    book now
+                    </a>
+                    </div>
+
+            </div>
+
         </div>
     </header>
 
@@ -63,8 +72,8 @@ footer:
             </svg>
         </div>
         <p class="mt-16">
-            <a class="editable mx-auto inline-block p-4 uppercase letter-spacing" href="/menu">
-                View food menu
+            <a class="editable mx-auto inline-block p-4 uppercase letter-spacing" target='_blank' href="https://www.google.com/maps/place/Giselle/@-8.6523806,115.1293945,18z/data=!4m6!3m5!1s0x2dd239007b1b6947:0x416967d4a3d428e5!8m2!3d-8.6523485!4d115.1310841!16s%2Fg%2F11yj95c7jq?entry=ttu&g_ep=EgoyMDI1MDkwMi4wIKXMDSoASAFQAw%3D%3D">
+                find your way here
             </a>
         </p>
 
@@ -109,7 +118,7 @@ window.addEventListener('load', () => {
 </script>
 
 
-<section style="background-image: url(/assets/images/map.png)" class="bg-cover bg-center bg-no-repeat min-h-screen flex flex-col justify-end items-center">
+<section style="background-image: url(/uploads/map-no-logo.png)" class="bg-cover bg-center bg-no-repeat min-h-screen flex flex-col justify-end items-center">
     <div class="text-center max-w-screen-lg mx-auto">
         <p>
             <a class="px-8 py-4 mb-16 base-section editable letter-spacing" href="https://www.google.com/maps/place/Giselle/@-8.6523485,114.9786488,12z/data=!4m6!3m5!1s0x2dd239007b1b6947:0x416967d4a3d428e5!8m2!3d-8.6523485!4d115.1310841!16s%2Fg%2F11yj95c7jq?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D">DIRECTIONS</a>
@@ -120,43 +129,73 @@ window.addEventListener('load', () => {
 </section>
 
 
-<section>
-    <div class="flex flex-col md:grid grid-cols-8 gap-[3vw] max-w-screen-lg mx-auto">
+<section class="overflow-hidden">
+    <div class="max-w-screen-lg mx-auto" style="width: 1024px;">
         <div class="col-span-full editable">
             <p> Join us on instagram </p>
             <p><a class="p" href="https://instagram.com/giselle.bali">@giselle.bali</a> </p>
         </div>
-        <div class="spacer col-span-6"></div>
-        <!-- 1 -->
-        <div class="col-span-2 row-span-2 flex items-center justify-center ">
-            <img src="/assets/images/Screenshot-3.png" class="editable" />
-        </div>
-        <!-- 2 -->
-        <div class="col-span-2 row-span-2 flex items-center justify-center">
-            <p><img src="/uploads/screenshot-2025-08-06-113407.png" class="editable" /></p>
-        </div>
-        <!-- 4 -->
-        <div class="col-span-2 row-span-4 flex items-center justify-center ">
-            <img src="/assets/images/Screenshot-4.png" class="editable" />
-        </div>
-        <!-- 3 -->
-        <div class="col-span-2 row-span-2 flex items-center justify-center p-6">
-            <p><img src="/uploads/screenshot-2025-08-06-113425.png" class="editable" /></p>
-        </div>
-        <div class="spacer col-span-2"></div>
-        <div class="spacer col-span-1"></div>
+        <div class="grid grid-cols-8 gap-[3vw] animated-grid-section" style="width: 1024px;">
 
-        <!-- 5 -->
-        <div class="col-span-1 row-span-2 flex items-center justify-center ">
-            <img src="/assets/images/Screenshot-5.png" class="editable" />
+            <div class="spacer col-span-6"></div>
+            <!-- 1 -->
+            <div class="col-span-2 row-span-2 flex items-center justify-center ">
+                <img src="/assets/images/Screenshot-3.png" class="editable" />
+            </div>
+            <!-- 2 -->
+            <div class="col-span-2 row-span-2 flex items-center justify-center">
+                <p><img src="/uploads/screenshot-2025-08-06-113407.png" class="editable" /></p>
+            </div>
+            <!-- 4 -->
+            <div class="col-span-2 row-span-4 flex items-center justify-center ">
+                <img src="/assets/images/Screenshot-4.png" class="editable" />
+            </div>
+            <!-- 3 -->
+            <div class="col-span-2 row-span-2 flex items-center justify-center p-6">
+                <p><img src="/uploads/screenshot-2025-08-06-113425.png" class="editable" /></p>
+            </div>
+            <div class="spacer col-span-2"></div>
+            <div class="spacer col-span-1"></div>
+            <!-- 5 -->
+            <div class="col-span-1 row-span-2 flex items-center justify-center ">
+                <img src="/assets/images/Screenshot-5.png" class="editable" />
+            </div>
+            <!-- 6 -->
+            <div class="col-span-1 row-span-2 flex items-center justify-center">
+                <p><img src="/uploads/screenshot-2025-08-06-113434.png" class="editable" /></p>
+            </div>
+            <div class="col-span-2 row-span-2 flex items-center justify-center">
+                <p><img src="/uploads/screenshot-2025-08-06-113443.png" class="editable" /></p>
+            </div>
         </div>
-        <!-- 6 -->
-        <div class="col-span-1 row-span-2 flex items-center justify-center">
-            <p><img src="/uploads/screenshot-2025-08-06-113434.png" class="editable" /></p>
-        </div>
-        <div class="col-span-2 row-span-2 flex items-center justify-center">
-            <p><img src="/uploads/screenshot-2025-08-06-113443.png" class="editable" /></p>
-        </div>
-
     </div>
+            
 </section>
+
+<style>
+    .spacer{
+    /* border: 1px solid; */
+    display: block;
+    min-height: 10vh;
+}
+@media screen and (max-width: 1120px) {
+    
+    :root {
+        --scroll-length: calc(90vw - 1024px)
+    }
+
+    @keyframes scrollGridAnimation {
+        0% {
+            left:0;
+        }
+        100% {
+            left:var(--scroll-length);
+        }
+    }
+    .animated-grid-section {
+        animation: scrollGridAnimation 5s linear infinite alternate;
+        position: relative;
+    }
+}
+
+</style>
