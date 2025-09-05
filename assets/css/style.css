@@ -906,6 +906,11 @@ video {
  display: inline-block;
 }
 
+html,body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 .base-section,body {
     background-color: #fff;
     color: var(--dark-color);
@@ -1157,10 +1162,10 @@ footer input::placeholder {
 /*this is where you can chand the color of the buttons*/
 .burger-button span{
   width: 60px;
-  border: 2px solid var(--text-color);
+  border: 1px solid var(--text-color);
   background-color: var(--text-color);
   display: block;
-  border-radius: 22px;
+  /* border-radius: 22px; */
   transition: .5s opacity;
 }
 .burger-x-1, .burger-x-2{
@@ -1172,11 +1177,11 @@ footer input::placeholder {
 }
 
 .burger-top{
-  top: -02px;
+  top: -03px;
 }
 
 .burger-bottom{
-  bottom: -02px;
+  bottom: -03px;
 }
 .burger-x-1{
   position: absolute;

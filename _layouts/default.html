@@ -72,7 +72,7 @@
     hr { border-color: var(--featured-color); border-width: 1px;}
   </style>
   
-    <div class="whatsapp-button fixed bottom-8 right-8 z-50">
+    <div class="whatsapp-button fixed hidden md:block bottom-8 right-8 z-50">
       <a href="https://api.whatsapp.com/send/?phone={{site.data.navigation.whatsApp_number | replace: ' ', ''}}&text={{site.data.navigation.whatsApp_initial_message | replace: ' ', '+'}}&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
         <img src="/uploads/whatsapp-icon.ico" alt="whatsapp icon" class="w-16 h-16">
       </a>
