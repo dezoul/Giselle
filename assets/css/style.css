@@ -1237,12 +1237,6 @@ footer input::placeholder {
   .md\:-right-\[5\%\] {
     right: -5%;
   }
-  .md\:-top-\[10\%\] {
-    top: -10%;
-  }
-  .md\:left-\[10\%\] {
-    left: 10%;
-  }
   .md\:top-0 {
     top: 0px;
   }
