@@ -21,8 +21,12 @@ From there, head inland a few steps and grab something cold. A cracked-open coco
 
 When the afternoon edges into its hottest stretch, retreat into shade. Pop into one of the countless spa’s for a traditional balinese massage or wander through air-conditioned boutiques to shop for locally made designs. The key is not to fight the heat, but to lean into the slower rhythm it demands.
 
-And then comes the best part: sunset. This is when Canggu comes alive with open-air restaurants and cocktail bars that feel purpose-built for aperitivo hour. We designed Giselle’s courtyard to be exactly that — a space to transition from day to night, cool off with a handcrafted cocktail, and catch the breeze drifting through the upstairs terrace. Order a spritz, sink into your chair, and watch the sky burn coral before it fades to indigo.
-
 &lt;add image of Giselle courtyard&gt;
 
+And then comes the best part: sunset. This is when Canggu comes alive with open-air restaurants and cocktail bars that feel purpose-built for aperitivo hour. We designed Giselle’s courtyard to be exactly that — a space to transition from day to night, cool off with a handcrafted cocktail, and catch the breeze drifting through the upstairs terrace. Order a spritz, sink into your chair, and watch the sky burn coral before it fades to indigo.
+
+&nbsp;
+
 By nightfall, the day’s intensity has melted away. Maybe you’ll slip into one of Canggu’s late-night cocktail bars, maybe back to the sand for a moonlit stroll. Either way, the day has cooled, the energy has shifted, and you’re reminded why Canggu’s blend of heat and ease keeps people coming back.
+
+&nbsp;
