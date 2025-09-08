@@ -911,9 +911,6 @@ video {
 .uppercase {
   text-transform: uppercase;
 }
-.italic {
-  font-style: italic;
-}
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -930,14 +927,6 @@ video {
     --bright-color: #e6b446;
 }
 
-@font-face {
-    font-family: 'futura book';
-    src: url(/assets/Fonts/Futura-Book-font.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'futura book italic';
-    src: url(/assets/Fonts/Futura-Book-Italic-font.ttf) format('truetype');
-}
 
 
 *{
@@ -1012,7 +1001,6 @@ header {
 header a {
   text-decoration: none;
   font-size: 1.2rem;
-  font-family: 'futura book italic';
   padding: 1.2rem;
   text-transform: uppercase;
 } 
@@ -1025,28 +1013,28 @@ header a {
 
 
 
-h1,h2,h3,h4,h5,h6,p{
+h1,h2,h3,h4,h5,h6{
     padding-bottom: 1em;
+    font-family: 'ivypresto-display';
+    font-weight: 300;
+
 }
 
 h1,.h1 {
-    font-family: 'futura book italic', sans-serif;
     font-size: max(3.5rem, 5vw);
 }
 h2,.h2 {
-    font-family: 'futura book', sans-serif;
     font-size: 2rem;
 }  
 h3,.h3 {
-    font-family: 'futura book italic', sans-serif;
     font-size: 1.5rem;
 }
 
 p,.p{
     min-height: 1px;
     font-size: 1.25rem;
-    font-family: 'futura book italic', sans-serif;
-
+    padding-bottom: 1em;
+    font-weight: 300;
 }
 
 a {
@@ -1055,6 +1043,20 @@ a {
     font-size: 1.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+}
+
+body{
+    font-family: 'ivyepic', sans-serif;
+}
+
+.heading {
+    font-family: 'ivypresto-display';
+}
+
+.link-style{
+    font-family: 'IVYEPIC'; 
+    letter-spacing: 0.8EM; 
+    font-weight: 500;
 }
 
 .button-subtle {
@@ -1086,7 +1088,7 @@ footer h3 {
 }
 
 footer .footer-p{
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 footer input::-moz-placeholder {
@@ -1111,9 +1113,7 @@ footer input::placeholder {
 .letter-spacing {
     letter-spacing: 0.1rem;
 }
-.italic {
-    font-family: 'futura book italic', sans-serif;
-}
+
 
 .copyright {
     font-size: 0.75rem;
