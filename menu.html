@@ -152,7 +152,7 @@ footer:
     <section class="menu-section z-10 md:flex md:width-screen md:overflow-x-scroll p-0 h-initial" style="scroll-snap-type: x mandatory;">
         <!-- starters -->
         <div class="slider-menu-item z-10 featured-section" id="starters">
-            <div class="max-w-screen-md mx-auto content-between relative z-10 pb-8 ">
+            <div class="max-w-screen-md mx-auto content-between relative z-10 md:pb-8 ">
                 <div class="pb-32 flex justify-center">
                     {% include /menu-svg/starters.html width = "50%" %}
                     <!-- <img class="inline w-[50%]" src="/assets/images/starters.svg" alt="" /> -->
@@ -164,7 +164,7 @@ footer:
                 </div>
                 
                 {% endfor %}
-                <div style="position: absolute;
+                <div class="hidden md:block"  style="position: absolute;
                 bottom: -9rem;
                 left: -8rem;
                 width: 27rem;
@@ -184,7 +184,7 @@ footer:
         </div>
         <!-- mains -->
         <div class="slider-menu-item z-10 dark-section" id="mains">
-            <div class="max-w-screen-md mx-auto content-between relative z-10   pb-32">
+            <div class="max-w-screen-md mx-auto content-between relative z-10 md:pb-8">
                 <div class="mb-32 text-center relative z-20">
                       {% include /menu-svg/mains.html width = "50%" %}
                 </div>
@@ -195,7 +195,7 @@ footer:
                 </div>
                 
                 {% endfor %}
-                <img src="/assets/images/mains-pic.svg" style="position: absolute;
+                <img src="/assets/images/mains-pic.svg" class="hidden md:block" style="position: absolute;
                     top: -14%;
                     left: -9rem;
                     width: 21rem;
@@ -216,7 +216,7 @@ footer:
         </div>
         <!-- deserts -->
         <div class="slider-menu-item z-10 featured-section">
-            <div class="max-w-screen-md mx-auto content-between relative z-10   pb-32">
+            <div class="max-w-screen-md mx-auto content-between relative z-10 md:pb-8">
                 <div class="flex justify-center mb-32">
                     {% include /menu-svg/desert.html width = "50%" %}
                 </div>
@@ -227,7 +227,7 @@ footer:
                 </div>
                 
                 {% endfor %}
-                <div style="position: absolute;
+                <div class="hidden md:block" style="position: absolute;
                   bottom: 4rem;
                   right: 7rem;
                   width: 19rem;">
@@ -253,7 +253,9 @@ footer:
     </section>
 
     <style>
-
+        .menu-section p {
+        padding-bottom: .3em;
+        }
     </style>
 
 <script>
