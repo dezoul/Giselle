@@ -917,8 +917,10 @@ video {
 html,body {
     width: 100vw;
     overflow-x: hidden;
-    height: 100vh;
+    /* height: 100vh; */
 }
+
+
 
 .base-section,body {
     background-color: #fff;
