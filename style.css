@@ -244,6 +244,7 @@ footer input::placeholder {
     flex: 0 0 100vw;
     padding:10% 5%;
     scroll-snap-align: center;
+    scroll-margin-top: 130px;
 }
 
 .menu-slider-button  {
