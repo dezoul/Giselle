@@ -800,6 +800,9 @@ video {
 .p-\[10\%\] {
   padding: 10%;
 }
+.p-12 {
+  padding: 3rem;
+}
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -835,6 +838,10 @@ video {
 .py-\[50vw\] {
   padding-top: 50vw;
   padding-bottom: 50vw;
+}
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .pb-0 {
   padding-bottom: 0px;

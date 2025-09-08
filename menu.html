@@ -96,7 +96,7 @@ footer:
 
         <div class="max-w-screen-2xl mx-auto flex flex-col content-between min-h-[95vh] relative z-30">
             {% include nav.html %}
-          <div class=" px-8 md:p-0">
+          <div class=" px-12 md:p-0">
 
             <div class="mobile-banner bg-cover bg-cneter py-[30vh] md:py-0 mt-[9rem] md:mt-0">
               <div class="hidden md:block text-center">
@@ -109,7 +109,7 @@ footer:
             </div>
           </div>
 
-            <div class="md:grid grid-cols-2 p-8 m-auto">
+            <div class="md:grid grid-cols-2 p-12 m-auto">
                 <div></div>
                 <div class="text-left justify-center md:px-24">
                     <p> {{page.banner.description}} </p>
@@ -140,6 +140,14 @@ footer:
       <a class="p-4" href="#mains">mains</a>
       <a class="p-4" href="#deserts">deserts</a>
     </section>
+
+    <!-- extra sticky code -->
+    <style>
+      body {
+        max-height: 100vh;
+        overflow: scroll;
+      }
+    </style>
 
     <section class="menu-section z-10 md:flex md:width-screen md:overflow-x-scroll p-0 h-initial" style="scroll-snap-type: x mandatory;">
         <!-- starters -->
