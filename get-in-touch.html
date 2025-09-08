@@ -24,9 +24,7 @@ footer:
             {% include nav.html %}
             <div class="relative mt-[9rem] mb-16 md:my-0">
               <img src="{{page.banner.image}}" class="w-[80%] md:w-[50%]" alt="beach-fun" />
-              <!-- <img class="absolute left-0 top-32 w-full" src="{{page.banner.banner-svg}}" alt="starters" style="width: 74%;
-                        margin: auto;
-                        left: 13%;" /> -->
+              <img class="absolute left-[5%] md:left-[13%] top-32 w-[90%] md:w-[74%]" src="/assets/images/get-in-touch.svg" alt="starters"/>
             </div>
         </div>
     </header>
@@ -47,18 +45,18 @@ footer:
     <section>
       <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row md:items-center py-[10%] md:py-[5%] gap-x-32 gap-y-8 relative z-10">
 
-        <div class="contact-details md:order-2">
-          <h3 class="font-bold">FIND US<a class="p editable" href="https://www.google.com/maps/place/Giselle/@-8.6523485,114.9786488,12z/data=!4m6!3m5!1s0x2dd239007b1b6947:0x416967d4a3d428e5!8m2!3d-8.6523485!4d115.1310841!16s%2Fg%2F11yj95c7jq?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D"> 10 Batu Balong, Canggu</a></h3> 
-          <h3 class="font-bold">WHATSAPP<a class="p editable" href="tel:625555555"> +62 555 5555</a></h3>
-          <h3 class="font-bold">PHONE<a class="p editable" href="tel:625555555"> +62 555 5555</a></h3>
-          <h3 class="font-bold">EMAIL<a class="p editable" href="mailto:hello@gisellebali.com"> hello@gisellebali.com</a></h3>
-          <h3 class="font-bold">INSTA <a class="p editable" target="_blank" href="instagram.com/giselle.bali"> @gisellebali </a></h3>
-          <h3 class="font-bold">OPENING HOURS <a class="p editable" target="_blank" href="instagram.com/giselle.bali"> @gisellebali </a></h3>
+        <div class="contact-details">
+          <h3 class="font-bold flex justify-between pt-[1em] border-b border-[#9f4837] border-opacity-50 "><span>FIND US</span><a class="p editable" href="https://www.google.com/maps/place/Giselle/@-8.6523485,114.9786488,12z/data=!4m6!3m5!1s0x2dd239007b1b6947:0x416967d4a3d428e5!8m2!3d-8.6523485!4d115.1310841!16s%2Fg%2F11yj95c7jq?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D"> 10 Batu Balong, Canggu</a></h3> 
+          <h3 class="font-bold flex justify-between  pt-[1em] border-b border-[#9f4837] border-opacity-50"><span>WHATSAPP</span><a class="p editable" href="tel:625555555"> +62 555 5555</a></h3>
+          <h3 class="font-bold flex justify-between  pt-[1em] border-b border-[#9f4837] border-opacity-50 "><span>PHONE</span><a class="p editable" href="tel:625555555"> +62 555 5555</a></h3>
+          <h3 class="font-bold flex justify-between  pt-[1em] border-b border-[#9f4837] border-opacity-50 "><span>EMAIL</span><a class="p editable" href="mailto:hello@gisellebali.com"> <span></span>hello@gisellebali.com</a></h3>
+          <h3 class="font-bold flex justify-between  pt-[1em] border-b border-[#9f4837] border-opacity-50 "><span>INSTA </span><a class="p editable" target="_blank" href="instagram.com/giselle.bali"> @gisellebali </a></h3>
+          <h3 class="font-bold flex justify-between  pt-[1em] border-b border-[#9f4837] border-opacity-50 "><span>OPENING HOURS</span> <a class="p editable" target="_blank" href="instagram.com/giselle.bali"> @gisellebali </a></h3>
 
         </div>
-        <div class="text-right relative min-h-[50vh] flex-1">
-            <a class=" h-full w-full block" target="_blank" href="https://www.google.com/maps/place/Giselle/@-8.6523485,114.9786488,12z/data=!4m6!3m5!1s0x2dd239007b1b6947:0x416967d4a3d428e5!8m2!3d-8.6523485!4d115.1310841!16s%2Fg%2F11yj95c7jq?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D">
-                <img class="editable inset-0 absolute h-full w-full object-cover ob" src="/uploads/map-no-logo.png" alt="" />
+        <div class="text-right relative min-h-[50vh] flex-1 hidden md:block">
+         
+                <img class="editable inset-0 absolute h-full w-full object-cover ob" src="assets/images/lady-sitting.svg" alt="" />
             </a>
         </div>
 
@@ -68,6 +66,7 @@ footer:
 <style>
     .contact-details h3 a{
         margin-left: 2rem;
+        padding: 0;
     }
     .contact-details h3{
     font-size: 1.25rem;
@@ -90,6 +89,10 @@ footer:
 
 </style>
 
-    <section class="bg-cover bg-center relative z-10" style="background-image: url('/assets/images/beach.png'); min-height: 60vh;">>
-
+    <section class="bg-cover bg-center py-[10%] flex justify-center items-end relative z-10" style="background-image: url('/assets/images/Giselle_Map.png'); min-height: 60vh;">>
+        <div>
+            <a class="p-4 dark-section" href="https://www.google.com/maps/place/Giselle/@-8.6523485,114.9786488,12z/data=!4m6!3m5!1s0x2dd239007b1b6947:0x416967d4a3d428e5!8m2!3d-8.6523485!4d115.1310841!16s%2Fg%2F11yj95c7jq?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D">
+                GET DIRECTIONS
+            </a>
+        </div>
     </section>

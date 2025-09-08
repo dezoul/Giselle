@@ -46,11 +46,11 @@ footer:
     }
 </style>
 
-<section class="px-0 pb-0">
+<section class="px-0 featured-section">
     <div class="flex content-between gap-8 overflow-x-scroll alt-max-width">
         {% assign sorted-events = site.events | sort: 'events_order' %}
         {% for event in sorted-events %}
-        <a href="{{event.url}}" class="shrink-0 featured-section p-4 w-[80vw] md:w-[35vw] basis-[80vw] md:basis-[35vw]">
+        <a href="{{event.url}}" class="shrink-0 base-section p-4 w-[80vw] md:w-[35vw] basis-[80vw] md:basis-[35vw]">
             <div>
                 <p class="text-right">{{event.event_date}}</p>
                 <div class="relative aspect-[.8]">
