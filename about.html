@@ -8,6 +8,7 @@ banner:
         color: '#000000'
         opacity: 0.3
     image: /assets/images/giselle-website-15.png
+    hide-small-logo: false
 burger-menu:
     background-color: '#e6b446'
     text-color: '#fff'
@@ -34,7 +35,6 @@ slideshow-2:
 footer:
     background: dark
 ---
-<img src="/assets/images/giselle-website-14.png" alt="">
 <header class="dark-section bg-cover bg-center text-center relative z-20 pb-16 md:py-[5vh]" style="background-image: url('{{page.banner.image}}'); color: {{page.banner.text-color}};">
         <div class="absolute inset-0" style="opacity:{{page.banner.overlay-color.opacity}}; background:{{page.banner.overlay-color.color}}"></div>
         {% if page.banner.video.file %}

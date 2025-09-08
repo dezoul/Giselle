@@ -44,16 +44,21 @@ html,body {
 .dark-section {
     background-color: var(--dark-color);
     color: var(--featured-color);
+    --svg-color: var(--featured-color);
 }
 
 .featured-section {
     background-color: var(--featured-color);
     color: var(--dark-color);
+    --svg-color: var(--dark-color);
+
 }
 
 .bright-section {
     background-color: var(--bright-color);
     color: #fff;
+    --svg-color: #fff;
+
 }
 
 .base-section path, body{
@@ -131,7 +136,15 @@ a {
     padding-bottom: 0.5rem;
 }
 
-footer a {
+.button-subtle {
+    border-bottom: 1px solid;
+}
+
+.button-subtle::after {
+    content: '→';
+}
+
+footer a, footer h3 {
     font-size: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;

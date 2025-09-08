@@ -500,9 +500,6 @@ video {
 .z-50 {
   z-index: 50;
 }
-.col-span-1 {
-  grid-column: span 1 / span 1;
-}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -512,11 +509,14 @@ video {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
-.col-span-6 {
-  grid-column: span 6 / span 6;
+.col-span-5 {
+  grid-column: span 5 / span 5;
 }
 .col-span-full {
   grid-column: 1 / -1;
+}
+.row-span-1 {
+  grid-row: span 1 / span 1;
 }
 .row-span-2 {
   grid-row: span 2 / span 2;
@@ -526,6 +526,9 @@ video {
 }
 .row-span-4 {
   grid-row: span 4 / span 4;
+}
+.row-span-5 {
+  grid-row: span 5 / span 5;
 }
 .m-auto {
   margin: auto;
@@ -692,6 +695,9 @@ video {
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.grid-cols-11 {
+  grid-template-columns: repeat(11, minmax(0, 1fr));
+}
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -722,6 +728,9 @@ video {
 .justify-between {
   justify-content: space-between;
 }
+.gap-0 {
+  gap: 0px;
+}
 .gap-2 {
   gap: 0.5rem;
 }
@@ -730,9 +739,6 @@ video {
 }
 .gap-8 {
   gap: 2rem;
-}
-.gap-\[3vw\] {
-  gap: 3vw;
 }
 .gap-\[5vw\] {
   gap: 5vw;
@@ -752,9 +758,6 @@ video {
 }
 .overflow-x-scroll {
   overflow-x: scroll;
-}
-.border {
-  border-width: 1px;
 }
 .bg-cover {
   background-size: cover;
@@ -781,9 +784,6 @@ video {
 }
 .p-4 {
   padding: 1rem;
-}
-.p-6 {
-  padding: 1.5rem;
 }
 .p-8 {
   padding: 2rem;
@@ -919,16 +919,21 @@ html,body {
 .dark-section {
     background-color: var(--dark-color);
     color: var(--featured-color);
+    --svg-color: var(--featured-color);
 }
 
 .featured-section {
     background-color: var(--featured-color);
     color: var(--dark-color);
+    --svg-color: var(--dark-color);
+
 }
 
 .bright-section {
     background-color: var(--bright-color);
     color: #fff;
+    --svg-color: #fff;
+
 }
 
 .base-section path, body{
@@ -1006,7 +1011,15 @@ a {
     padding-bottom: 0.5rem;
 }
 
-footer a {
+.button-subtle {
+    border-bottom: 1px solid;
+}
+
+.button-subtle::after {
+    content: '→';
+}
+
+footer a, footer h3 {
     font-size: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -1248,10 +1261,6 @@ footer input::placeholder {
   }
   .md\:order-3 {
     order: 3;
-  }
-  .md\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
   }
   .md\:mx-auto {
     margin-left: auto;
