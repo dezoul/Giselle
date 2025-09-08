@@ -26,6 +26,10 @@
 }
 
 
+*{
+    scroll-behavior: smooth;
+}
+
 * img {
     max-width: 100%;
  display: inline-block;
@@ -34,6 +38,7 @@
 html,body {
     width: 100vw;
     overflow-x: hidden;
+    height: 100vh;
 }
 
 .base-section,body {

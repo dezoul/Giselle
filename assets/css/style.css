@@ -559,6 +559,9 @@ video {
 .-mt-\[2\.3rem\] {
   margin-top: -2.3rem;
 }
+.mb-12 {
+  margin-bottom: 3rem;
+}
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -567,6 +570,9 @@ video {
 }
 .mb-4 {
   margin-bottom: 1rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
 }
 .mb-\[10\%\] {
   margin-bottom: 10%;
@@ -707,6 +713,9 @@ video {
 .flex-col {
   flex-direction: column;
 }
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
 .content-between {
   align-content: space-between;
 }
@@ -795,14 +804,6 @@ video {
   padding-left: 0px;
   padding-right: 0px;
 }
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -846,6 +847,9 @@ video {
 }
 .pb-8 {
   padding-bottom: 2rem;
+}
+.pl-0 {
+  padding-left: 0px;
 }
 .pt-0 {
   padding-top: 0px;
@@ -901,6 +905,10 @@ video {
 }
 
 
+*{
+    scroll-behavior: smooth;
+}
+
 * img {
     max-width: 100%;
  display: inline-block;
@@ -909,6 +917,7 @@ video {
 html,body {
     width: 100vw;
     overflow-x: hidden;
+    height: 100vh;
 }
 
 .base-section,body {
@@ -1325,8 +1334,15 @@ footer input::placeholder {
   .md\:justify-center {
     justify-content: center;
   }
+  .md\:overflow-x-scroll {
+    overflow-x: scroll;
+  }
   .md\:p-0 {
     padding: 0px;
+  }
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
   .md\:py-0 {
     padding-top: 0px;

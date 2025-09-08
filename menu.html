@@ -96,7 +96,7 @@ footer:
 
         <div class="max-w-screen-2xl mx-auto flex flex-col content-between min-h-[95vh] relative z-30">
             {% include nav.html %}
-          <div class=" px-16 md:p-0">
+          <div class=" px-8 md:p-0">
 
             <div class="mobile-banner bg-cover bg-cneter py-[30vh] md:py-0 mt-[9rem] md:mt-0">
               <div class="hidden md:block text-center">
@@ -111,7 +111,7 @@ footer:
 
             <div class="md:grid grid-cols-2 p-8 m-auto">
                 <div></div>
-                <div class="text-left justify-center px-24">
+                <div class="text-left justify-center md:px-24">
                     <p> {{page.banner.description}} </p>
                 </div>
 
@@ -135,11 +135,15 @@ footer:
 
 
     <!-- menu fun -->
+    <section class="md:hidden sticky top-0 z-20 flex flex-nowrap overflow-scroll bright-section">
+      <a class="pl-0 p-4" href="#starters">starters</a>
+      <a class="p-4" href="#mains">mains</a>
+      <a class="p-4" href="#deserts">deserts</a>
+    </section>
 
-
-    <section class="menu-section z-10 flex width-screen overflow-x-scroll p-0 h-initial" style="scroll-snap-type: x mandatory;">
+    <section class="menu-section z-10 md:flex md:width-screen md:overflow-x-scroll p-0 h-initial" style="scroll-snap-type: x mandatory;">
         <!-- starters -->
-        <div class="slider-menu-item z-10 featured-section">
+        <div class="slider-menu-item z-10 featured-section" id="starters">
             <div class="max-w-screen-md mx-auto content-between relative z-10 pb-8 ">
                 <div class="pb-32 flex justify-center">
                     {% include /menu-svg/starters.html width = "50%" %}
@@ -160,7 +164,7 @@ footer:
                   {% include /menu-svg/woman-lying-down.html width = "100%" color = "#E6B446" %}
                 </div>
             </div>
-            <div class="max-w-screen-lg mx-auto">
+            <div class="max-w-screen-lg mx-auto hidden md:block">
                 <div class=" flex justify-end relative z-10">
                     <span class="menu-slider-button" onclick="slide(1)">
                         
@@ -171,7 +175,7 @@ footer:
             </div>
         </div>
         <!-- mains -->
-        <div class="slider-menu-item z-10 dark-section">
+        <div class="slider-menu-item z-10 dark-section" id="mains">
             <div class="max-w-screen-md mx-auto content-between relative z-10   pb-32">
                 <div class="mb-32 text-center relative z-20">
                       {% include /menu-svg/mains.html width = "50%" %}
@@ -189,7 +193,7 @@ footer:
                     width: 21rem;
                     rotate: -1deg;" />
             </div>
-            <div class="max-w-screen-lg mx-auto">
+            <div class="max-w-screen-lg mx-auto hidden md:block" id="deserts">
                 <div class=" flex justify-between relative z-10">
                     <span class="menu-slider-button" onclick="slide(0)">
                       {% include /menu-svg/starters.html width = "169px" %}
@@ -222,7 +226,7 @@ footer:
                 {% include /menu-svg/pear.html width = "100%" color = "#E6B446" %}  
               </div>
             </div>
-            <div class="max-w-screen-lg mx-auto">
+            <div class="max-w-screen-lg mx-auto  hidden md:block">
                 <div class=" flex justify-between relative z-10">
                     <span class="menu-slider-button" onclick="slide(1)">
                       {% include /menu-svg/mains.html width = "169px" %} 
@@ -257,7 +261,7 @@ console.log(menu,menu.offsetHeight,largestMenu);
     }
 })
 
-menuSection.style.height = `${largestMenu * 1.1}px`;
+// menuSection.style.height = `${largestMenu * 1.1}px`;
 
 
         function slide(x) {
@@ -269,7 +273,7 @@ menuSection.style.height = `${largestMenu * 1.1}px`;
         }
     </script>
 
-    <section class="base-section relative z-10 md:py-64">
+    <section class="base-section relative z-30 md:py-64 ">
         <div class="max-w-screen-sm mx-auto">
             <div class="text-center">
                 <img src="/assets/images/make-a-reservatrion-large.svg" alt="" class="mx-auto" style="width: 23rem;" />
@@ -294,6 +298,6 @@ menuSection.style.height = `${largestMenu * 1.1}px`;
 
     </div></section>
 
-    <section class="bg-cover bg-center relative z-10" style="background-image: url('/assets/images/beach.png'); min-height: min(44vw,50vh);">>
+    <section class="bg-cover bg-center relative z-30" style="background-image: url('/assets/images/beach.png'); min-height: min(44vw,50vh);">>
 
     </section>
