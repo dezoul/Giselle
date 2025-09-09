@@ -79,25 +79,32 @@ html,body {
 
 footer,section,article,aside,nav,main {
     display: block;
-    padding: 5%;
+    padding: 5% 7vw;
     position: relative;
+}
+
+@media (max-width: 768px) {
+    footer,section,article,aside,nav,main {
+        padding: 5%;
+    }
 }
 
 header {
     color: var(--featured-color);
 }
 
-header a {
+header a, .button {
   text-decoration: none;
   font-size: 1.2rem;
   padding: 1.2rem;
   text-transform: uppercase;
+  cursor: pointer;
 } 
 
 
 .alt-max-width {
-    padding-left: max(5%, calc((100vw - 1536px)/2) );
-    padding-right: max(5%, calc((100vw - 1536px)/2) );
+    padding-left: max(7vw, calc((100vw - 1536px)/2) );
+    padding-right: max(7vw, calc((100vw - 1536px)/2) );
 }
 
 
@@ -126,7 +133,7 @@ p,.p{
     font-weight: 300;
 }
 
-a {
+header a, header nav .reservation-button {
     text-decoration: none;
     color: inherit;
     font-size: 1.5rem;
@@ -161,6 +168,7 @@ footer a, footer h3 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     letter-spacing: 3px;
+    font-family: 'ivyepic', sans-serif;
 }
 
 footer svg {
@@ -359,10 +367,11 @@ footer input::placeholder {
   left:00vw;
   right:0;
 }
-.burger-menu a {
+.burger-menu a, .burger-menu .reservation-button{
   text-decoration: none;
   display:block;
   padding:5px 15px;
   text-align:center;
   white-space:nowrap;
+  font-size:1.25rem;
 }

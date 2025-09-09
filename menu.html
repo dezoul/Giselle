@@ -278,15 +278,15 @@ footer:
 
     <!-- menu fun -->
     <section class="md:hidden sticky top-0 z-20 flex flex-nowrap overflow-scroll base-section">
-      <a class="pl-0 p-4 uppercase" href="#starters">starters</a>
-      <a class="p-4 uppercase" href="#crudo">crudo</a>
-      <a class="p-4 uppercase shrink-0" href="#seafood_platter" style="flex-basis: 14.7rem;">seafood platter</a>
-      <a class="p-4 uppercase" href="#mains">mains</a>
-      <a class="p-4 uppercase" href="#bites">bites</a>
-      <a class="p-4 uppercase shrink-0" href="#pasta_and_risotto" style="flex-basis: 14rem;">pasta & risotto</a>
-      <a class="p-4 uppercase" href="#salads">salads</a>
-      <a class="p-4 uppercase" href="#sides">sides</a>
-      <a class="p-4 uppercase" href="#deserts">deserts</a>
+      <a class="pl-0 p-4 uppercase button" href="#starters">starters</a>
+      <a class="p-4 uppercase button" href="#crudo">crudo</a>
+      <a class="p-4 uppercase button shrink-0" href="#seafood_platter" style="flex-basis: 13.7rem;">seafood platter</a>
+      <a class="p-4 uppercase button" href="#mains">mains</a>
+      <a class="p-4 uppercase button" href="#bites">bites</a>
+      <a class="p-4 uppercase button shrink-0" href="#pasta_and_risotto" style="flex-basis: 12.7rem;">pasta & risotto</a>
+      <a class="p-4 uppercase button" href="#salads">salads</a>
+      <a class="p-4 uppercase button" href="#sides">sides</a>
+      <a class="p-4 uppercase button" href="#deserts">deserts</a>
     </section>
 
     <!-- extra sticky code -->
@@ -331,7 +331,7 @@ footer:
             </div>
         </div>
         <!-- crudo -->
-        <div class="slider-menu-item z-10 dark-section" id="mains">
+        <div class="slider-menu-item z-10 dark-section" id="crudo">
             <div class="max-w-screen-md mx-auto content-between relative z-10 md:pb-8">
                 <div class="mb-32 text-center relative z-20">
                       {% include /menu-svg/mains.html width = "50%" %}
@@ -587,16 +587,18 @@ footer:
             </div>
             <div class="max-w-screen-lg mx-auto  hidden md:block">
                 <div class=" flex justify-between relative z-10">
-                    <span class="menu-slider-button" onclick="slide(7)">
-                      {% include /menu-svg/mains.html width = "169px" %} 
-                      {% include /menu-svg/Arrow-1.html direction = 'left' %}
-                    </span>
-                    <span class="menu-slider-button hidden md:block">
+                  <span class="menu-slider-button" onclick="slide(7)">
+                    {% include /menu-svg/mains.html width = "169px" %} 
+                    {% include /menu-svg/Arrow-1.html direction = 'left' %}
+                  </span>
+                  <span class="menu-slider-button hidden md:block">
+                    <span class="reservation-button button">
 
                       {% include /menu-svg/Make-a-reservation.html width = "500px" %} 
-                        {% include /menu-svg/Arrow-1.html direction = 'right' %}
-                        <!-- <img src="/assets/images/Arrow-1.svg" class="arrow-right" alt="Arrow to the left" /> -->
-                    </span>
+                      {% include /menu-svg/Arrow-1.html direction = 'right' %}
+                      <!-- <img src="/assets/images/Arrow-1.svg" class="arrow-right" alt="Arrow to the left" /> -->
+                    </a>
+                  </span>
                 </div>
                 <!-- todo add reservation link -->
             </div>
@@ -650,7 +652,7 @@ console.log(menu,menu.offsetHeight,largestMenu);
 
             </div>
             <div class="text-center">
-              <a class=" px-8 py-4 inline-block dark-section editable letter-spacing" href="https://www.google.com/maps/place/Giselle/@-8.6523485,114.9786488,12z/data=!4m6!3m5!1s0x2dd239007b1b6947:0x416967d4a3d428e5!8m2!3d-8.6523485!4d115.1310841!16s%2Fg%2F11yj95c7jq?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D">BOOK NOW</a>
+              <a class=" px-8 py-4 inline-block dark-section editable letter-spacing" href="https://www.sevenrooms.com/explore/giselle/reservations/create/search">BOOK NOW</a>
             </div>
             
 

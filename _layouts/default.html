@@ -51,8 +51,8 @@
             <div class="flex flex-col items-start justify-center col-span-2 row-span-2 ">
                 <a href="/events">EVENTS</a>
                 <a href="/join-us">JOBS AT GISELLE</a>
-                <a href="/stoires">NEWS</a>
-                <a href="https://www.google.com/maps/place/Giselle/@-8.6523485,114.9786488,12z/data=!4m6!3m5!1s0x2dd239007b1b6947:0x416967d4a3d428e5!8m2!3d-8.6523485!4d115.1310841!16s%2Fg%2F11yj95c7jq?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D">HOW TO FIND</a>
+                <a href="/stories">NEWS</a>
+                <a href="https://www.google.com/maps/place/Giselle/@-8.6523485,114.9786488,12z/data=!4m6!3m5!1s0x2dd239007b1b6947:0x416967d4a3d428e5!8m2!3d-8.6523485!4d115.1310841!16s%2Fg%2F11yj95c7jq?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">HOW TO FIND</a>
             </div>
             <hr class="md:hidden block my-8"> 
             <form action="" class="col-span-3 row-span-2">
@@ -78,6 +78,33 @@
         <img src="/uploads/whatsapp-icon.ico" alt="whatsapp icon" class="w-16 h-16">
       </a>
     </div>
+
+<div class="resvation-container relative left-[100vw]">
+  <button id="central-reservation-button"></button>
+  <script src="https://www.sevenrooms.com/reservations/embed.js"></script>
+  <script>
+  const reservationButtons = document.querySelectorAll('.reservation-button');
+  
+  SevenroomsWidget.init({
+  venueId: "giselle",
+  triggerId: "central-reservation-button",
+  type: "reservations",
+  })
+  
+  reservationButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelector('#central-reservation-button').click();
+    });
+  });
+  
+  </script>
+
+  <style>
+    #xb-close-modal {
+        right: max(7vw, calc((100vw - 1536px)/2))!important;
+    }
+  </style>
+</div>
 
 </body>
 

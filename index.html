@@ -41,15 +41,18 @@ footer:
                 </h3>
     
                     <div class="md:hidden text-center mt-8">
-                        <a class="dark-section editable mx-auto inline-block p-4 uppercase letter-spacing" href="/book now">
+
+                        <span class="dark-section editable mx-auto inline-block p-4 uppercase letter-spacing button reservation-button">
                     book now
-                    </a>
+                        </span>
                     </div>
 
             </div>
 
         </div>
     </header>
+                        <span class="reservation-button">temp button</span>
+                        <span class="reservation-button" onclick="document.querySelector('#temp-button').click()">second button </span>
 
 <section class="flex items-center justify-center base-section">
     <div class="text-center">
@@ -60,7 +63,7 @@ footer:
             <p>From 5 until late, this is where the night begins and ends. Giselle is a house for friends, strangers, and stories. Seafood leads the menu, the Mediterranean inspires the mood, and the energy belongs to Canggu
             </p>
         </div>
-        <a href="/" class="p-4 dark-section"> MAKE A RESERVATION </a>
+        <a href="https://www.sevenrooms.com/explore/giselle/reservations/create/search" class="p-4 dark-section button"> MAKE A RESERVATION </a>
     </div>
 
 </section>
@@ -129,10 +132,10 @@ console.log(image.naturalWidth / image.naturalHeight);
 </script>
 
 
-<section style="background-image: url(/assets/images/Giselle_Map.png)" class="bg-cover bg-center bg-no-repeat min-h-screen flex flex-col justify-end items-center">
+<section style="background-image: url(/assets/images/Giselle_Map.png);background-position: 47% 50%" class="bg-cover bg-center bg-no-repeat min-h-screen flex flex-col justify-end items-center">
     <div class="text-center max-w-screen-lg mx-auto">
         <p>
-            <a class="px-8 py-4 mb-16 base-section editable letter-spacing" href="https://www.google.com/maps/place/Giselle/@-8.6523485,114.9786488,12z/data=!4m6!3m5!1s0x2dd239007b1b6947:0x416967d4a3d428e5!8m2!3d-8.6523485!4d115.1310841!16s%2Fg%2F11yj95c7jq?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D">DIRECTIONS</a>
+            <a class="px-8 py-4 mb-16 base-section editable letter-spacing button" href="https://www.google.com/maps/place/Giselle/@-8.6523485,114.9786488,12z/data=!4m6!3m5!1s0x2dd239007b1b6947:0x416967d4a3d428e5!8m2!3d-8.6523485!4d115.1310841!16s%2Fg%2F11yj95c7jq?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D">DIRECTIONS</a>
         </p>
 
     </div>
@@ -251,7 +254,7 @@ console.log(image.naturalWidth / image.naturalHeight);
         }
     }
     .animated-grid-section {
-        animation: scrollGridAnimation 8s linear infinite alternate;
+        animation: scrollGridAnimation 8s ease-in-out infinite alternate;
         position: relative;
     }
 }
