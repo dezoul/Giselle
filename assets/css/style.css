@@ -1303,7 +1303,7 @@ footer input::placeholder {
   left:00vw;
   right:0;
 }
-.burger-menu a, nav .burger-menu .reservation-button{
+.burger-menu a, .burger-menu .reservation-button{
   text-decoration: none;
   display:block;
   padding:5px 15px;
