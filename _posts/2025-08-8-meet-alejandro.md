@@ -2,7 +2,7 @@
 layout: post
 title: meet the chef Antoine Darquin
 banner:
-    text-color: '#e8d8b1'
+    text-color: '#9f4837'
     image: /assets/images/dish-1.png
 blog-info:
     image: /assets/images/dish-1.png

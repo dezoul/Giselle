@@ -2,6 +2,7 @@
 layout: post
 title: Cool down in canggu
 banner:
+    text-color: '#e8d8b1'
     image: /assets/images/giselle-website-9.jpg
 blog-info:
     image: /assets/images/giselle-website-9.jpg

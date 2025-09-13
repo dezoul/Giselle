@@ -18,7 +18,7 @@
     {% comment %}
     {% if page.url == "/" %}
     <div class="sticky right-0 top-[50%] z-10">
-        <a href="/menu" class=" dark-section uppercase p-4 text-center absolute block -rotate-90 letter-spacing" style="width: 18.2rem; right: -7rem; letter-spacing: 5px; font-size: 1.4rem;" target="_blank"><span>view menu</span></a>
+        <a href="/menu" class=" dark-section uppercase p-4 text-center absolute block -rotate-90" style="width: 18.2rem; right: -7rem; letter-spacing: 5px; font-size: 1.4rem;" target="_blank"><span>view menu</span></a>
     </div>
     {% endif %}
     {% endcomment %}
@@ -45,10 +45,10 @@
             <div class="flex flex-col items-start justify-center col-span-2 row-span-2 -mb-2">
                 <a href="/">RESERVATIONS</a>
                 <a href="/menu">MENU</a>
-                <a href="/about">ABOUT US</a>
                 <a href="/get-in-touch">CONTACT</a>
-            </div>
-            <div class="flex flex-col items-start justify-center col-span-2 row-span-2 ">
+              </div>
+              <div class="flex flex-col items-start justify-center col-span-2 row-span-2 ">
+                <a href="/about">ABOUT US</a>
                 <!-- <a href="/events">EVENTS</a>
                 <a href="/join-us">JOBS AT GISELLE</a> -->
                 <a href="/stories">NEWS</a>
@@ -62,7 +62,7 @@
                     </p>
 
                     <p>
-                      <span onclick="document.querySelector('.form-pop-up').show()" class="button featured-section border border-[var(--dark-color)] mt-3 inline-block">get on the list</span>
+                      <span onclick="document.querySelector('.form-pop-up').showModal()" class="button featured-section mt-3 inline-block">get on the list</span>
                     </p>
               <dialog class="form-pop-up fixed w-[60vw] top-[20vh] dark-section">
                {% include mailchimp-form.html %}

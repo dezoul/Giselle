@@ -109,11 +109,12 @@ header a, .button {
 
 
 
-h1,h2,h3,h4,h5,h6{
-    padding-bottom: 1em;
-    font-family: 'ivypresto-display';
-    font-weight: 300;
-
+h1, h2, h3, h4, h5, h6 {
+  padding-bottom: 0.5em;
+  font-family: 'ivypresto-display';
+  font-weight: 200;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
 }
 
 h1,.h1 {
@@ -128,7 +129,7 @@ h3,.h3 {
 
 p,.p{
     min-height: 1px;
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding-bottom: 1em;
     font-weight: 300;
 }
@@ -140,7 +141,7 @@ p,.p{
 header a, header nav .reservation-button {
     text-decoration: none;
     color: inherit;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
@@ -153,14 +154,26 @@ body{
     font-family: 'ivypresto-display';
 }
 
-.link-style{
+.link-style {
     font-family: 'IVYEPIC'; 
     letter-spacing: 0.8EM; 
     font-weight: 500;
 }
 
+.button {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+}
+
 .button-subtle {
     border-bottom: 1px solid;
+    border-top:1rem;
+    border-bottom:1rem;
+
 }
 
 .button-subtle::after {
@@ -183,11 +196,6 @@ footer svg {
 }
 
 
-
-footer h3 {
-    letter-spacing: 3px;
-}
-
 footer .footer-p{
     font-size: .8rem;
 }
@@ -195,7 +203,12 @@ footer .footer-p{
 footer input::placeholder {
     color: var(--dark-color);
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 0.1em;
+}
+
+dialog::backdrop  {
+    background-color: black;
+    opacity: .5;
 }
 
 @media (min-width: 768px) {
@@ -205,9 +218,6 @@ footer input::placeholder {
    }
 }
 
-.letter-spacing {
-    letter-spacing: 0.1rem;
-}
 
 
 .copyright {

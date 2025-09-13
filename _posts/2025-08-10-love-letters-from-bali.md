@@ -2,7 +2,7 @@
 layout: post
 title: A foodies guide to 24 hours in Canggu
 banner:
-    text-color: '#272'
+    text-color: '#9f4837'
     image: /assets/images/giselle-website-11.jpg
 blog-info:
     image: /assets/images/giselle-website-11.jpg

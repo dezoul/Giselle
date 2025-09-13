@@ -188,7 +188,7 @@ footer:
     <!-- menu fun -->
     <section class="sticky top-0 z-20 md:py-4 flex flex-nowrap overflow-scroll base-section">
       {% for menu in page.menus %}
-      <a class="{% if forloop.first %} pl-0 {% endif %} p-4 uppercase button whitespace-nowrap" href="#{{menu.name | replace: ' ',''}}">{{menu.name}}</a>
+      <a class="{% if forloop.first %} pl-0 {% endif %} button whitespace-nowrap" href="#{{menu.name | replace: ' ',''}}">{{menu.name}}</a>
       {% endfor %}
     </section>
 
@@ -203,10 +203,10 @@ footer:
     <section class="menu-section z-10  p-0 h-initial" style="scroll-snap-type: x mandatory;">
 
 {% for menu in page.menus %}
-<div class="py-[5%] {% cycle 'featured-section','dark-section' %}">
+<div class="py-[5%] {% cycle 'featured-section','featured-section','featured-section','featured-section','dark-section','dark-section','dark-section','bright-section' %}">
   
             <div class="max-w-screen-md mx-auto content-between relative z-10 md:pb-8" id="{{menu.name | replace: ' ',''}}">
-                <div class="flex justify-center">
+                <div class="">
                   <h3 class="h1 cursive">
                     {{menu.name}}
                   </h3>
@@ -236,6 +236,15 @@ footer:
     <style>
         .menu-section p {
         padding-bottom: .3em;
+        }
+
+        .menu-section h3 {
+          font-size: 3rem;  
+        }
+        @media (min-width: 768px) {
+        .menu-section h3 {
+          font-size: 4rem;
+        }
         }
     </style>
 <!-- 
@@ -280,7 +289,7 @@ console.log(menu,menu.offsetHeight,largestMenu);
 
             </div>
             <div class="text-center">
-              <a class=" px-8 py-4 inline-block dark-section editable letter-spacing" href="https://www.sevenrooms.com/explore/giselle/reservations/create/search">BOOK NOW</a>
+              <span class=" px-8 py-4 inline-block dark-section editable letter-spacing reservation-button">BOOK NOW</span>
             </div>
             
 

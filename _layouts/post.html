@@ -4,7 +4,7 @@ layout: default
 
 <header class="base-section md:min-h-screen bg-cover bg-center text-center relative z-20 md:py-[5vh]">
     <div class="max-w-screen-2xl mx-auto flex flex-col content-between md:min-h-[90vh] relative z-30">
-        {% include nav.html  %}
+        {% include nav.html color = page.banner.text-color  %}
          <div class="mobile-banner bg-cover bg-cneter py-[25vh] md:py-0 my-[9rem] md:my-auto mx-[5%]">
                 <div class="text-center">
                     <h2>
@@ -41,8 +41,10 @@ layout: default
     }
 </style>
 
-<section class="max-width-screen -lg, margin auto">
+<section >
+    <div class="max-width-screen-xl margin-auto">
+        {{ content }}
 
-    {{ content }}
+    </div>
 
 </section>
