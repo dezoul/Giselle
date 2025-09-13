@@ -464,6 +464,9 @@ video {
 .left-\[100vw\] {
   left: 100vw;
 }
+.left-\[20vw\] {
+  left: 20vw;
+}
 .left-\[5\%\] {
   left: 5%;
 }
@@ -488,17 +491,20 @@ video {
 .top-8 {
   top: 2rem;
 }
+.top-\[20vh\] {
+  top: 20vh;
+}
 .top-\[2vw\] {
   top: 2vw;
 }
 .top-\[50\%\] {
   top: 50%;
 }
-.right-\[8px\] {
-  right: 8px;
+.right-4 {
+  right: 1rem;
 }
-.top-\[8px\] {
-  top: 8px;
+.top-4 {
+  top: 1rem;
 }
 .z-10 {
   z-index: 10;
@@ -677,6 +683,9 @@ video {
 .w-\[50\%\] {
   width: 50%;
 }
+.w-\[60vw\] {
+  width: 60vw;
+}
 .w-\[80\%\] {
   width: 80%;
 }
@@ -832,9 +841,6 @@ video {
 .p-12 {
   padding: 3rem;
 }
-.p-2 {
-  padding: 0.5rem;
-}
 .p-4 {
   padding: 1rem;
 }
@@ -843,6 +849,9 @@ video {
 }
 .p-\[10\%\] {
   padding: 10%;
+}
+.p-8 {
+  padding: 2rem;
 }
 .px-0 {
   padding-left: 0px;
@@ -1415,6 +1424,10 @@ footer input::placeholder {
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   .md\:py-64 {
     padding-top: 16rem;

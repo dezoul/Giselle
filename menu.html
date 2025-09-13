@@ -277,7 +277,7 @@ footer:
 
 
     <!-- menu fun -->
-    <section class="md:hidden sticky top-0 z-20 flex flex-nowrap overflow-scroll base-section">
+    <section class="sticky top-0 z-20 md:py-4 flex flex-nowrap overflow-scroll base-section">
       <a class="pl-0 p-4 uppercase button" href="#starters">starters</a>
       <a class="p-4 uppercase button" href="#crudo">crudo</a>
       <a class="p-4 uppercase button shrink-0" href="#seafood_platter" style="flex-basis: 13.7rem;">seafood platter</a>
@@ -297,7 +297,9 @@ footer:
       }
     </style>
 
-    <section class="menu-section z-10 md:flex md:width-screen md:overflow-x-scroll p-0 h-initial" style="scroll-snap-type: x mandatory;">
+    <section class="menu-section z-10  p-0 h-initial" style="scroll-snap-type: x mandatory;">
+<!-- classes for desktop version md:flex md:width-screen md:overflow-x-scroll -->
+
         <!-- starters -->
         <div class="slider-menu-item z-10 featured-section" id="starters">
             <div class="max-w-screen-md mx-auto content-between relative z-10 md:pb-8 ">
@@ -308,7 +310,7 @@ footer:
                 {% for food in page.starters %}
                 <div class="flex justify-between gap-8">
                     <p>{{food.dish_name}}</p>
-                    <p>{{food.price}}</p>
+                    <!-- <p>{{food.price}}</p> -->
                 </div>
                 
                 {% endfor %}
@@ -320,7 +322,7 @@ footer:
                   {% include /menu-svg/woman-lying-down.html width = "100%" color = "#E6B446" %}
                 </div>
             </div>
-            <div class="max-w-screen-lg mx-auto hidden md:block">
+            <!-- <div class="max-w-screen-lg mx-auto hidden md:block">
                 <div class=" flex justify-end relative z-10">
                     <span class="menu-slider-button" onclick="slide(1)">
                         
@@ -328,7 +330,7 @@ footer:
                         {% include /menu-svg/Arrow-1.html direction = 'right' %}
                     </span>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- crudo -->
         <div class="slider-menu-item z-10 dark-section" id="crudo">
@@ -339,7 +341,7 @@ footer:
                 {% for food in page.crudo %}
                 <div class="flex justify-between relative z-10  gap-8">
                     <p>{{food.dish_name}}</p>
-                    <p>{{food.price}}</p>
+                    <!-- <p>{{food.price}}</p> -->
                 </div>
                 
                 {% endfor %}
@@ -349,7 +351,7 @@ footer:
                     width: 21rem;
                     rotate: -1deg;" />
             </div>
-            <div class="max-w-screen-lg mx-auto hidden md:block">
+            <!-- <div class="max-w-screen-lg mx-auto hidden md:block">
                 <div class=" flex justify-between relative z-10">
                     <span class="menu-slider-button" onclick="slide(0)">
                       {% include /menu-svg/starters.html width = "169px" %}
@@ -360,7 +362,7 @@ footer:
                          {% include /menu-svg/Arrow-1.html direction = 'right' %}
                     </span>
             </div>
-            </div>
+            </div> -->
         </div>
         <!-- seafood_platter -->
         <div class="slider-menu-item z-10 featured-section" id="seafood_platter">
@@ -371,7 +373,7 @@ footer:
                 {% for food in page.seafood_platter %}
                 <div class="flex justify-between  gap-8">
                     <p>{{food.dish_name}}</p>
-                    <p>{{food.price}}</p>
+                    <!-- <p>{{food.price}}</p> -->
                 </div>
                 
                 {% endfor %}
@@ -382,7 +384,7 @@ footer:
                 {% include /menu-svg/pear.html width = "100%" color = "#E6B446" %}  
               </div>
             </div>
-            <div class="max-w-screen-lg mx-auto  hidden md:block">
+            <!-- <div class="max-w-screen-lg mx-auto  hidden md:block">
                 <div class=" flex justify-between relative z-10">
                     <span class="menu-slider-button" onclick="slide(1)">
                       {% include /menu-svg/starters.html width = "169px" %}
@@ -393,8 +395,7 @@ footer:
                          {% include /menu-svg/Arrow-1.html direction = 'right' %}
                     </span>
             </div>
-                <!-- todo add reservation link -->
-            </div>
+            </div> -->
         </div>
         <!-- mains -->
         <div class="slider-menu-item z-10 featured-section" id="mains">
@@ -406,7 +407,7 @@ footer:
                 {% for food in page.mains %}
                 <div class="flex justify-between gap-8">
                     <p>{{food.dish_name}}</p>
-                    <p>{{food.price}}</p>
+                    <!-- <p>{{food.price}}</p> -->
                 </div>
                 
                 {% endfor %}
@@ -418,7 +419,7 @@ footer:
                   {% include /menu-svg/woman-lying-down.html width = "100%" color = "#E6B446" %}
                 </div>
             </div>
-            <div class="max-w-screen-lg mx-auto hidden md:block">
+            <!-- <div class="max-w-screen-lg mx-auto hidden md:block">
                 <div class=" flex justify-between relative z-10">
                     <span class="menu-slider-button" onclick="slide(2)">
                       {% include /menu-svg/starters.html width = "169px" %}
@@ -429,7 +430,7 @@ footer:
                          {% include /menu-svg/Arrow-1.html direction = 'right' %}
                     </span>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- bites -->
         <div class="slider-menu-item z-10 dark-section" id="bites">
@@ -440,7 +441,7 @@ footer:
                 {% for food in page.mains %}
                 <div class="flex justify-between relative z-10  gap-8">
                     <p>{{food.dish_name}}</p>
-                    <p>{{food.price}}</p>
+                    <!-- <p>{{food.price}}</p> -->
                 </div>
                 
                 {% endfor %}
@@ -450,7 +451,7 @@ footer:
                     width: 21rem;
                     rotate: -1deg;" />
             </div>
-            <div class="max-w-screen-lg mx-auto hidden md:block">
+            <!-- <div class="max-w-screen-lg mx-auto hidden md:block">
                  <div class=" flex justify-between relative z-10">
                     <span class="menu-slider-button" onclick="slide(3)">
                       {% include /menu-svg/starters.html width = "169px" %}
@@ -461,7 +462,7 @@ footer:
                          {% include /menu-svg/Arrow-1.html direction = 'right' %}
                     </span>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- deserts -->
         <div class="slider-menu-item z-10 featured-section" id="pasta_and_risotto">
@@ -472,7 +473,7 @@ footer:
                 {% for food in page.pasta_and_risotto %}
                 <div class="flex justify-between  gap-8">
                     <p>{{food.dish_name}}</p>
-                    <p>{{food.price}}</p>
+                    <!-- <p>{{food.price}}</p> -->
                 </div>
                 
                 {% endfor %}
@@ -483,8 +484,8 @@ footer:
                 {% include /menu-svg/pear.html width = "100%" color = "#E6B446" %}  
               </div>
             </div>
-            <div class="max-w-screen-lg mx-auto  hidden md:block">
-                                <div class=" flex justify-between relative z-10">
+            <!-- <div class="max-w-screen-lg mx-auto  hidden md:block">
+                  <div class=" flex justify-between relative z-10">
                     <span class="menu-slider-button" onclick="slide(4)">
                       {% include /menu-svg/starters.html width = "169px" %}
                          {% include /menu-svg/Arrow-1.html direction = 'left' %}
@@ -494,7 +495,7 @@ footer:
                          {% include /menu-svg/Arrow-1.html direction = 'right' %}
                     </span>
                 </div>
-            </div>
+            </div> -->
         </div>
         
         <!-- salads -->
@@ -507,7 +508,7 @@ footer:
                 {% for food in page.salads %}
                 <div class="flex justify-between gap-8">
                     <p>{{food.dish_name}}</p>
-                    <p>{{food.price}}</p>
+                    <!-- <p>{{food.price}}</p> -->
                 </div>
                 
                 {% endfor %}
@@ -519,7 +520,7 @@ footer:
                   {% include /menu-svg/woman-lying-down.html width = "100%" color = "#E6B446" %}
                 </div>
             </div>
-            <div class="max-w-screen-lg mx-auto hidden md:block">
+            <!-- <div class="max-w-screen-lg mx-auto hidden md:block">
                   <div class=" flex justify-between relative z-10">
                     <span class="menu-slider-button" onclick="slide(5)">
                       {% include /menu-svg/starters.html width = "169px" %}
@@ -530,7 +531,7 @@ footer:
                          {% include /menu-svg/Arrow-1.html direction = 'right' %}
                     </span>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- sides -->
         <div class="slider-menu-item z-10 dark-section" id="sides">
@@ -541,17 +542,17 @@ footer:
                 {% for food in page.sides %}
                 <div class="flex justify-between relative z-10  gap-8">
                     <p>{{food.dish_name}}</p>
-                    <p>{{food.price}}</p>
+                    <!-- <p>{{food.price}}</p> -->
                 </div>
-                
                 {% endfor %}
+                
                 <img src="/assets/images/mains-pic.svg" class="hidden md:block" style="position: absolute;
                     top: -14%;
                     left: -9rem;
                     width: 21rem;
                     rotate: -1deg;" />
             </div>
-            <div class="max-w-screen-lg mx-auto hidden md:block">
+            <!-- <div class="max-w-screen-lg mx-auto hidden md:block">
                 <div class=" flex justify-between relative z-10">
                     <span class="menu-slider-button" onclick="slide(6)">
                       {% include /menu-svg/starters.html width = "169px" %}
@@ -562,7 +563,7 @@ footer:
                          {% include /menu-svg/Arrow-1.html direction = 'right' %}
                     </span>
                 </div>
-            </div>
+            </div> -->
             </div>
         </div>
         <!-- deserts -->
@@ -574,18 +575,18 @@ footer:
                 {% for food in page.deserts %}
                 <div class="flex justify-between  gap-8">
                     <p>{{food.dish_name}}</p>
-                    <p>{{food.price}}</p>
+                    <!-- <p>{{food.price}}</p> -->
                 </div>
                 
                 {% endfor %}
-                <div class="hidden md:block" style="position: absolute;
+              <div class="hidden md:block" style="position: absolute;
                   bottom: 4rem;
                   right: 7rem;
                   width: 19rem;">
                 {% include /menu-svg/pear.html width = "100%" color = "#E6B446" %}  
-              </div>
+             </div>
             </div>
-            <div class="max-w-screen-lg mx-auto  hidden md:block">
+            <!-- <div class="max-w-screen-lg mx-auto  hidden md:block">
                 <div class=" flex justify-between relative z-10">
                   <span class="menu-slider-button" onclick="slide(7)">
                     {% include /menu-svg/mains.html width = "169px" %} 
@@ -596,12 +597,12 @@ footer:
 
                       {% include /menu-svg/Make-a-reservation.html width = "500px" %} 
                       {% include /menu-svg/Arrow-1.html direction = 'right' %}
-                      <!-- <img src="/assets/images/Arrow-1.svg" class="arrow-right" alt="Arrow to the left" /> -->
+
                     </a>
                   </span>
                 </div>
-                <!-- todo add reservation link -->
-            </div>
+                
+            </div> -->
         </div>
     </section>
 
@@ -610,7 +611,7 @@ footer:
         padding-bottom: .3em;
         }
     </style>
-
+<!-- 
 <script>
 const menuSection = document.querySelector('.menu-section');
 const menuItems = document.querySelectorAll('.slider-menu-item');
@@ -634,7 +635,7 @@ console.log(menu,menu.offsetHeight,largestMenu);
                 behavior: 'smooth'
             });
         }
-    </script>
+    </script> -->
 
     <section class="base-section relative z-30 md:py-64 ">
         <div class="max-w-screen-sm mx-auto">

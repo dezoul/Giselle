@@ -60,34 +60,32 @@
                     <p class="footer-p">
                         Exclusive updates, sneak previews, VIP opportunities
                     </p>
-<div id="mc_embed_shell">
-  
-<div id="mc_embed_signup">
-    <form action="https://kelapacreative.us18.list-manage.com/subscribe/post?u=6a442aa17f5764aa62bf99185&amp;id=8e0f7bbced&amp;f_id=004aa9e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
-        <div id="mc_embed_signup_scroll">
-            <div class="mc-field-group w-[50%] md:w-full block relative">
-              <input type="email" name="EMAIL" class="required email featured-section p-2 w-full" id="mce-EMAIL" required="" value="" placeholder="EMAIL">
-              <label for="submit" class="absolute right-[8px] top-[8px]" style="transform: rotate(-45deg);"><svg viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:24px; height:24px"><path d="M3 12L21 12M21 12L12.5 3.5M21 12L12.5 20.5"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--dark-color);"></path></svg>
-              </label>
-            </div>
-            <div id="mce-responses" class="clear foot">
-              <div class="response" id="mce-error-response" style="display: none;"></div>
-              <div class="response" id="mce-success-response" style="display: none;"></div>
-            </div>
-            <div aria-hidden="true" style="position: absolute; left: -5000px;">
-              /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-              <input id="submit" type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-              <input type="text" name="b_6a442aa17f5764aa62bf99185_8e0f7bbced" tabindex="-1" value="">
-            </div>
-                <div class="clear foot">
-                   
-                </div>
-        </div>
-    </form>
-  </div>
-</div>
 
+                    <p>
+                      <span onclick="document.querySelector('.form-pop-up').show()">Click here to sign up</span>
+                    </p>
+              <dialog class="form-pop-up fixed w-[60vw] left-[20vw] top-[20vh] dark-section" open>
+               {% include mailchimp-form.html %}
+              </dialog>
+                  <style>
+        #mc_embed_signup .x{
+font-size: 1.5rem;
+        }
 
+        #mc_embed_signup label{
+            display: block;
+            margin-bottom: 1rem;
+        }
+        #mc_embed_signup input{
+        display: block;
+        width: 100%;
+        padding: .5em 1em;
+        }
+        #mc_embed_signup input[type="submit"]{
+            display: inline-block;
+            width: initial;
+        }
+    </style>
             </div>
             <div class="col-span-4 my-8 md:my-0">
                 <p class="copyright">© Copyright Giselle Bali 2025. All Rights Reserved.</p>
@@ -110,6 +108,7 @@
   <button id="central-reservation-button"></button>
   <script src="https://www.sevenrooms.com/reservations/embed.js"></script>
   <script>
+
   const reservationButtons = document.querySelectorAll('.reservation-button');
   
   SevenroomsWidget.init({
