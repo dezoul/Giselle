@@ -464,9 +464,6 @@ video {
 .left-\[100vw\] {
   left: 100vw;
 }
-.left-\[20vw\] {
-  left: 20vw;
-}
 .left-\[5\%\] {
   left: 5%;
 }
@@ -587,9 +584,6 @@ video {
 .mb-16 {
   margin-bottom: 4rem;
 }
-.mb-32 {
-  margin-bottom: 8rem;
-}
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -605,6 +599,9 @@ video {
 .mt-16 {
   margin-top: 4rem;
 }
+.mt-3 {
+  margin-top: 0.75rem;
+}
 .mt-32 {
   margin-top: 8rem;
 }
@@ -616,9 +613,6 @@ video {
 }
 .mt-\[9rem\] {
   margin-top: 9rem;
-}
-.mt-3 {
-  margin-top: 0.75rem;
 }
 .block {
   display: block;
@@ -802,6 +796,9 @@ video {
 .overflow-x-scroll {
   overflow-x: scroll;
 }
+.whitespace-nowrap {
+  white-space: nowrap;
+}
 .border {
   border-width: 1px;
 }
@@ -811,6 +808,9 @@ video {
 .border-\[\#9f4837\] {
   --tw-border-opacity: 1;
   border-color: rgb(159 72 55 / var(--tw-border-opacity, 1));
+}
+.border-\[var\(--dark-color\)\] {
+  border-color: var(--dark-color);
 }
 .border-opacity-50 {
   --tw-border-opacity: 0.5;
@@ -895,9 +895,6 @@ video {
 }
 .pb-16 {
   padding-bottom: 4rem;
-}
-.pb-32 {
-  padding-bottom: 8rem;
 }
 .pl-0 {
   padding-left: 0px;
@@ -1062,6 +1059,10 @@ p,.p{
     font-weight: 300;
 }
 
+.cursive {
+    font-family: "La Belle Aurore", cursive;
+}
+
 header a, header nav .reservation-button {
     text-decoration: none;
     color: inherit;
@@ -1092,7 +1093,7 @@ body{
     content: '→';
 }
 
-footer a, footer h3 {
+footer a, footer h3, .height-screen footer span{
     font-size: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -1407,9 +1408,6 @@ footer input::placeholder {
   }
   .md\:justify-center {
     justify-content: center;
-  }
-  .md\:overflow-x-scroll {
-    overflow-x: scroll;
   }
   .md\:p-0 {
     padding: 0px;
