@@ -44,15 +44,15 @@
             </div>
             <div class="flex flex-col items-start justify-center col-span-2 row-span-2 -mb-2">
                 <a href="/">RESERVATIONS</a>
-                <!-- <a href="/menu">MENU</a> -->
+                <a href="/menu">MENU</a>
                 <a href="/about">ABOUT US</a>
                 <a href="/get-in-touch">CONTACT</a>
             </div>
             <div class="flex flex-col items-start justify-center col-span-2 row-span-2 ">
-                <a href="/events">EVENTS</a>
-                <a href="/join-us">JOBS AT GISELLE</a>
+                <!-- <a href="/events">EVENTS</a>
+                <a href="/join-us">JOBS AT GISELLE</a> -->
                 <a href="/stories">NEWS</a>
-                <a href="https://www.google.com/maps/place/Giselle/@-8.6523485,114.9786488,12z/data=!4m6!3m5!1s0x2dd239007b1b6947:0x416967d4a3d428e5!8m2!3d-8.6523485!4d115.1310841!16s%2Fg%2F11yj95c7jq?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">HOW TO FIND</a>
+                <a href="/get-in-touch#contact-details">HOW TO FIND</a>
             </div>
             <hr class="md:hidden block my-8"> 
             <div class="col-span-3 row-span-2">
@@ -62,30 +62,12 @@
                     </p>
 
                     <p>
-                      <span onclick="document.querySelector('.form-pop-up').show()">Click here to sign up</span>
+                      <span onclick="document.querySelector('.form-pop-up').show()" class="button base-section mt-3 inline-block">Click here to sign up</span>
                     </p>
-              <dialog class="form-pop-up fixed w-[60vw] left-[20vw] top-[20vh] dark-section" open>
+              <dialog class="form-pop-up fixed w-[60vw] top-[20vh] dark-section">
                {% include mailchimp-form.html %}
               </dialog>
-                  <style>
-        #mc_embed_signup .x{
-font-size: 1.5rem;
-        }
-
-        #mc_embed_signup label{
-            display: block;
-            margin-bottom: 1rem;
-        }
-        #mc_embed_signup input{
-        display: block;
-        width: 100%;
-        padding: .5em 1em;
-        }
-        #mc_embed_signup input[type="submit"]{
-            display: inline-block;
-            width: initial;
-        }
-    </style>
+                  
             </div>
             <div class="col-span-4 my-8 md:my-0">
                 <p class="copyright">© Copyright Giselle Bali 2025. All Rights Reserved.</p>
