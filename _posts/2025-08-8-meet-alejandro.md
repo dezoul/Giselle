@@ -2,10 +2,11 @@
 layout: post
 title: meet the chef Antoine Darquin
 banner:
+    heading: meet the chef
     text-color: '#9f4837'
-    image: /assets/images/dish-1.png
+    image: /assets/images/giselle-website-4.jpg
 blog-info:
-    image: /assets/images/dish-1.png
+    image: /assets/images/giselle-website-4.jpg
     description: The thought behind the menu that’s bringing the Riviera to Bali.
 footer:
     background: dark
