@@ -205,12 +205,11 @@ footer:
 {% for menu in page.menus %}
 <div class="py-[5%] {% cycle 'featured-section','featured-section','featured-section','featured-section','dark-section','dark-section','dark-section','base-section' %}">
   
-            <div class="max-w-screen-md mx-auto content-between relative z-10 md:pb-8" id="{{menu.name | replace: ' ',''}}">
+            <div class="max-w-screen-md mx-auto content-between relative z-10 md:pb-4" id="{{menu.name | replace: ' ',''}}">
                 <div class="">
                   <h3 class="h1 cursive">
                     {{menu.name}}
                   </h3>
-                    <!-- <img class="inline w-[50%]" src="/assets/images/starters.svg" alt="" /> -->
                 </div>
                 {% for food in menu.dishes %}
                 <div class="flex justify-between gap-8">
@@ -219,13 +218,7 @@ footer:
                 </div>
                 
                 {% endfor %}
-                <!-- <div class="hidden md:block"  style="position: absolute;
-                bottom: -9rem;
-                left: -8rem;
-                width: 27rem;
-                rotate: -1deg;">
-                  {% include /menu-svg/woman-lying-down.html width = "100%" color = "#E6B446" %}
-                </div> -->
+
             </div>
             
 </div>
