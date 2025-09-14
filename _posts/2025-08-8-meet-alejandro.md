@@ -16,6 +16,8 @@ footer:
 
 I’m Antoine Darquin — a French kid who was supposed to become a physical trainer, rebelled, and ended up in kitchen instead. My culinary journey began in Lyon and Paris, where chefs yelled more than they spoke… and somehow, I fell in love with the energy there. I got the opportunity to learn beside incredible Michelin star chef. From there, I travelled kitchens across France and Asia, always chasing flavor over fame. I opened Bisou Bangkok to bring a slice of that soulful, unpretentious, kiss of French indulgence to Bangkok.
 
+![](/assets/images/giselle-website-6.jpg)
+
 **What cuisines or styles have influenced your cooking the most?**
 
 French roots first — But over the years, Mediterranean generosity, Japanese precision, and punchiness snuck into my DNA. My style today is what I call “naughty bistro” — technique-driven cooking with a playful spirit and zero snobbism.
@@ -29,6 +31,8 @@ Giselle is our new restaurant located in Bali, she’s inspired by the Mediterra
 **How would you describe the concept and culinary identity of the restaurant?**
 
 Giselle is a Mediterranean seafood playground. Fresh, local fish from Bali’s coast cooked with European creativity and simplicity. It’s not about reinventing the wheel — it’s about reminding people how damn good the wheel tastes when the product is top and the vibe is honest. Casual elegance with a bit of cheek.
+
+![](/assets/images/giselle-website-17.jpg)
 
 **What sets this restaurant apart from others in the area?**
 
