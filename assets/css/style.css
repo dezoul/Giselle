@@ -620,9 +620,6 @@ video {
 .inline-block {
   display: inline-block;
 }
-.inline {
-  display: inline;
-}
 .flex {
   display: flex;
 }
@@ -1207,18 +1204,15 @@ dialog::backdrop  {
 
 
 .slider-menu-item {
-    width: 100vw;
-    flex: 0 0 100vw;
-    padding:10% 5%;
-    scroll-snap-align: center;
+    scroll-snap-align: top;
     scroll-margin-top: 130px;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .slider-menu-item {
         scroll-margin-top: 0
     }
-}
+} */
 
 .menu-slider-button  {
     cursor: pointer;
@@ -1446,8 +1440,8 @@ dialog::backdrop  {
     padding-top: 5vh;
     padding-bottom: 5vh;
   }
-  .md\:pb-8 {
-    padding-bottom: 2rem;
+  .md\:pb-4 {
+    padding-bottom: 1rem;
   }
   .md\:pb-\[300px\] {
     padding-bottom: 300px;
