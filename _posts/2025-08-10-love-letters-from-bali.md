@@ -21,24 +21,32 @@ Canggu is a place that doesn’t so much wake up as it glides into the day—sur
 
 Start your day the Canggu way: barefoot and salty. Head straight to **Times Beach Warung**, where the coffee is strong, the pastries are flaky, and the ocean provides the morning’s best entertainment. Locals linger here, toes in the sand, watching surfers carve through waves like clockwork. Order a croissant and let the sea breeze do the rest.
 
+![](/uploads/image.png)
+
 ### 10am - Brunch at Baked
 
 When the mid-morning hunger kicks in, make your way inland to **Baked.**, a café that has become something of an institution. The cult favorite? Their silky scrambled eggs, piled generously on house-baked sourdough. And don’t even think about leaving without trying their sourdough soft-serve—a creation that defies logic but makes perfect sense after the first spoonful. Pair it all with a flat white and you’ll understand why brunch in Canggu borders on religion.
+
+![](/uploads/screenshot-2025-09-14-at-4-35-57-pm.png)
 
 ### 1pm - Late lunch at Sensorium
 
 Lunch belongs to **Sensorium**, where Chef William’s menu is a love letter to modern Australian dining with a Southeast Asian soul. Think: pork belly with tonkotsu broth or their famed 5 Senses Pork Bowl, plated with precision and served with a touch of theater. It’s worth the wait (and there is always a wait). Settle in—the reward is on the plate.
 
-### 5pm - Aperitivo Hour at Giselle
+![](/uploads/image-1.png)
+
+### 5pm till late - dinner & drinks at Giselle
 
 As the sun softens and the air turns golden, it’s time for aperitivo. We’ll welcome you into **Giselle**, Canggu’s newest darling, where the courtyard was made for summer evenings and the playlist hums with easy sophistication. This is a restaurant with a soul — and a little attitude — where we cook as if we’re inviting you into our home, only with colder wine and better music.
 
 Chef Antoine Darquin, equal parts rebel and romantic, calls Giselle a “naughty bistro,” and the menu plays into the fantasy. Start with Aperol spritz and the sea bream sashimi, dressed delicately with yuzukosho on the bones themselves, then surrender to the pink snapper roasted in salt crust and flambéed at your table —the kind of dish that silences the room before sparking a fight over the last bite. Here, seafood is seductive, spritzes are essential, and every moment feels like a summer affair you’ll never quite forget.
 
-### 10pm - Night Cap at The Sengo
+![](/assets/images/Screenshot-1.png)
+
+### 1am - Night Cap at The Sengo
 
 Not ready to call it a night? **The Segno** waits upstairs, dimly lit and effortlessly stylish. Their cocktail list reads like poetry, but the Negroni variations are where they truly shine. Sip slowly, lean into the velvet banquettes, and let the night in Canggu stretch just a little longer.
 
 ---
 
-**One day in Canggu is a tease — just enough to leave you full, a little sun-drunk, and already plotting your return.**
+**One day in Canggu is a tease - just enough to leave you full, a little sun-drunk, and already plotting your return.**
