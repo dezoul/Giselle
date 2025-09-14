@@ -2,6 +2,7 @@
 layout: post
 title: Cool down in canggu
 banner:
+    heading: splash
     text-color: '#e8d8b1'
     image: /assets/images/giselle-website-9.jpg
 blog-info:
@@ -10,7 +11,7 @@ blog-info:
 footer:
     background: dark
 ---
-# Cool Down in Canggu
+# Cool down in Canggu
 
 We flock to Bali for its endless summer — the kind that wraps you in sunshine from breakfast till late. But after a few hours in 32 degrees and 90% humidity, even the most devoted sun-chaser will be looking for ways to cool off. Luckily, Canggu knows how to deliver.
 
