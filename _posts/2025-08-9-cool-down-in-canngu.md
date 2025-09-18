@@ -21,7 +21,7 @@ Start with the obvious: the ocean itself. Batu Bolong’s waves are forgiving en
 
 From there, head inland a few steps and grab something cold. A cracked-open coconut from a roadside stand does the trick, or try a café juice—watermelon mint is a local favorite, balancing sweetness and refreshment in one frosted glass. It’s the kind of simple pleasure that Canggu does best: unpretentious, sun-kissed, and exactly what you needed.
 
-![](/uploads/image-2.png "Image by @Aishakatherina at Times Beach Warung.")
+&nbsp;
 
 When the afternoon edges into its hottest stretch, retreat into shade. Pop into one of the countless spa’s for a traditional balinese massage or wander through air-conditioned boutiques to shop for locally made designs. The key is not to fight the heat, but to lean into the slower rhythm it demands.
 
