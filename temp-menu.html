@@ -1,0 +1,84 @@
+---
+layout: default
+menus:
+  - name: bites
+    sub-heading: Lorem ipsum dolor sit amet consectetur
+    dishes:
+    - dish_name: Truffles Croques Toast
+      price: 100
+      image: /uploads/food-placeholder.jpeg
+    - dish_name: Beef Tartare, Potato Millefeuilles
+      price: 120
+      image: /uploads/food-placeholder.jpeg
+    - dish_name: Tartelette Sea Bream, Yuzu
+      price: 300
+      image: /uploads/food-placeholder.jpeg
+    - dish_name: Marinated Sweet Peppers, Herbs Butter, Anchovies
+      price: 100
+      image: /uploads/food-placeholder.jpeg
+    - dish_name: Smoked Whitefish Croquettes
+      price: 450
+      image: /uploads/food-placeholder.jpeg
+
+---
+<header class="bright-section text-center relative z-20 md:py-[5vh]" style=" color: {{page.banner.text-color}};">
+        <div class="absolute inset-0 hidden md:grid grid-cols-2">
+            <div class="absolute top-0 left-0 right-[50vw] h-full bg-cover bg-center" style="background-image: url('{{page.banner.image}}'); ">
+
+            </div>
+        </div>
+
+        <div class="max-w-screen-2xl mx-auto flex flex-col content-between min-h-[95vh] relative z-30">
+            {% include nav.html %}
+          <div class=" px-12 md:p-0">
+
+            <div class="mobile-banner bg-cover bg-cneter py-[30vh] md:py-0 mt-[9rem] md:mt-0">
+              <div class="hidden md:block text-center">
+                {% include banner-svg/dine-with-us.html width="80%" %}
+              </div>
+              <div class="md:hidden text-center">
+                {% include banner-svg/menu.html width="80%" %}
+              </div>
+              <!-- <img src="{{page.banner.banner-svg}}" alt="starters" class="m-auto" style="width: 80%"/> -->
+            </div>
+          </div>
+
+            <div class="md:grid grid-cols-2 p-12 m-auto">
+                <div></div>
+                <div class="text-left justify-center md:px-24">
+                    <p> {{page.banner.description}} </p>
+                </div>
+
+            </div>
+        </div>
+    </header>
+<section class="base-section px-0">
+        {% for menu in page.menus %}
+        <div class="flex justify-between items-center alt-max-width">
+            <h2 class="h1 cursive" data-aos="fade"
+                data-aos-duration="500">{{menu.name}}</h3>
+            <p data-aos="fade"
+                data-aos-duration="800">{{menu.sub-heading}}</p>
+        </div>
+        <div class="alt-max-width flex flex-nowrap md:grid grid-cols-3 overflow-scroll gap-2">
+            {% for dish in menu.dishes %}
+            <div class="relative flex flex-col justify-end shrink-0 -4 text-center" 
+                data-aos="fade"
+                data-aos-duration="500"
+                 style="aspect-ratio: 11/15; flex-basis: 400px;">
+                <img class="absolute h-full w-full inset-0 object-cover" src="{{dish.image}}" alt="{{dish.dish_name}}">
+                <h3 class="relative" style="min-height: 4.1rem;">{{dish.dish_name}}</h3>
+                <p class="relative">${{dish.price}}k</p>
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+</section>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
