@@ -133,7 +133,7 @@ vesion with text over image
         currentIndex = (currentIndex + 1) % dataDivs.length;
         dataDivs[currentIndex].classList.add('active');
         slideshow.style.backgroundImage = `url(${dataDivs[currentIndex].dataset.url})`;
-        slideshow.querySelector('h2').innerText = dataDivs[currentIndex].dataset.text;
+        // slideshow.querySelector('h2').innerText = dataDivs[currentIndex].dataset.text;
     }
 
     setInterval(showNextImageOne, {{page.slideshow-with-text.speed_in_seconds}} * 1000);
@@ -172,7 +172,7 @@ vesion with text over image
         
 </section> -->
 
-<section class="slideshow-2 flex justify-center items-end py-28 bg-center bg-cover" style="background-image: url(/assets/images/map.png); min-height: 60vh; ">
+<section class="slideshow-2 flex justify-center items-end py-28 bg-center bg-cover" style="background-image: url({{page.slideshow-2.images[0]}}); min-height: 60vh; ">
     <!-- <div class="text-center max-w-screen-lg mx-auto">
         <p>
             <a class="px-8 py-4 base-section letter-spacing" href="/resvation-link">BOOK A TABLE</a>
@@ -192,6 +192,7 @@ vesion with text over image
     const dataDivs2 = document.querySelectorAll('.data-div-2');
 
 
+if (dataDivs2.length > 1) {
 
     let currentIndexSecond = 0;
 
@@ -204,4 +205,8 @@ vesion with text over image
     }
 
     setInterval(showNextImageTwo, {{page.slideshow-2.speed_in_seconds}} * 1000);
+    } else {
+        console.log('not enough slides for slideshow-2',dataDivs2.length)
+    }
+
 </script>

@@ -1,0 +1,61 @@
+---
+layout: default
+footer:
+    background: dark
+---
+
+<section class="p-0 featured-section">
+    <div class="flex flex-col md:grid grid-cols-2 gap-2">
+        <div class="md:order-2 px-[var(--side-padding)] py-[5vw] md:pl-24 flex items-center">
+            <div>
+                <h2>Get on the list</h2>
+                <p>Exclusive updates, sneak previews, and VIP opportunities. </p>
+                <p>
+                    <span onclick="document.querySelector('.form-pop-up').showModal()" class="button dark-section mt-3 inline-block">get on the list</span>
+                </p>
+                <dialog class="form-pop-up fixed w-[60vw] top-[20vh] dark-section">
+                    {% include mailchimp-form.html %}
+                </dialog>
+            </div>
+        </div>
+        <div class="relative" style="aspect-ratio: 1;"><img class="inset-0 w-full h-full object-cover" src="/assets/images/giselle-website-12.jpg" alt=""></div>
+    </div>  
+</section>
+        
+<footer class="{{page.footer.background}}-section z-30 relative pb-0 md:pb-[5%]">
+        <div class="max-w-screen-lg mx-auto flex flex-col md:grid grid-cols-8 gap-2">
+            <div class="col-span-3 ">
+                
+                {% include svg-text/test-logo.html  width='100%' %}
+
+            </div>
+            <div class="row-span-3">
+
+            </div>
+            <div class="flex flex-col items-start justify-center col-span-2 row-span-2 -mb-2">
+                <a href="/">RESERVATIONS</a>
+                <a href="/menu">MENU</a>
+                <a href="/get-in-touch">CONTACT</a>
+              </div>
+              <div class="flex flex-col items-start justify-center col-span-2 row-span-2 ">
+                <a href="/about">ABOUT US</a>
+                <!-- <a href="/events">EVENTS</a>
+                <a href="/join-us">JOBS AT GISELLE</a> -->
+                <a href="/stories">NEWS</a>
+                <a href="/get-in-touch#contact-details">HOW TO FIND</a>
+            </div>
+            <!-- <hr class="md:hidden block my-8">  -->
+            <!-- <div class="col-span-3 row-span-2">
+                    <h3>NEWSLETTER SIGN UP</h3>
+                    <p class="footer-p">
+                        Exclusive updates, sneak previews, VIP opportunities
+                    </p>
+
+                    
+                  
+            </div> -->
+            <div class="col-span-full text-center my-8 md:my-0">
+                <p class="copyright">© Copyright Giselle Bali 2025. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
