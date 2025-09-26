@@ -470,6 +470,9 @@ video {
 .right-0 {
   right: 0px;
 }
+.right-2 {
+  right: 0.5rem;
+}
 .right-8 {
   right: 2rem;
 }
@@ -481,6 +484,9 @@ video {
 }
 .top-0 {
   top: 0px;
+}
+.top-2 {
+  top: 0.5rem;
 }
 .top-32 {
   top: 8rem;
@@ -835,6 +841,9 @@ video {
   -o-object-position: center;
      object-position: center;
 }
+.\!p-0 {
+  padding: 0px !important;
+}
 .p-0 {
   padding: 0px;
 }
@@ -966,6 +975,10 @@ video {
 
 *{
     scroll-behavior: smooth;
+}
+
+*:focus{
+    outline: none;
 }
 
 * img {
@@ -1163,11 +1176,36 @@ dialog::backdrop  {
     opacity: .5;
 }
 
+.form-pop-up {
+    width: 90vw;
+}
+
+.form-pop-up input::-moz-placeholder {
+    font-size: 0.8;
+}
+
+.form-pop-up input::placeholder {
+    font-size: 0.8;
+}
+
+
 @media (min-width: 768px) {
+    
     footer svg {
         left: -5%;
         width: 10rem;
-   }
+    }
+
+    .form-pop-up {
+        width: 60vw;
+    }
+    .form-pop-up input::-moz-placeholder {
+    font-size: 0.9;
+}
+    .form-pop-up input::placeholder {
+    font-size: 0.9;
+}
+
 }
 
 
@@ -1351,7 +1389,20 @@ dialog::backdrop  {
   white-space:nowrap;
   font-size:1.25rem;
 }
-@media (min-width: 768px) {
+
+
+/* booking-menu */
+
+
+div:has(> div > div.trap.is-active)  {
+    padding:1% max(10vw, calc((100vw - 1536px)/2));
+}
+
+    #xb-close-modal {
+        right: 0!important;
+    }
+
+    @media (min-width: 768px) {
   .md\:relative {
     position: relative;
   }
@@ -1361,8 +1412,14 @@ dialog::backdrop  {
   .md\:left-\[13\%\] {
     left: 13%;
   }
+  .md\:right-8 {
+    right: 2rem;
+  }
   .md\:top-0 {
     top: 0px;
+  }
+  .md\:top-8 {
+    top: 2rem;
   }
   .md\:top-\[7px\] {
     top: 7px;

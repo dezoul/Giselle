@@ -23,6 +23,10 @@
     scroll-behavior: smooth;
 }
 
+*:focus{
+    outline: none;
+}
+
 * img {
     max-width: 100%;
  display: inline-block;
@@ -212,11 +216,29 @@ dialog::backdrop  {
     opacity: .5;
 }
 
+.form-pop-up {
+    width: 90vw;
+}
+
+.form-pop-up input::placeholder {
+    font-size: 0.8 !important;
+}
+
+
 @media (min-width: 768px) {
+    
     footer svg {
         left: -5%;
         width: 10rem;
-   }
+    }
+
+    .form-pop-up {
+        width: 60vw;
+    }
+    .form-pop-up input::placeholder {
+    font-size: 0.9 !important;
+}
+
 }
 
 
@@ -387,3 +409,15 @@ dialog::backdrop  {
   white-space:nowrap;
   font-size:1.25rem;
 }
+
+
+/* booking-menu */
+
+
+div:has(> div > div.trap.is-active)  {
+    padding:1% max(10vw, calc((100vw - 1536px)/2));
+}
+
+    #xb-close-modal {
+        right: 0!important;
+    }
