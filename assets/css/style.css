@@ -650,6 +650,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-screen {
+  height: 100vh;
+}
 .min-h-\[100vw\] {
   min-height: 100vw;
 }
@@ -1181,11 +1184,11 @@ dialog::backdrop  {
 }
 
 .form-pop-up input::-moz-placeholder {
-    font-size: 0.8;
+    font-size: 0.8 !important;
 }
 
 .form-pop-up input::placeholder {
-    font-size: 0.8;
+    font-size: 0.8 !important;
 }
 
 
@@ -1200,10 +1203,10 @@ dialog::backdrop  {
         width: 60vw;
     }
     .form-pop-up input::-moz-placeholder {
-    font-size: 0.9;
+    font-size: 0.9 !important;
 }
     .form-pop-up input::placeholder {
-    font-size: 0.9;
+    font-size: 0.9 !important;
 }
 
 }
