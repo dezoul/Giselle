@@ -76,6 +76,7 @@ menus:
     dishes:
       -   dish_name: Shrimps | Oysters | Raw Scallop | Tarama | Smoked Salmon | Tuna Tartare
           price: 890
+          extra:  + add lobster   690
   - name: chef hors serie
     dishes:
     - dish_name: Barramundi in Salt Crust, Flambed, Beurre Blanc Noilly Prat 
@@ -235,10 +236,14 @@ footer:
                 {% for food in menu.dishes %}
                 <div class="flex justify-between gap-8">
                     <p>{{food.dish_name}}</p>
-                    <!-- <p>{{food.price}}</p> -->
-                </div>
+                    <p>{{food.price}}</p>
+                  </div>
+                  {% if food.extra %}
+                  <p>{{food.extra}}</p>
+                  {% endif %}
                 
                 {% endfor %}
+                
 
             </div>
             
