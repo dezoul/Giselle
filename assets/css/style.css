@@ -650,9 +650,6 @@ video {
 .h-full {
   height: 100%;
 }
-.h-screen {
-  height: 100vh;
-}
 .min-h-\[100vw\] {
   min-height: 100vw;
 }
