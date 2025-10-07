@@ -4,7 +4,7 @@ title: A foodies guide to 24 hours in Canggu
 banner:
     heading: guide to canggu
     text-color: '#9f4837'
-    image: /assets/images/giselle-website-11.jpg
+    image: /assets/images/foodies_guide_giselle.jpg
 blog-info:
     image: /assets/images/giselle-website-11.jpg
     description: >-
@@ -39,9 +39,11 @@ Lunch belongs to **Sensorium**, where Chef William’s menu is a love letter to 
 
 As the sun softens and the air turns golden, it’s time for aperitivo. We’ll welcome you into **Giselle**, Canggu’s newest darling, where the courtyard was made for summer evenings and the playlist hums with easy sophistication. This is a restaurant with a soul — and a little attitude — where we cook as if we’re inviting you into our home, only with colder wine and better music.
 
+![](/assets/images/foodies_guide_giselle.jpg)
+
 Chef Antoine Darquin, equal parts rebel and romantic, calls Giselle a “naughty bistro,” and the menu plays into the fantasy. Start with Aperol spritz and the sea bream sashimi, dressed delicately with yuzukosho on the bones themselves, then surrender to the pink snapper roasted in salt crust and flambéed at your table —the kind of dish that silences the room before sparking a fight over the last bite. Here, seafood is seductive, spritzes are essential, and every moment feels like a summer affair you’ll never quite forget.
 
-![](/assets/images/Screenshot-1.png)
+![](/assets/images/giselle-opening-3.jpg)
 
 ### 1am - Night Cap at The Sengo
 
