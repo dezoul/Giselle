@@ -7,13 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/editor.css">
-    <title>Giselle {% if page.title %} - {{page.title}}{% endif %}</title>
     <link rel="stylesheet" href="https://use.typekit.net/igh8yfq.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    
+    <!-- meta fields  -->
+    <title> {% if page.seo.title %} {{page.seo.title}} {% else %} Giselle Bali{% endif %}</title>
+     {% if page.seo.description %}
+    <meta name="description" content="{{page.seo.desctiption}}" />
+    {% endif %}
+    {% if page.seo.keywords %}
+    <meta name="keywords" content="{{page.seo.keywords}}" />
+    {% endif %}
+    {% if page.seo.author %}
+    <meta name="author" content="{{page.seo.author}}"/>
+    {% endif %}
+    {% if page.seo.crawl == true %}
+    <meta name="robots" content="index, follow" />
+    {% else %}
+    <meta name="robots" content="noindex" />
+    {% endif %}
+    {% if page.seo.image %}
+    <meta property="og:image" content="{{page.seo.image}}" />
+    {% endif %}
+    <link rel="icon" href="" type="image/x-icon" />
 </head>
-
 <body class="height-screen relative">
     {% comment %}
     {% if page.url == "/" %}
