@@ -13,6 +13,8 @@ blog-info:
 footer:
     background: dark
 ---
+# Is this Canggu’s hottest new table?
+
 Last weekend, Canggu got a little hotter.
 
 Bali’s food scene is, in my humble opinion one of the best in the world, in Canggu might just have the highest density of incredibly food within just a few kilometers. So when a new restaurant opens up, you know it has to be good - really good - to make an impact on the dining scene here. So with some serious hospitality experience behind the team at Giselle (with each of the founders having run award-winning restaurants in Bangkok before their move to Bali) I was excited to try it for myself.
