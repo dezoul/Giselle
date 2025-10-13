@@ -43,7 +43,7 @@ We don’t do “fusion” to be trendy. We do clarity of flavour, exceptional s
 
 The menu was born from the fresh catch and French savoir-faire. The idea: let the product speak — don’t shout over it. Every dish is three things: seasonal, sexy, and shareable. Because food tastes better when you steal it off someone else’s plate.
 
-![](/assets/images/giselle-website-7.jpg)
+![](/assets/images/giselle-opening-night-2.png)
 
 **What excites you the most about Giselle?**
 
