@@ -15,9 +15,9 @@ footer:
 ---
 # Is this Canggu’s hottest new table?
 
-Last weekend, Canggu got a little hotter.
+*Review by Tina May*
 
-Bali’s food scene is, in my humble opinion one of the best in the world, in Canggu might just have the highest density of incredibly food within just a few kilometers. So when a new restaurant opens up, you know it has to be good - really good - to make an impact on the dining scene here. So with some serious hospitality experience behind the team at Giselle (with each of the founders having run award-winning restaurants in Bangkok before their move to Bali) I was excited to try it for myself.
+Bali’s food scene is, in my humble opinion one of the best in the world. We're spoilt to have an incredibly highest density of restaurants & bars within just a few kilometers, blending local and global culinary talent with the freshest produce and ingredients. So when a new restaurant opens up, you know it has to be good - really good - to make an impact on the dining scene here. Backed by a team with serious credentials (with each of the founders having run award-winning restaurants in Bangkok before their move to Bali) I was curious to see (and taste) Giselle for myself, so I went along last weekend to the opening of their new Mediterranean restaurant & bar.
 
 The long-awaited opening of Giselle Bali saw a crowd that was equal parts glamorous, curious, and unashamedly hungry. Between clinking glasses, stolen bites, and that golden-hour glow over the rice fields, the tone for this restaurant’s future was set — effortlessly sexy, a little wild, and unmistakably French.
 
