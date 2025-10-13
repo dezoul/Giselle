@@ -2,8 +2,8 @@
 layout: post
 title: 'Is this Bali''s hottest new table? '
 banner:
-    heading: Bali's hottest new table
-    text-color: '#9f4837'
+    heading: it begins
+    text-color: '#ffffff'
     image: /assets/images/giselle-opening-night-4.jpg
 blog-info:
     image: /assets/images/giselle-opening-night-4.jpg
@@ -33,7 +33,7 @@ One of the most incredible dishes I tried has to be the **madai sashimi**, serve
 
 The drinks list? Dangerous. A mix of Mediterranean wines, signature cocktails that taste like holiday romance, and just enough bubbles to make the night stretch longer than planned.
 
-&nbsp;![Giselle restau](/assets/images/giselle-opening-night-5.png)
+&nbsp;![Giselle restaurant and bar Canggu nightlife](/assets/images/giselle-opening-night-5.png)
 
 It’s rare to find a restaurant that nails both the vibe and the flavour. Giselle manages it with ease — thanks to a team that’s clearly obsessed with the details. From the playlist to the plating, everything feels considered but never forced.
 
