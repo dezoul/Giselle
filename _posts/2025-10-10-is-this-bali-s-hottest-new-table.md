@@ -2,11 +2,11 @@
 layout: post
 title: 'Is this Bali''s hottest new table? '
 banner:
-    heading: guide to canggu
+    heading: Bali's hottest new table
     text-color: '#9f4837'
-    image: /assets/images/foodies_guide_giselle.jpg
+    image: /assets/images/giselle-opening-night-4.jpg
 blog-info:
-    image: /assets/images/giselle-website-11.jpg
+    image: /assets/images/giselle-opening-night-4.jpg
     description: >-
         Last weekend, Canggu's food scene got a little hotter with the opening
         of new Mediterranean restaurant Giselle Bali. 
@@ -27,13 +27,13 @@ Helmed by Executive Chef Antoine Darquin (of Bisou Bangkok fame), Giselle’s me
 
 ![best mediterranean food in canggu](/uploads/giselle-opening-night-6.png)
 
-One of the most incredible dishes I tried has to be the **madai sashimi**, served in one of the most creative ways I've seen. It felt like a visual representation of just how fresh the seafood coming out of this kitchen really is. Elegant, surprising, and brimming with life.
+One of the most incredible dishes I tried has to be the **madai sashimi**, served in one of the most creative ways I’ve seen. It felt like a visual representation of just how fresh the seafood coming out of this kitchen really is. Elegant, surprising, and brimming with life.
 
 ![](/assets/images/giselle-opening-night-2.png)
 
 The drinks list? Dangerous. A mix of Mediterranean wines, signature cocktails that taste like holiday romance, and just enough bubbles to make the night stretch longer than planned.
 
-&nbsp;
+&nbsp;![](/assets/images/giselle-opening-night-5.png)
 
 It’s rare to find a restaurant that nails both the vibe and the flavour. Giselle manages it with ease — thanks to a team that’s clearly obsessed with the details. From the playlist to the plating, everything feels considered but never forced.
 
