@@ -411,6 +411,12 @@ dialog::backdrop  {
 }
 
 
+/* Blog Posts */
+
+h1 {
+  @apply md:text-lg  text-md
+}
+
 /* booking-menu */
 
 
