@@ -413,9 +413,19 @@ dialog::backdrop  {
 
 /* Blog Posts */
 
-h1 {
+.blog h1 {
   @apply md:text-lg  text-md
 }
+
+.blog p {
+  font-size: 1.2rem;
+  padding-bottom: 1em;
+  font-family: "ivypresto-text", serif;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
 
 /* booking-menu */
 
