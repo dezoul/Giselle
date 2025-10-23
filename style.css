@@ -30,6 +30,10 @@
 
 /* CSS variable colors */
 
+@layer base {
+
+
+
 :root {
     --dark: rgb(42,42,42);
     --cream-400: #F9F7F4;
@@ -466,4 +470,36 @@ div:has(> div > div.trap.is-active)  {
 
     #xb-close-modal {
         right: 0!important;
+    }
+
+
+
+
+    /* menu code */
+
+
+    .showing-text  .text-menu{
+     display: block;
+    }
+
+
+
+
+
+
+    .showing-image-grid  .image-grid{
+     display: flex;
+    }
+    .showing-image-grid  .image-grid > div{
+     flex-basis: 400px;
+    flex-shrink: 0;
+    }
+
+    @media (max-width: 765px) {
+    .showing-image-grid  .image-menu{
+     display: grid;
+    }
+        
+    }
+
     }
