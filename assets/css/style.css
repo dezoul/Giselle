@@ -308,6 +308,9 @@
   .m-auto {
     margin: auto;
   }
+  .mx-\(--side-padding\) {
+    margin-inline: var(--side-padding);
+  }
   .mx-\[5\%\] {
     margin-inline: 5%;
   }
@@ -624,6 +627,9 @@
   }
   .p-\[10\%\] {
     padding: 10%;
+  }
+  .px-\(--side-padding\) {
+    padding-inline: var(--side-padding);
   }
   .px-0 {
     padding-inline: calc(var(--spacing) * 0);
@@ -990,6 +996,9 @@
   .bright-section path {
     fill: #fff;
   }
+  .no-fill path {
+    fill: none;
+  }
   footer,section,article,aside,nav,main {
     display: block;
     padding: 5% 7vw;
@@ -1290,19 +1299,20 @@
   #xb-close-modal {
     right: 0 !important;
   }
-  .showing-text  .text-menu {
-    display: block;
+  .showing-text-menu  .text-menu {
+    display: block !important;
   }
-  .showing-image-grid  .image-grid {
-    display: flex;
+  .showing-image-menu  .image-grid {
+    display: flex !important;
+    gap: 1rem;
   }
-  .showing-image-grid  .image-grid > div {
+  .showing-image-menu  .image-grid > div {
     flex-basis: 400px;
     flex-shrink: 0;
   }
-  @media (max-width: 765px) {
-    .showing-image-grid  .image-menu {
-      display: grid;
+  @media (min-width: 765px) {
+    .showing-image-menu  .image-grid {
+      display: grid !important;
     }
   }
 }

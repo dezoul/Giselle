@@ -23,12 +23,17 @@ menus:
       - dish_name: 'Truffle Croque Toast '
         image: /assets/images/dish-1.png
         price: 75
+        text-color: '#9f4837'
       - dish_name: Beef Tartare, Potato Millefeuilles
         image: /assets/images/dish-1.png
         price: 65
+        text-color: '#000'
+        
       - dish_name: Sea Bream Tartelette, Yuzu
         image: /assets/images/dish-1.png
         price: 45
+        text-color: '#fff'
+        
       - dish_name: Marinated Sweet Peppers, Herb Butter, Sardine
         image: /assets/images/dish-1.png
         price: 45
@@ -258,12 +263,15 @@ seo:
 
 
     <!-- menu fun -->
-    <section class="sticky top-0 z-20 px-0 md:py-4 grid base-section">
-      <div class="px-side-p border-b border-dark">
+    <section class="sticky top-0 z-20 px-0 md:py-4 base-section menu-nav showing-image-menu">
+      <div class="mx-(--side-padding) border-b border-dark flex justify-between items-center">
         <h2>Menu</h2>
-        <div></div>
+        <div class="grid grid-cols-2 gap-8">
+          {% include svg-images/text-menu-icon.html width="45px" %}
+          {% include svg-images/image-menu-icon.html width="45px" %}
+        </div>
       </div>
-      <div class="flex flex-nowrap overflow-scroll ">
+      <div class="flex flex-nowrap overflow-scroll px-(--side-padding)">
         {% for menu in page.menus %}
         <a class="{% if forloop.first %} pl-0 {% endif %} button whitespace-nowrap" href="#{{menu.name | replace: ' ',''}}">{{menu.name}}</a>
         {% endfor %}
@@ -287,19 +295,19 @@ seo:
       }
     </style>
 
-    <section class="menu-section z-10  !p-0 h-initial" style="scroll-snap-type: x mandatory;">
+    <section class="menu-section z-10 p-0 h-initial showing-image-menu" style="scroll-snap-type: x mandatory;">
 
 {% for menu in page.menus %}
-<div class="px-5p px-[5%] py-[5%]  {% cycle 'featured-section pb-0','featured-section pb-0','featured-section pb-0','featured-section','dark-section pb-0','dark-section pb-0','dark-section pb-0','dark-section','bright-section b-0','bright-section' %}">
+<div class="{% cycle 'featured-section pb-0','featured-section pb-0','featured-section pb-0','featured-section','dark-section pb-0','dark-section pb-0','dark-section pb-0','dark-section','bright-section b-0','bright-section' %}">
   
-            <div class="max-w-screen-md mx-auto content-between relative z-10 md:pb-4 slider-menu-item showing-image-grid" id="{{menu.name | replace: ' ',''}}">
-                <div>
+            <div class="py-[5%] content-between relative z-10 md:pb-4 slider-menu-item showing-image-grid" id="{{menu.name | replace: ' ',''}}">
+                <div class="px-5p px-[5%] ">
                   <h3 class="h1 cursive">
                     {{menu.name}}
                   </h3>
                 </div>
                 
-                <div class="text-menu hidden">
+                <div class="text-menu hidden px-5p px-[5%]">
                   {% for food in menu.dishes %}
                   <div class="flex justify-between gap-8">
                     <p>{{food.dish_name}}</p>
@@ -312,19 +320,19 @@ seo:
                   {% endfor %}
                 </div>
 
-                <div class="image-grid grid-cols-4 hidden overflow-scroll max-w-full">
+                <div class="image-grid grid-cols-3 hidden overflow-scroll max-w-full px-5p px-[5%] ">
                   {% for food in menu.dishes %}
                   {% if food.image %}
-                  <div class="relative flex justify-center items-end" style="aspect-ratio: 3/4;">
-                    <img src="{{food.image}}" alt="{{food.dish_name}}" class="w-full h-auto object-cover absolute inset-0"/>
-                    <div>
-                      <p>
-                        {{food.dish_name}}
-                      </p>
-                      <p>
-                        {{food.price}}
-                      </p>
-                    </div>
+                    <div class="relative flex justify-center items-end" style="aspect-ratio: 3/4;">
+                      <img src="{{food.image}}" alt="{{food.dish_name}}" class="w-full h-full object-cover absolute inset-0"/>
+                      <div class="relative text-center" style="color:{{food.text-color}}">
+                        <p>
+                          {{food.dish_name}}
+                        </p>
+                        <p>
+                          {{food.price}}
+                        </p>
+                      </div>
                   </div>
                   {% endif %}
                   {% endfor %}
@@ -340,7 +348,25 @@ seo:
             
 
             <script>
-              const 
+              const menuNav = document.querySelector('.menu-nav');
+              const textMenuIcon = document.querySelector('.text-menu-icon');
+              const imageMenuIcon = document.querySelector('.image-menu-icon');
+              const menuSection = document.querySelector('.menu-section');
+
+              textMenuIcon.addEventListener('click', function() {
+                menuNav.classList.remove('showing-image-menu');
+                menuNav.classList.add('showing-text-menu');
+                menuSection.classList.remove('showing-image-menu');
+                menuSection.classList.add('showing-text-menu');
+              });
+
+              imageMenuIcon.addEventListener('click', function() {
+                menuNav.classList.remove('showing-text-menu');
+                menuNav.classList.add('showing-image-menu');
+                menuSection.classList.remove('showing-text-menu');
+                menuSection.classList.add('showing-image-menu');
+              });
+
             </script>
     </section>
 

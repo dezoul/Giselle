@@ -26,9 +26,6 @@
   --text-2xl: 5rem;
   --text-2xl--line-height: 1.1;
   --leading: 1.1;
-
-  /* side-padding-fix */
-  --px-side-padding: var(--side-padding);
 }
 
 /* CSS variable colors */
@@ -116,6 +113,10 @@ html,body {
 
 .bright-section path{
     fill: #fff;
+}
+
+.no-fill path {
+    fill: none;
 }
 
 
@@ -481,26 +482,25 @@ div:has(> div > div.trap.is-active)  {
     /* menu code */
 
 
-    .showing-text  .text-menu{
-     display: block;
+    .showing-text-menu  .text-menu{
+     display: block !important;
     }
 
 
 
 
-
-
-    .showing-image-grid  .image-grid{
-     display: flex;
+    .showing-image-menu  .image-grid{
+     display: flex !important;
+     gap: 1rem;
     }
-    .showing-image-grid  .image-grid > div{
+    .showing-image-menu  .image-grid > div{
      flex-basis: 400px;
     flex-shrink: 0;
     }
 
-    @media (max-width: 765px) {
-    .showing-image-grid  .image-menu{
-     display: grid;
+    @media (min-width: 765px) {
+    .showing-image-menu  .image-grid{
+     display: grid !important;
     }
         
     }
