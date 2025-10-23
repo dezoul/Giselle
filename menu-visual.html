@@ -28,12 +28,10 @@ menus:
         image: /assets/images/dish-1.png
         price: 65
         text-color: '#000'
-        
       - dish_name: Sea Bream Tartelette, Yuzu
         image: /assets/images/dish-1.png
         price: 45
         text-color: '#fff'
-        
       - dish_name: Marinated Sweet Peppers, Herb Butter, Sardine
         image: /assets/images/dish-1.png
         price: 45
@@ -84,16 +82,16 @@ menus:
         image: /assets/images/dish-1.png
         price: 1,590
       - dish_name: Scallop Crudo, Cucumber, Lemon, Buttermilk
-        image: /assets/images/dish-1.png
+        image: /uploads/scallop-crudo-cucumber-lemon-buttermilk.jpg
         price: 150
       - dish_name: Tuna Tartare, Yuzu, Cucumber, Avocado
-        image: /assets/images/dish-1.png
+        image: /uploads/tuna-tartare-yuzu-cucumber-avocado.jpg
         price: 150
       - dish_name: 'Ebi Prawns Tin, Salmon Roe, Wasabi Mayo '
-        image: /assets/images/dish-1.png
+        image: /uploads/ebi-prawns-tin-salmon-roe-wasabi-mayo.jpg
         price: 350
       - dish_name: Mahi Mahi, Straciatella, Tarragon,  Red Shiso
-        image: /assets/images/dish-1.png
+        image: /uploads/mahi-mahi-straciatella-tarragon-red-shiso.jpg
         price: 140
   - name: seafood platter
     dishes:
@@ -324,7 +322,7 @@ seo:
                   {% for food in menu.dishes %}
                   {% if food.image %}
                     <div class="relative flex justify-center items-end" style="aspect-ratio: 3/4;">
-                      <img src="{{food.image}}" alt="{{food.dish_name}}" class="w-full h-full object-cover absolute inset-0"/>
+                      <img src="{{food.image}}" alt="{{food.dish_name}}" class="w-full h-full object-cover absolute inset-0" />
                       <div class="relative text-center" style="color:{{food.text-color}}">
                         <p>
                           {{food.dish_name}}
