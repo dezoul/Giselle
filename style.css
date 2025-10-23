@@ -26,6 +26,9 @@
   --text-2xl: 5rem;
   --text-2xl--line-height: 1.1;
   --leading: 1.1;
+
+  /* side-padding-fix */
+  --px-side-padding: var(--side-padding);
 }
 
 /* CSS variable colors */

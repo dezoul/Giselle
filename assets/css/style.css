@@ -20,6 +20,7 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-dark: var(--dark);
     --text-md: 2rem;
     --text-md--line-height: 1.1;
   }
@@ -579,6 +580,9 @@
   }
   .border-\[\#9f4837\] {
     border-color: #9f4837;
+  }
+  .border-dark {
+    border-color: var(--color-dark);
   }
   .bg-cover {
     background-size: cover;

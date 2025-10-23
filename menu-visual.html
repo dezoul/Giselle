@@ -258,7 +258,11 @@ seo:
 
 
     <!-- menu fun -->
-    <section class="sticky top-0 z-20 md:py-4 grid base-section" style="grid-template-columns: 1fr 250px;">
+    <section class="sticky top-0 z-20 px-0 md:py-4 grid base-section">
+      <div class="px-side-p border-b border-dark">
+        <h2>Menu</h2>
+        <div></div>
+      </div>
       <div class="flex flex-nowrap overflow-scroll ">
         {% for menu in page.menus %}
         <a class="{% if forloop.first %} pl-0 {% endif %} button whitespace-nowrap" href="#{{menu.name | replace: ' ',''}}">{{menu.name}}</a>
@@ -269,7 +273,7 @@ seo:
 
         </span>
         <span>
-          
+
         </span>
       </div>
 
