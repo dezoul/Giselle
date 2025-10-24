@@ -298,30 +298,31 @@ seo:
     <section class="menu-section z-10 p-0 h-initial showing-image-menu" style="scroll-snap-type: x mandatory;">
 
 {% for menu in page.menus %}
-<div class="{% cycle 'featured-section pb-0','featured-section pb-0','featured-section pb-0','featured-section','dark-section pb-0','dark-section pb-0','dark-section pb-0','dark-section','bright-section b-0','bright-section' %}">
+<div class="{% cycle 'featured-section pb-0','featured-section pb-0','featured-section pb-0','featured-section pb-[5%]','dark-section pb-0','dark-section pb-0','dark-section pb-0','dark-section pb-[5%]','bright-section b-0','bright-section pb-[5%]' %}">
   
-            <div class="py-[5%] content-between relative z-10 md:pb-4 slider-menu-item showing-image-grid" id="{{menu.name | replace: ' ',''}}">
+            <div class="pt-[5%] content-between relative z-10 md:pb-4 slider-menu-item showing-image-grid px-(--side-padding)" id="{{menu.name | replace: ' ',''}}">
                 <div class="px-5p px-[5%] ">
                   <h3 class="h1 cursive">
                     {{menu.name}}
                   </h3>
                 </div>
-                
-                <div class="text-menu hidden px-5p px-[5%]">
-                  {% for food in menu.dishes %}
-                  <div class="flex justify-between gap-8">
-                    <p>{{food.dish_name}}</p>
-                    <p>{{food.price}}</p>
-                  </div>
-                  {% if food.extra %}
-                  <p>{{food.extra}}</p>
-                  {% endif %}
-                  
-                  {% endfor %}
+              </div>
+              
+              <div class="text-menu hidden px-(--side-padding)">
+                {% for food in menu.dishes %}
+                <div class="flex justify-between gap-8">
+                  <p>{{food.dish_name}}</p>
+                  <p>{{food.price}}</p>
                 </div>
+                {% if food.extra %}
+                <p>{{food.extra}}</p>
+                {% endif %}
+                
+                {% endfor %}
+              </div>
 
-                <div class="image-grid grid-cols-3 hidden overflow-scroll max-w-full px-5p px-[5%] ">
-                  {% for food in menu.dishes %}
+              <div class="image-grid grid-cols-3 hidden overflow-scroll max-w-full px-(--side-padding)">
+                {% for food in menu.dishes %}
                   {% if food.image %}
                     <div class="relative flex justify-center items-end" style="aspect-ratio: 3/4;">
                       <img src="{{food.image}}" alt="{{food.dish_name}}" class="w-full h-full object-cover absolute inset-0"/>
@@ -335,8 +336,8 @@ seo:
                       </div>
                   </div>
                   {% endif %}
-                  {% endfor %}
-                </div>
+                {% endfor %}
+              </div>
 
 
                 

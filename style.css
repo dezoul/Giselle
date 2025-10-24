@@ -120,6 +120,22 @@ html,body {
 }
 
 
+.base-section .no-fill path{
+    stroke: var(--dark-color);
+}
+
+.dark-section .no-fill path{
+    stroke:  var(--featured-color);
+}
+
+.featured-section .no-fill path {
+    stroke: var(--dark-color);
+}
+
+.bright-section .no-fill path{
+    stroke: #fff;
+}
+
 footer,section,article,aside,nav,main {
     display: block;
     padding: 5% 7vw;
@@ -486,7 +502,13 @@ div:has(> div > div.trap.is-active)  {
      display: block !important;
     }
 
+    .showing-text-menu .image-menu-icon{
+     opacity: .5;
+    }
 
+    .showing-image-menu .text-menu-icon{
+     opacity: .5;
+    }
 
 
     .showing-image-menu  .image-grid{
