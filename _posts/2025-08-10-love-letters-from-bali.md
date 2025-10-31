@@ -45,7 +45,7 @@ Chef Antoine Darquin, equal parts rebel and romantic, calls Giselle a “naughty
 
 ![](/assets/images/giselle-opening-3.jpg)
 
-### 1am - Night Cap at The Sengo
+### 1am - Night Cap at The Segno
 
 Not ready to call it a night? **The Segno** waits upstairs, dimly lit and effortlessly stylish. Their cocktail list reads like poetry, but the Negroni variations are where they truly shine. Sip slowly, lean into the velvet banquettes, and let the night in Canggu stretch just a little longer.
 
